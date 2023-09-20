@@ -16,11 +16,12 @@
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
     <header id="navBar">
         <!--Logo da FOREVER GAMES serve como imagem interativa para returnar a página principal-->
-        <a href="/"><img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja" height="40Rem"></a>
+        <a href="/"><img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja" height="40rem"></a>
         <span>FOREVER GAMES</span>
         <!--Barra de navegação para outras páginas-->
         <nav>
             <ul>
+                <li><a href="/">NEWS</a></li>
                 <li><a href="/html/top.html">TOP 3</a></li>
                 <li><a href="/html/jogos.html">JOGOS</a></li>
                 <li><a href="/html/login.html">LOGIN</a></li>
@@ -30,35 +31,49 @@
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
         <h1>Contato</h1>
-        <form>
-            <label><strong>Insira seu email:</strong></label>
-            <input>
-            <p><label><strong>Adicione seu problema / dica de melhoria:</strong></label></p>
-            <input>
-            <p><button>Enviar!</button> <strong>Agradecemos pelo seu feedback!</strong></p>
+        <form action="contato">
+            <label for="email"><strong>Insira seu email:</strong></label>
+            <input type="email" id="email" name="email" placeholder="Insira seu email">
+            <p><label for="comentario"><strong>Adicione seu problema / dica de melhoria:</strong></label></p>
+            <input type="text" id="comentario" name="comentario" placeholder="Comentário">
+            <p><button type="submit">Enviar!</button><strong>Agradecemos pelo seu feedback!</strong></p>
         </form>
         <p><strong>Regras de Negócio:</strong></p>
-        <p><strong>Missão:</strong> Criar um ambiente de informação, reflexão e avaliação que reflita a verdadeira opinião dos gamers! Nada de avaliações incorretas só poque é um triple A (jogo de baixo investimento)!</p>
+        <p><strong>Missão:</strong> Criar um ambiente de informação, reflexão e avaliação que reflita a verdadeira opinião dos gamers! Nada de avaliações incorretas só poque é um triple A (jogo com alto invetimento)!</p>
         <p><strong>Visão:</strong> Temos como objetivo ser o principal site de avaliação / opinião da web.</p>
         <p><strong>Valores:</strong> Respeito, igualdade e veracidade.</p>
-        <p><strong>Membros</strong></p>
         <table>
             <tr>
                 <td>
-                    <img src="/">
-                    <strong>Eduardo Alves</strong>
-                    <img src="/">
-                    <strong>João Vitor</strong>
-                    <img src="/">
-                    <strong>Luiz Otavio</strong>
-                    <img src="/">
-                    <strong>Marcello Cavalcanti</strong>
-                    <img src="/">
-                    <strong>Victor Cardoso</strong>
+                    <p><strong>Membros</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/src/img/membros/eduardoAlvesFoto.jpeg" alt="foto do Eduardo Alves" height="150rem">
+                    <p><strong>Eduardo Alves</strong> Descrição do membro</p>
+                <td>
+                    <img src="/src/img/membros/joãoVitorFoto.jpg" alt="foto do João Vitor" height="150rem">
+                    <p><strong>João Vitor</strong> Descrição do membro</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/src/img/membros/luizOtavioFoto.jpeg" alt="foto do Luiz Otavio" height="150rem">
+                    <p><strong>Luiz Otavio</strong> Descrição do membro</p>
+                </td>
+                <td>
+                    <img src="/src/img/membros/marcelloCavalcantiFoto.jpg" alt="foto do Marcello Cavalcanti" height="150rem">
+                    <p><strong>Marcello Cavalcanti</strong> Descrição do membro</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/src/img/membros/victorCardosoFoto.jpg" alt="foto do Victor Cardoso" height="150rem">
+                    <p><strong>Victor Cardoso</strong> Descrição do membro</p>
                 </td>
             </tr>
         </table>
-        
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
     <footer>

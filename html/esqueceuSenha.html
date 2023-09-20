@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOREVER GAMES - LOGIN</title>
+    <title>FOREVER GAMES - Esqueceu senha</title>
     <!--google fonts para alterar a familha das fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,26 +29,20 @@
     </header>
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
-        <div>
-            <h1>Bem vindo</h1>
-    <!--login-->
-        <form action="login">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="nome" placeholder="Digite seu nome"><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Digite sua senha"><br><br>
-            <button type="submit">Entrar</button><br><br>
+        <h1>Esqueceu a sua senha</h1>
+        <p>Por favor informe seu email, e nós iremos lhe enviar um link para alterar a senha:</p>
+        <!--Formulário para recuperar senha-->
+        <form action="">
+            <label for="emailPassword">Digite seu email</label>
+            <input type="email" id="emailPassword" name="emailPassword" placeholder="Digite seu email">
         </form>
-        <p><a href="/html/cadastro.html">Cadastrar</a></p>
-        <p><a href="/html/esqueceuSenha.html">Esqueceu a Senha</a></p>
-        </div>
+        <p>Caso não receba um email dentro de 10 minutos, por favor tente novamente. Lembre-se de checar o span e a lixeira!</p>
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
     <footer>
         <h6>&copy; FOREVER GAMES - Todos os direitos reservados - 2023</h6>
         <nav>
             <ul>
-                <li><a href="#navBar">Retornar ao topo</a></li>
                 <li><a href="/html/contato.html">CONTATO</a></li>
             </ul>
         </nav>
