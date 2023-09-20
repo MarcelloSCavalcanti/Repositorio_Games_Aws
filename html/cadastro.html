@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOREVER GAMES - LOGIN</title>
+    <title>FOREVER GAMES - Cadastro</title>
     <!--google fonts para alterar a familha das fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,26 +29,29 @@
     </header>
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
-        <div>
-            <h1>Bem vindo</h1>
-    <!--login-->
-        <form action="login">
+        <h1>Cadastro</h1>
+        <p>Por favor preencha o formulário abaixo:</p>
+        <!--Formulário para cadastro contendo Nome, email, senha e checkbox para receber novos emails-->
+        <form action=""></form>
             <label for="name">Nome:</label>
             <input type="text" id="name" name="nome" placeholder="Digite seu nome"><br><br>
-            <label for="password">Password:</label>
+            <lable for="email">Email:</lable>
+            <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+            <lable for="email2">Confirme seu Email:</lable>
+            <input type="email" id="email2" name="email2" placeholder="Digite seu emal"><br><br>
+            <lable for="password">Escolha uma senha:</lable>
             <input type="password" id="password" name="password" placeholder="Digite sua senha"><br><br>
-            <button type="submit">Entrar</button><br><br>
-        </form>
-        <p><a href="/html/cadastro.html">Cadastrar</a></p>
-        <p><a href="/html/esqueceuSenha.html">Esqueceu a Senha</a></p>
-        </div>
-    </main>
+            <label for="password2">Digite novamente a senha:</label>
+            <input type="password" id="password2" name="password2" placeholder="Digite sua senha"><br><br>
+            <input type="checkbox" id="yesEmail" name="yesEmail" value="yesEmail">
+            <label for="yesEmail">Deseja receber avisos de novas avaliações via email?</label><br><br>
+            <button type="submit">Cadastrar</button>
+        </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
     <footer>
         <h6>&copy; FOREVER GAMES - Todos os direitos reservados - 2023</h6>
         <nav>
             <ul>
-                <li><a href="#navBar">Retornar ao topo</a></li>
                 <li><a href="/html/contato.html">CONTATO</a></li>
             </ul>
         </nav>
