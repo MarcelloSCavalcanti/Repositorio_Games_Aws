@@ -2,16 +2,125 @@
 
 /*FONTES QUE IREMOS USAR NO TRABALHO*/
 
-/*font-family: 'Carter One', cursive;
-font-family: 'Inter', sans-serif;*/
-/* {
+
+
+* {
     color:orangered;
-    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 header {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163FE5;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    top: inherit;
+    box-shadow: 0rem 0rem 2rem #163FE5;
 }
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 3rem;
+    filter: drop-shadow(0rem 0rem 1rem black);
+}
+
+header img:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+header img:not(:hover) {
+    transition: 0.5s;
+}
+
+header h1{
+    font-family: 'Carter One', cursive;
+    padding-left: 2rem;
+    font-size: 3rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+header h1:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+header h1:not(:hover) {
+    transition: 0.5s;
+}
+
+.nav-bar-top a {
+    font-family: 'Carter One', cursive;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+.nav-bar-top:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-top:not(:hover) {
+    transition: 0.5s;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+
+
 footer {
-    background-color: #ffffff;
-}/*
+    display:flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+    background-color: #163FE5;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+    text-shadow: 0rem 0rem 0.1rem black;
+    cursor: default;
+}
+
+footer ul {
+    display: flex;
+}
+
+.nav-bar-bot {
+    list-style: none;
+}
+
+.nav-bar-bot a {
+    font-family: 'Carter One', cursive;
+    margin-left: 2rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+.nav-bar-bot:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-bot:not(:hover) {
+    transition: 0.5s;
+}

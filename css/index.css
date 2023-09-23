@@ -1,0 +1,40 @@
+main {
+    padding: 2rem 7rem;
+}
+
+main h3 {
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+h2, h3 {
+    width: min-content;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-image {
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    height: 24rem;
+    width: 18rem;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+}
+
+.game-image:hover {
+    transition: 0.75s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.game-image:not(:hover) {
+    transition: 0.75s;
+}
