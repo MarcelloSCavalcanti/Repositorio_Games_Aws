@@ -1,10 +1,4 @@
 /*Esse arquivo é para a estilização padrão dos tipos de páginas como: NEWS(index), TOP, JOGOS, LOGIN, REVIEW e CONTATO*/
-
-/*FONTES QUE IREMOS USAR NO TRABALHO*/
-html {
-    display: flex;
-}
-
 * {
     color:orangered;
     font-family: 'Inter', sans-serif;
