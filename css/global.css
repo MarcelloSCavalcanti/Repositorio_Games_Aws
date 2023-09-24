@@ -1,8 +1,9 @@
 /*Esse arquivo é para a estilização padrão dos tipos de páginas como: NEWS(index), TOP, JOGOS, LOGIN, REVIEW e CONTATO*/
 
 /*FONTES QUE IREMOS USAR NO TRABALHO*/
-
-
+html {
+    display: flex;
+}
 
 * {
     color:orangered;
@@ -18,8 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #163FE5;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding: 0 6rem;
     top: inherit;
     box-shadow: 0rem 0rem 2rem #163FE5;
 }
@@ -46,7 +46,7 @@ header img:not(:hover) {
 
 header h1{
     font-family: 'Carter One', cursive;
-    padding-left: 2rem;
+    padding: 0 2rem;
     font-size: 3rem;
     text-shadow: 0rem 0rem 0.5rem black;
 }
@@ -61,10 +61,15 @@ header h1:not(:hover) {
     transition: 0.5s;
 }
 
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap:3rem;
+}
+
 .nav-bar-top a {
     font-family: 'Carter One', cursive;
     font-size: 2rem;
-    margin-left: 2rem;
     text-shadow: 0rem 0rem 0.5rem black;
 }
 
@@ -78,16 +83,9 @@ header h1:not(:hover) {
     transition: 0.5s;
 }
 
-header nav ul {
-    display: flex;
-    list-style: none;
-}
-
 body {
     background-color: black;
 }
-
-
 
 footer {
     display:flex;
@@ -101,17 +99,14 @@ footer {
     cursor: default;
 }
 
-footer ul {
+footer nav ul{
     display: flex;
-}
-
-.nav-bar-bot {
     list-style: none;
+    gap:3rem;
 }
 
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
-    margin-left: 2rem;
     text-shadow: 0rem 0rem 0.5rem black;
 }
 
