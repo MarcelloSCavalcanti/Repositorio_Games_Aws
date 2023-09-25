@@ -1,0 +1,47 @@
+header, body {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ul {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: carter one;
+    font-size: 15px;
+    background-color: #000000;
+}
+
+a {
+    color:orangered;
+}
+
+header {
+    font-family: carter One;
+    font-size: 15px;
+    color: orangered;
+    background-color: #ffffff;
+}
+
+main {
+    font-family: inter;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+footer {
+    font-family: carter one;
+    font-size: 15px;
+    color: orangered;
+    background-color: #ffffff;
+}
