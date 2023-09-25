@@ -1,26 +1,43 @@
-header, body {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
 
-ul {
+/*ul {
     display:flex;
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: row;
+}*/
+
+.nav_header {
+    display:flex;
+    justify-content:flex-end;
+       
 }
 
-table {
+.nav_footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#titulo_main {
     display: flex;
     justify-content: center;
+}
+
+#img_jogos {
+    display: flex;
+    justify-content: center;     
 }
 
 button {
     font-family: carter one;
     font-size: 15px;
     background-color: #000000;
-}
+    text-align:center; 
+    padding: 15px 15px 15px 15px;
+    border: 5px solid orangered;
+    border-radius: 25px;
+    margin: 5px; 
+  }
 
 a {
     color:orangered;
@@ -30,18 +47,18 @@ header {
     font-family: carter One;
     font-size: 15px;
     color: orangered;
-    background-color: #ffffff;
+    background-color: black;
 }
 
 main {
     font-family: inter;
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: blueviolet;
 }
 
 footer {
     font-family: carter one;
     font-size: 15px;
     color: orangered;
-    background-color: #ffffff;
+    background-color: #000000;
 }
