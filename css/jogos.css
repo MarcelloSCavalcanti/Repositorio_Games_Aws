@@ -44,7 +44,9 @@ header {
 
 #img_jogos {
     display: flex;
-    justify-content: center;     
+    justify-content: center;
+    box-shadow: #000000;
+    filter:drop-shadow(10px 10px 10px black);    
 }
 
 main {
