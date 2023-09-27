@@ -16,15 +16,16 @@
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
     <header id="navBar">
         <!--Logo da FOREVER GAMES serve como imagem interativa para returnar a página principal-->
-        <a href="/"><img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja" height="40rem"></a>
-        <span>FOREVER GAMES</span>
+        <a href="/">
+            <img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja" height="40rem"><h1>FOREVER GAMES</h1>
+        </a>
         <!--Barra de navegação para outras páginas-->
         <nav>
             <ul>
-                <li><a href="/">NEWS</a></li>
-                <li><a href="/html/top.html">TOP 3</a></li>
-                <li><a href="/html/jogos.html">JOGOS</a></li>
-                <li><a href="/html/login.html">LOGIN</a></li>
+                <li class="nav-bar-top"><a href="/">NEWS</a></li>
+                <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
+                <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
+                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
             </ul>
         </nav>
     </header>
@@ -52,6 +53,7 @@
                 <td>
                     <img src="/src/img/membros/eduardoAlvesFoto.jpeg" alt="foto do Eduardo Alves" height="150rem">
                     <p><strong>Eduardo Alves</strong> Descrição do membro</p>
+                </td>
                 <td>
                     <img src="/src/img/membros/joãoVitorFoto.jpg" alt="foto do João Vitor" height="150rem">
                     <p><strong>João Vitor</strong> Descrição do membro</p>
@@ -80,7 +82,7 @@
         <h6>&copy; FOREVER GAMES - Todos os direitos reservados - 2023</h6>
         <nav>
             <ul>
-                <li><a href="#navBar">Retornar ao topo</a></li>
+                <li class="nav-bar-bot"><a href="#navBar">Retornar ao topo</a></li>
             </ul>
         </nav>
     </footer>
