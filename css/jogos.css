@@ -19,6 +19,10 @@ a {
     justify-content: center;
 }*/
 
+#logoControle1 {
+    margin-top: 5px;
+}
+
 nav {
     margin-top: 5px;
 }
@@ -49,8 +53,13 @@ header {
     filter:drop-shadow(10px 10px 10px black);    
 }
 
+img {
+    border-radius: 20px 20px 20px 20px;    
+}
+
 main {
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
+    background-image: url(/src/img/backgroundBluevioletControleMarca.png);
     margin: 0 auto;
     width: auto;
 }
