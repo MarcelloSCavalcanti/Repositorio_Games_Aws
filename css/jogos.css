@@ -175,9 +175,6 @@
 /*----------------------------------------------------*/
 
 header {
-    /*font-family: carter One;
-    font-size: 15px;
-    color: orangered;*/
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -191,6 +188,14 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 30px;
+}
+
+figcaption {
+    line-height: 15px;
+    color:orangered;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:  'carter one', cursive;
 }
 
 #img_jogos {
@@ -227,7 +232,6 @@ header {
     filter: drop-shadow(10px 10px 10px black);
 }
 
-
 .mariogalaxy:hover {
     transform: scale(1.11);
     filter: drop-shadow(10px 10px 10px black);
@@ -248,7 +252,6 @@ header {
     transform: scale(1.11);
     filter: drop-shadow(10px 10px 10px black);
 }
-
 
 .f1:hover {
     transform: scale(1.11);
@@ -271,7 +274,6 @@ header {
     filter: drop-shadow(10px 10px 10px black);
 }
 
-
 .persona:hover {
     transform: scale(1.11);
     filter: drop-shadow(10px 10px 10px black);
@@ -292,7 +294,6 @@ header {
     transform: scale(1.11);
     filter: drop-shadow(10px 10px 10px black);
 }
-
 
 .rocket:hover {
     transform: scale(1.11);
@@ -326,7 +327,6 @@ body {
 }
 
 main {
-    /*background-color: blueviolet;*/
     background-image: url(/src/img/backgroundBluevioletControleMarca.png);
     margin: 0 auto;
     height: 0 auto;
@@ -334,7 +334,7 @@ main {
 }
 
 footer {
-    font-family: carter one;
+    font-family: 'carter one', cursive;
     font-size: 15px;
     color: orangered;
     background-color: #000000;
