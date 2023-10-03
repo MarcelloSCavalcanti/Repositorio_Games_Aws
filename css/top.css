@@ -1,0 +1,22 @@
+.game-image{
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+}
+
+.game-image-primeiro{
+    border-radius: 1rem;
+    margin: 3rem 4rem;
+    box-shadow: 0rem 0rem 1rem #d3c013;
+}
+
+main table {
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
