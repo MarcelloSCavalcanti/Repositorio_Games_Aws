@@ -24,8 +24,10 @@ form{
    color: rgb(231, 122, 12);
    background-color: rgb(5, 71, 115);
    display: grid;
-  place-items: center;
-  padding: 80px;
+   place-items: center;
+   padding: 80px;
+   margin: 50 auto;
+   border-top: 300px;
 
 }
 input {
@@ -42,5 +44,25 @@ button{
 }
 label{
    display: grid;
-   place-items: center;
+   place-items: left;
+}
+@media screen and (max-width: 600px) {
+   div{
+      padding:0px;
+      padding-left: 156px;
+      padding-right: 24px;
+      margin: 40px;
+   }
+   form{
+      color: rgb(231, 122, 12);
+      background-color: rgb(5, 71, 115);
+      display: grid;
+     place-items: center;
+     padding: 40px;
+     margin: 0 auto;}
+     
+   bory{
+      font-size: small;
+   }
+
 }
