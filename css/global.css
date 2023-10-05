@@ -8,14 +8,25 @@
     border: 0;
 }
 
+/*para andar pela página de forma suave quando selecionado o retornar para o topo*/
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #163FE5;
-    padding: 0 6rem;
+    padding: 0 48px;
     top: inherit;
     box-shadow: 0rem 0rem 2rem #163FE5;
+}
+
+@media (max-width: 300px) {
+    header {
+        padding: 0 16px;
+    }
 }
 
 header a {
@@ -23,9 +34,21 @@ header a {
     align-items: center;
 }
 
+@media (max-width: 300px) {
+    header nav ul li{
+        display: none;
+    }
+}
+
 header img {
     height: 3rem;
     filter: drop-shadow(0rem 0rem 1rem black);
+}
+
+@media (max-width: 300px) {
+    header img {
+        height: 24px;
+    }
 }
 
 header img:hover {
@@ -40,9 +63,16 @@ header img:not(:hover) {
 
 header h1{
     font-family: 'Carter One', cursive;
-    padding: 0 2rem;
+    padding: 0 32px;
     font-size: 3rem;
     text-shadow: 0rem 0rem 0.5rem black;
+}
+
+@media (max-width: 300px) {
+    header h1 {
+        font-size: 20px;
+        padding: 8px;
+    }
 }
 
 header h1:hover {
@@ -51,6 +81,7 @@ header h1:hover {
     cursor: pointer;
 }
 
+
 header h1:not(:hover) {
     transition: 0.5s;
 }
@@ -58,7 +89,7 @@ header h1:not(:hover) {
 header nav ul{
     display: flex;
     list-style: none;
-    gap:3rem;
+    gap: 48px;
 }
 
 .nav-bar-top a {
@@ -81,22 +112,68 @@ body {
     background-color: black;
 }
 
+main {
+    padding: 32px 0;
+    width: 1280px;
+    margin: auto;
+}
+
+@media (max-width: 300px) {
+    main {
+        padding: 16px 0;
+        width: 260px;
+    }
+}
+
+@media (max-width: 300px) {
+    main {
+        padding: 16px 0;
+        width: 260px;
+    }
+}
+
 footer {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    padding: 0 6rem;
+    padding: 0 24px;
     background-color: #163FE5;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 24px;
     box-shadow: 0rem 0rem 1rem #163FE5;
     text-shadow: 0rem 0rem 0.1rem black;
     cursor: default;
+
+}
+
+@media (max-width: 300px) {
+    footer {
+        padding: 16px;
+        font-size: 16px;
+    }
 }
 
 footer nav ul{
     display: flex;
     list-style: none;
-    gap:3rem;
+    gap:48px;
+}
+
+@media (max-width: 300px) {
+    h6 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    #return {
+        display:none;
+    }
+}
+
+@media (max-width: 300px) {
+    #contato {
+    font-size: 12px;
+    }
 }
 
 .nav-bar-bot a {
