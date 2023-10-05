@@ -4,7 +4,7 @@
     
 */
 
-#botoes_header {
+/*#botoes_header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -17,7 +17,7 @@
     padding: 10px;
 }
 
-/*criando botões com efeitos de glowing e variação de cores*/
+criando botões com efeitos de glowing e variação de cores
 #buttonNews {
     position: relative;
     z-index: 0;
@@ -178,7 +178,8 @@
     100% { background-position: 0 0; }
 }
 
-/*----------------------------------------------------*/
+
+------------------------------------------------------------
 
 header {
     background-color: black;
@@ -187,7 +188,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 5px 10px 5px 10px;
-}
+}*/
 
 #titulo_jogos {
     display: flex;
@@ -333,13 +334,13 @@ body {
 }
 
 main {
-    background-image: url(/src/img/backgroundBluevioletControleMarca.png);
+    background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
     margin: 0 auto;
     height: 0 auto;
     width: 0 auto;
 }
 
-footer {
+/*footer {
     font-family: 'carter one', cursive;
     font-size: 15px;
     color: orangered;
@@ -349,4 +350,4 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 0px 10px 0px 10px;
-}
+}*/
