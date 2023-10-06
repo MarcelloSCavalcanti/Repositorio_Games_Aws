@@ -23,9 +23,9 @@ header {
     box-shadow: 0rem 0rem 2rem #163FE5;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 660px) {
     header {
-        padding: 0 16px;
+        padding: 0 24px;
     }
 }
 
@@ -34,9 +34,19 @@ header a {
     align-items: center;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1160px) {
     header nav ul li{
         display: none;
+    }
+}
+
+#littleScreens {
+    display:none;
+}
+
+@media (max-width: 1160px) {
+    #littleScreens {
+        display: block;
     }
 }
 
@@ -45,9 +55,22 @@ header img {
     filter: drop-shadow(0rem 0rem 1rem black);
 }
 
-@media (max-width: 300px) {
+@media (max-width: 700px) {
+    #navBar {
+        height: 73.6px;
+    }
+    
+    header a h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 660px) {
     header img {
-        height: 24px;
+        margin: 8px;
+    }
+    header h1 {
+        display:none;
     }
 }
 
@@ -68,19 +91,17 @@ header h1{
     text-shadow: 0rem 0rem 0.5rem black;
 }
 
-@media (max-width: 300px) {
-    header h1 {
-        font-size: 20px;
-        padding: 8px;
-    }
-}
-
 header h1:hover {
     transition: 0.5s;
     transform: scale(1.15);
     cursor: pointer;
 }
 
+@media (max-width: 660px) {
+    header h1 {
+        display:none;
+    } 
+}
 
 header h1:not(:hover) {
     transition: 0.5s;
@@ -113,22 +134,32 @@ body {
 }
 
 main {
-    padding: 32px 0;
     width: 1280px;
-    margin: auto;
+    margin: 32px auto;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1340px) {
     main {
-        padding: 16px 0;
-        width: 260px;
+        width:952px;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width:1020px) {
+    main {
+        width:624px;
+    }
+}
+
+@media (max-width: 660px) {
+    main {
+        width: 296px;
+    }
+}
+
+@media (max-width: 320px) {
     main {
         padding: 16px 0;
-        width: 260px;
+        width: 200px;
     }
 }
 
@@ -142,14 +173,6 @@ footer {
     box-shadow: 0rem 0rem 1rem #163FE5;
     text-shadow: 0rem 0rem 0.1rem black;
     cursor: default;
-
-}
-
-@media (max-width: 300px) {
-    footer {
-        padding: 16px;
-        font-size: 16px;
-    }
 }
 
 footer nav ul{
@@ -158,27 +181,35 @@ footer nav ul{
     gap:48px;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 660px) {
     h6 {
-        font-size: 10px;
+        font-size: 0.6rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
 
-@media (max-width: 300px) {
-    #return {
-        display:none;
-    }
-}
-
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     #contato {
-    font-size: 12px;
+    font-size: 1rem;
     }
 }
 
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
     text-shadow: 0rem 0rem 0.5rem black;
+}
+
+@media (max-width: 660px) {
+    .nav-bar-bot {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    #return {
+    display: none;
+    }
 }
 
 .nav-bar-bot:hover {

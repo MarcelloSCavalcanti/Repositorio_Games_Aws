@@ -1,5 +1,5 @@
 main h3 {
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 32px 0px;
 }
 
 h2, h3 {
@@ -11,7 +11,7 @@ h2, h3 {
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
 }
-/*ao invés de margin na imagem usei o*/
+/*ao invés de margin na imagem usei o gap*/
 main div {
     display: flex;
     flex-wrap: wrap;
@@ -20,15 +20,15 @@ main div {
 
 .game-image {
     border-radius: 16px;
-    height: 372px;
-    width: 272px;
+    height: 396px;
+    width: 296px;
     box-shadow: 0px 0px 16px #163FE5;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     .game-image {
-        height: 320px;
-        max-width: 260px;
+        height: 300px;
+        width: 200px;
     }
 }
 
