@@ -329,6 +329,24 @@ img {
     border-radius: 20px 20px 20px 20px;    
 }
 
+@meda (max-width: 1500) {
+    img {
+        height: 
+    }
+}
+
+@meda (max-width:) {
+
+}
+
+@meda (max-width:) {
+
+}
+
+@meda (max-width: 400) {
+
+}
+
 body {
     margin: 0 auto;
 }
