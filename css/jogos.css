@@ -210,7 +210,7 @@ header {
     background-color: #163FE5;
     padding: 0 48px;
     top: inherit;
-    box-shadow: 0rem 0rem 2rem #163FE5;
+    box-shadow: 0px 0px 32px #163FE5;
 }
 
 @media (max-width: 660px) {
@@ -224,23 +224,29 @@ header a {
     align-items: center;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 850px) {
     header nav ul li{
         display: none;
     }
 }
+
 #littleScreens {
     display:none;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 850px) {
     #littleScreens {
         display: block;
     }
+
+    header nav img {
+        height: 40px;
+    }
 }
+
 header img {
-    height: 3rem;
-    filter: drop-shadow(0rem 0rem 1rem black);
+    height: 48px;
+    filter: drop-shadow(0px 0px 16px black);
 }
 
 @media (max-width: 700px) {
@@ -249,7 +255,7 @@ header img {
     }
     
     header a h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 }
 
@@ -275,8 +281,8 @@ header img:not(:hover) {
 header h1{
     font-family: 'Carter One', cursive;
     padding: 0 32px;
-    font-size: 3rem;
-    text-shadow: 0rem 0rem 0.5rem black;
+    font-size: 48px;
+    text-shadow: 0px 0px 8px black;
 }
 
 header h1:hover {
@@ -303,8 +309,8 @@ header nav ul{
 
 .nav-bar-top a {
     font-family: 'Carter One', cursive;
-    font-size: 2rem;
-    text-shadow: 0rem 0rem 0.5rem black;
+    font-size: 32px;
+    text-shadow: 0px 0px 8px black;
 }
 
 .nav-bar-top:hover {
@@ -444,7 +450,7 @@ figcaption {
 }
 
 /*-----------------------------------------------------------------------------------*/
-h1 {
+h2 {
     font-family: "carter one";
     text-align: center;
     font-size: 40px;
@@ -465,22 +471,72 @@ img {
 
 @media (max-width: 1350px) {
     main img {
-        height: 270px; 
-        width: 190px;
+        height: 260px; 
+        width: 180px;
     } 
 }
 
-@media (max-width: 1280px) {
-    main img {
-        height: 270px; 
-        width: 190px;
-    }
-}
-
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
     main img {
         height: 250px; 
         width: 170px;
+    }
+}
+
+@media (max-width: 1260px) {
+    main img {
+        height: 250px; 
+        width: 170px;
+    }
+    header a h1 {
+        font-size: 36.8px;
+    }
+    header {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    main img {
+        height: 230px; 
+        width: 150px;
+    }
+    header a h1 {
+        font-size: 32px;
+    }
+
+    #NEWS a, #TOP3 a, #LOGIN a {
+        font-size: 24px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+   
+}
+
+@media (max-width: 980px) {
+    main img {
+        height: 210px; 
+        width: 130px;
+    }
+}
+
+@media (max-width: 980px) {
+    main img {
+        height: 200px; 
+        width: 120px;
+    }
+}
+
+@media (max-width: 850px) {
+    main img {
+        height: 180px; 
+        width: 100px;
+    }
+
+    header a h1 {
+        font-size: 28px;
     }
 }
 
@@ -512,36 +568,9 @@ footer nav ul{
     list-style: none;
     gap:48px;
 }
-
-@media (max-width: 660px) {
-    h6 {
-        font-size: 0.6rem;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-}
-
-@media (max-width: 320px) {
-    #contato {
-    font-size: 1rem;
-    }
-}
-
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
     text-shadow: 0rem 0rem 0.5rem black;
-}
-
-@media (max-width: 660px) {
-    .nav-bar-bot {
-        margin-left: 16px;
-    }
-}
-
-@media (max-width: 900px) {
-    #return {
-    display: none;
-    }
 }
 
 .nav-bar-bot:hover {
@@ -553,3 +582,31 @@ footer nav ul{
 .nav-bar-bot:not(:hover) {
     transition: 0.5s;
 }
+
+@media (max-width: 900px) {
+    #return {
+    display: none;
+    }
+    h6 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 660px) {
+    h6 {
+        font-size: 0.6rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .nav-bar-bot {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    #contato {
+    font-size: 1rem;
+    }
+}
+
