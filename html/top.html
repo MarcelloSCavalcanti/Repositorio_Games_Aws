@@ -11,6 +11,8 @@
     <!--link para a estilização do css-->
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/top.css">
+    <!--linkagem com os arquivos JS-->
+    <script src="/js/top.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
@@ -22,6 +24,7 @@
         <!--Barra de navegação para outras páginas-->
         <nav>
             <ul>
+                <li class="nav-bar-top" id="littleScreens"><img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer"></img></li>
                 <li class="nav-bar-top"><a href="/">NEWS</a></li>
                 <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
                 <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
@@ -94,12 +97,10 @@
         <h6>&copy; FOREVER GAMES - Todos os direitos reservados - 2023</h6>
         <nav>
             <ul>
-                <li class="nav-bar-bot"><a href="#navBar">Retornar ao topo</a></li>
-                <li class="nav-bar-bot"><a href="/html/contato.html">CONTATO</a></li>
+                <li class="nav-bar-bot" id="return"><a href="#navBar">Retornar ao topo</a></li>
+                <li class="nav-bar-bot" id="contato"><a href="/html/contato.html">CONTATO</a></li>
             </ul>
         </nav>
     </footer>
-    <!--linkagem com os arquivos JS-->
-    <script src="/js/top.js"></script>
 </body>
 </html>
