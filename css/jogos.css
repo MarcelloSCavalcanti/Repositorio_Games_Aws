@@ -190,6 +190,133 @@ header {
     padding: 5px 10px 5px 10px;
 }*/
 
+* {
+    color:orangered;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163FE5;
+    padding: 0 48px;
+    top: inherit;
+    box-shadow: 0rem 0rem 2rem #163FE5;
+}
+
+@media (max-width: 660px) {
+    header {
+        padding: 0 24px;
+    }
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1160px) {
+    header nav ul li{
+        display: none;
+    }
+}
+#littleScreens {
+    display:none;
+}
+
+@media (max-width: 1160px) {
+    #littleScreens {
+        display: block;
+    }
+}
+header img {
+    height: 3rem;
+    filter: drop-shadow(0rem 0rem 1rem black);
+}
+
+@media (max-width: 700px) {
+    #navBar {
+        height: 73.6px;
+    }
+    
+    header a h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+    header img {
+        margin: 8px;
+    }
+    header h1 {
+        display:none;
+    }
+}
+
+header img:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+header img:not(:hover) {
+    transition: 0.5s;
+}
+
+header h1{
+    font-family: 'Carter One', cursive;
+    padding: 0 32px;
+    font-size: 3rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+header h1:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+@media (max-width: 660px) {
+    header h1 {
+        display:none;
+    } 
+}
+
+header h1:not(:hover) {
+    transition: 0.5s;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-bar-top a {
+    font-family: 'Carter One', cursive;
+    font-size: 2rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+.nav-bar-top:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-top:not(:hover) {
+    transition: 0.5s;
+}
+
 figcaption {
     line-height: 15px;
     color:orangered;
@@ -210,7 +337,7 @@ figcaption {
     margin-right: 90px;  
 }
 
-/*efeito para cada imagem da tela*/
+/*------------efeito para cada imagem da tela------------*/
 .assassins:hover {
     transform: scale(1.11);
     filter: drop-shadow(10px 10px 10px black);
@@ -330,22 +457,31 @@ img {
 }
 
 @media (max-width: 1500px) {
-    img {
-        height: 250px; 
-        width: 170px;
+    main img {
+        height: 270px; 
+        width: 190px;
     }
 }
 
-@meda (max-width:) {
-
+@media (max-width: 1350px) {
+    main img {
+        height: 270px; 
+        width: 190px;
+    } 
 }
 
-@meda (max-width:) {
-
+@media (max-width: 1280px) {
+    main img {
+        height: 270px; 
+        width: 190px;
+    }
 }
 
-@meda (max-width: 400) {
-
+@media (max-width: 1100px) {
+    main img {
+        height: 250px; 
+        width: 170px;
+    }
 }
 
 body {
@@ -359,14 +495,61 @@ main {
     width: 0 auto;
 }
 
-/*footer {
-    font-family: 'carter one', cursive;
-    font-size: 15px;
-    color: orangered;
-    background-color: #000000;
+footer {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 0 24px;
+    background-color: #163FE5;
     align-items: center;
-    padding: 0px 10px 0px 10px;
-}*/
+    font-size: 24px;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+    text-shadow: 0rem 0rem 0.1rem black;
+    cursor: default;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    gap:48px;
+}
+
+@media (max-width: 660px) {
+    h6 {
+        font-size: 0.6rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    #contato {
+    font-size: 1rem;
+    }
+}
+
+.nav-bar-bot a {
+    font-family: 'Carter One', cursive;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+@media (max-width: 660px) {
+    .nav-bar-bot {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    #return {
+    display: none;
+    }
+}
+
+.nav-bar-bot:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-bot:not(:hover) {
+    transition: 0.5s;
+}
