@@ -2,9 +2,9 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
     
-*/
 
-/*#botoes_header {
+
+#botoes_header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -190,13 +190,6 @@ header {
     padding: 5px 10px 5px 10px;
 }*/
 
-#titulo_jogos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-
 figcaption {
     line-height: 15px;
     color:orangered;
@@ -324,14 +317,22 @@ figcaption {
 }
 
 /*-----------------------------------------------------------------------------------*/
+h1 {
+    font-family: "carter one";
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
 
 img {
     border-radius: 20px 20px 20px 20px;    
 }
 
-@meda (max-width: 1500) {
+@media (max-width: 1500px) {
     img {
-        height: 
+        height: 250px; 
+        width: 170px;
     }
 }
 
