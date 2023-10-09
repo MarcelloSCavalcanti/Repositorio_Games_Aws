@@ -1,5 +1,5 @@
 body{
-    background-color: cornflowerblue;
+    background-color: black;
 }
 
 .h1review{
@@ -9,17 +9,26 @@ body{
     margin-bottom: 10px;
     width: 140px;
     padding-left: 10px;
-    border-radius: 40px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
-#disponiveltexto{
+.disponiveltexto{
     background-color: black;
     margin-left: 30px;
     margin-top: 20px;
-    margin-bottom: 10px;
-    width: 170px;
+    margin-bottom: 20px;
     padding-left: 10px;
-    border-radius: 40px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #valor{
@@ -29,7 +38,12 @@ body{
     margin-bottom: 10px;
     width: 80px;
     padding-left: 10px;
-    border-radius: 40px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #quais{
@@ -39,7 +53,12 @@ body{
     margin-bottom: 10px;
     width: 170px;
     padding-left: 10px;
-    border-radius: 40px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #vermais{
@@ -48,31 +67,44 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
     width: 100px;
-    border-radius: 30px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #textocomentario1{
     background-color: black;
     margin-left: 30px;
     margin-top: 20px;
-    margin-bottom: 10px;
     width: 380px;
     padding-top: 30px;
     padding-left: 10px;
-    border-radius: 40px;
-    height: 70px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+    height: 50px;
 }
 
 #textocomentario2{
     background-color: black;
     margin-left: 30px;
     margin-top: 20px;
-    margin-bottom: 10px;
     width: 380px;
     padding-top: 30px;
     padding-left: 10px;
-    border-radius: 40px;
-    height: 70px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+    height: 50px;
 }
 
 #nota-do-jogo{
@@ -81,7 +113,12 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
     width: 140px;
-    border-radius: 30px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
     padding-left: 10px;
 }
 
@@ -92,8 +129,14 @@ body{
     margin-bottom: 10px;
     width: 150px;
     height: 30px;
+    padding-top: 10px;
     padding-left: 10px;
-    border-radius: 20px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #trailer{
@@ -104,13 +147,24 @@ body{
     width: 380px;
     height: 240px;
     padding-left: 10px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #gameplay{
     background-color: black;
     margin-left: 100px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
     width: 380px;
     height: 240px;
     padding-left: 10px;
@@ -122,7 +176,12 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
     width: 80px;
-    border-radius: 30px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
     padding-left: 10px;
 }
 
@@ -133,7 +192,12 @@ body{
     margin-bottom: 10px;
     width: 120px;
     padding-left: 20px;
-    border-radius: 30px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #comentarios{
@@ -144,7 +208,12 @@ body{
     width: 140px;
     height: 30px;
     padding-left: 20px;
-    border-radius: 30px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #titulopublicar{
@@ -155,19 +224,28 @@ body{
     width: 120px;
     height: 50px;
     padding-left: 20px;
-    border-radius: 30px;  
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default; 
 }  
 
 #publicar-comentarios{
     background-color: black;
     margin-left: 30px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 380px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    border-radius: 40px;
+    padding-top: 30px;
+    padding-left: 10px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
     height: 70px;
 }
 
@@ -177,17 +255,19 @@ body{
     margin-top: 20px;
     margin-bottom: 15px;
     width: 70px;
-    border-radius: 30px;
-    text-align: center;
-    padding: 5px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
 
 #notadojogoeestrelas{
     display: flex;
-    
 }
 
-#disponiveletexto{
+#disponivelemetexto{
     display: flex;
 }
 
