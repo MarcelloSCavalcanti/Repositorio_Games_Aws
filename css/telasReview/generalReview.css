@@ -289,9 +289,4 @@ body{
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
     height: 70px;
-}
-
-footer{
-    background-color: black;
-    padding-left: 100px;
-}   
+}  
