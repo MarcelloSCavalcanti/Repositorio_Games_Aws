@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
+=======
+    background-color: black;
+>>>>>>> main
 }
 
 .h1review{
@@ -17,7 +21,7 @@ body{
     cursor: default;
 }
 
-#disponiveltexto{
+.disponiveltexto{
     background-color: black;
     margin-left: 30px;
     margin-top: 20px;
@@ -267,7 +271,11 @@ body{
     display: flex;
 }
 
+<<<<<<< HEAD
 #disponiveletexto {
+=======
+#disponivelemetexto{
+>>>>>>> main
     display: flex;
 }
 
