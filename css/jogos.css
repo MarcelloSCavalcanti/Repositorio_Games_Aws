@@ -353,17 +353,21 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(1px);
     position: absolute;
-    bottom: 0px;
+    bottom: 3.5px;
     left: 0px;
     height: 3.5rem;
     width: 100%;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     opacity: 0;
-    transition: 0.75s;
+    
 }
 
-.game_img:hover .legenda {
+li {
+    list-style: none;
+}
+
+.game-image:hover .legenda {
     opacity: 1;
 }
 
@@ -374,6 +378,11 @@ figcaption {
     align-items: center;
     font-size: 1rem;
     text-align: center;
+    
+}
+
+main ul {
+    display: flex;
 }
 
 h2 {
