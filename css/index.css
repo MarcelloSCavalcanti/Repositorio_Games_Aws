@@ -1,3 +1,28 @@
+@media (max-width: 1340px) {
+    section {
+        width:952px;
+    }
+}
+
+@media (max-width:1020px) {
+    section {
+        width:624px;
+    }
+}
+
+@media (max-width: 660px) {
+    section {
+        width: 296px;
+    }
+}
+
+@media (max-width: 320px) {
+    section {
+        padding: 16px 0;
+        width: 200px;
+    }
+}
+
 main h3 {
     margin: 32px 0px;
 }
