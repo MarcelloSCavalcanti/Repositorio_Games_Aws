@@ -17,6 +17,60 @@ body{
     cursor: default;
 }
 
+#notadojogoeestrelas{
+    display: flex;
+}
+
+#nota-do-jogo{
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 140px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+    padding-left: 10px;
+}
+
+#estrelas5{
+    background-color: black;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 70px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+#disponiveletexto {
+    display: flex;
+}
+
+#disponiveis{
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
 #disponiveltexto{
     background-color: black;
     margin-left: 30px;
@@ -31,6 +85,60 @@ body{
     cursor: default;
 }
 
+#traileregameplay{
+    display: flex;
+}
+
+#trailer{
+    background-color: black;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 380px;
+    height: 240px;
+    padding-left: 10px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+#gameplay{
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+    width: 380px;
+    height: 240px;
+    padding-left: 10px;
+}
+
+#precosevalor{
+    display: flex;
+}
+
+#precos{
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+    padding-left: 10px;
+}
+
 #valor{
     background-color: black;
     margin-left: 30px;
@@ -38,6 +146,25 @@ body{
     margin-bottom: 10px;
     width: 80px;
     padding-left: 10px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+#categoriasequais{
+    display: flex;
+}
+
+#categorias{
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 120px;
+    padding-left: 20px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
@@ -61,18 +188,24 @@ body{
     cursor: default;
 }
 
-#vermais{
+#comentarios{
     background-color: black;
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 100px;
+    width: 140px;
+    height: 30px;
+    padding-left: 20px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
+}
+
+#comentarioetexto{
+    display: flex;
 }
 
 #textocomentario1{
@@ -107,107 +240,12 @@ body{
     height: 50px;
 }
 
-#nota-do-jogo{
+#vermais{
     background-color: black;
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 140px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    padding-left: 10px;
-}
-
-#disponiveis{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 150px;
-    height: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#trailer{
-    background-color: black;
-    margin-left: 200px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 380px;
-    height: 240px;
-    padding-left: 10px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#gameplay{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    width: 380px;
-    height: 240px;
-    padding-left: 10px;
-}
-
-#precos{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 80px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    padding-left: 10px;
-}
-
-#categorias{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 120px;
-    padding-left: 20px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#comentarios{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 140px;
-    height: 30px;
-    padding-left: 20px;
+    width: 100px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
@@ -230,7 +268,11 @@ body{
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default; 
-}  
+} 
+
+#publicar{
+    display: flex;
+}
 
 #publicar-comentarios{
     background-color: black;
@@ -247,48 +289,6 @@ body{
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
     height: 70px;
-}
-
-#estrelas5{
-    background-color: black;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    width: 70px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#notadojogoeestrelas{
-    display: flex;
-}
-
-#disponiveletexto {
-    display: flex;
-}
-
-#precosevalor{
-    display: flex;
-}
-
-#categoriasequais{
-    display: flex;
-}
-
-#comentarioetexto{
-    display: flex;
-}
-
-#traileregameplay{
-    display: flex;
-}
-
-#publicar{
-    display: flex;
 }
 
 footer{
