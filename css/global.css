@@ -130,10 +130,10 @@ header nav ul{
 }
 
 body {
-    background-color: black;
+    background-color: #161718;
 }
 
-main {
+/*main {
     width: 1280px;
     margin: 32px auto;
 }
@@ -161,7 +161,7 @@ main {
         padding: 16px 0;
         width: 200px;
     }
-}
+}*/
 
 footer {
     display: flex;

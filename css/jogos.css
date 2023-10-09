@@ -1,0 +1,511 @@
+/*html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+
+
+#botoes_header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#botoes_footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+criando botões com efeitos de glowing e variação de cores
+#buttonNews {
+    position: relative;
+    z-index: 0;
+}
+
+#buttonNews::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(2px);
+    width: calc(100% + 8px);
+    height: calc(100% + 0px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+#buttonNews:hover::before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#buttonTop3 {
+    position: relative;
+    z-index: 0;
+}
+
+#buttonTop3::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(2px);
+    width: calc(100% + 8px);
+    height: calc(100% + 0px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+#buttonTop3:hover::before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#buttonLogin {
+    position: relative;
+    z-index: 0;
+}
+
+#buttonLogin::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(2px);
+    width: calc(100% + 8px);
+    height: calc(100% + 0px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+#buttonLogin:hover::before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#buttonRetornarTopo {
+    position: relative;
+    z-index: 0;
+}
+
+#buttonRetornarTopo::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(2px);
+    width: calc(100% + 8px);
+    height: calc(100% + -2px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+#buttonRetornarTopo:hover::before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#buttonContato {
+    position: relative;
+    z-index: 0;
+}
+
+#buttonContato::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(2px);
+    width: calc(100% + 8px);
+    height: calc(100% + -2px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+}
+
+#buttonContato:hover::before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+------------------------------------------------------------
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}*/
+
+* {
+    color:orangered;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163FE5;
+    padding: 0 48px;
+    top: inherit;
+    box-shadow: 0px 0px 32px #163FE5;
+}
+
+@media (max-width: 660px) {
+    header {
+        padding: 0 24px;
+    }
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+    header nav ul li{
+        display: none;
+    }
+}
+
+#littleScreens {
+    display:none;
+}
+
+@media (max-width: 850px) {
+    #littleScreens {
+        display: block;
+    }
+
+    header nav img {
+        height: 40px;
+    }
+}
+
+header img {
+    height: 48px;
+    filter: drop-shadow(0px 0px 16px black);
+}
+
+@media (max-width: 700px) {
+    #navBar {
+        height: 73.6px;
+    }
+    
+    header a h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 660px) {
+    header img {
+        margin: 8px;
+    }
+    header h1 {
+        display:none;
+    }
+}
+
+header img:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+header img:not(:hover) {
+    transition: 0.5s;
+}
+
+header h1{
+    font-family: 'Carter One', cursive;
+    padding: 0 32px;
+    font-size: 48px;
+    text-shadow: 0px 0px 8px black;
+}
+
+header h1:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+@media (max-width: 660px) {
+    header h1 {
+        display:none;
+    } 
+}
+
+header h1:not(:hover) {
+    transition: 0.5s;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-bar-top a {
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    text-shadow: 0px 0px 8px black;
+}
+
+.nav-bar-top:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-top:not(:hover) {
+    transition: 0.5s;
+}
+
+figcaption {
+    line-height: 15px;
+    color:orangered;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:  'carter one', cursive;
+}
+
+#img_jogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: #000000;
+    filter:drop-shadow(10px 10px 10px black);
+    gap: 50px;
+    padding-bottom: 50px; 
+    margin-left: 90px;
+    margin-right: 90px;  
+}
+
+/*------------efeito para cada imagem da tela------------*/
+.games_img:hover {
+    transform: scale(1.11);
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+h2 {
+    font-family: "carter one";
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+img {
+    border-radius: 20px;    
+}
+
+@media (max-width: 1500px) {
+    main img {
+        height: 270px; 
+        width: 190px;
+    }
+}
+
+@media (max-width: 1350px) {
+    main img {
+        height: 260px; 
+        width: 180px;
+    } 
+}
+
+@media (max-width: 1300px) {
+    main img {
+        height: 250px; 
+        width: 170px;
+    }
+}
+
+@media (max-width: 1260px) {
+    main img {
+        height: 250px; 
+        width: 170px;
+    }
+    header a h1 {
+        font-size: 36.8px;
+    }
+    header {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    main img {
+        height: 230px; 
+        width: 150px;
+    }
+    header a h1 {
+        font-size: 32px;
+    }
+
+    #NEWS a, #TOP3 a, #LOGIN a {
+        font-size: 24px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+   
+}
+
+@media (max-width: 980px) {
+    main img {
+        height: 210px; 
+        width: 130px;
+    }
+}
+
+@media (max-width: 980px) {
+    main img {
+        height: 200px; 
+        width: 120px;
+    }
+}
+
+@media (max-width: 850px) {
+    main img {
+        height: 180px; 
+        width: 100px;
+    }
+
+    header a h1 {
+        font-size: 28px;
+    }
+}
+
+body {
+    margin: 0 auto;
+}
+
+main {
+    background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
+    margin: 0 auto;
+    height: 0 auto;
+    width: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: #163FE5;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+    text-shadow: 0rem 0rem 0.1rem black;
+    cursor: default;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    gap:48px;
+}
+.nav-bar-bot a {
+    font-family: 'Carter One', cursive;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+.nav-bar-bot:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-bot:not(:hover) {
+    transition: 0.5s;
+}
+
+@media (max-width: 900px) {
+    #return {
+    display: none;
+    }
+    h6 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 660px) {
+    h6 {
+        font-size: 0.6rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .nav-bar-bot {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    #contato {
+    font-size: 1rem;
+    }
+}
+
