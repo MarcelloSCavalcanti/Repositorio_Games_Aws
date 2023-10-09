@@ -344,112 +344,11 @@ figcaption {
 }
 
 /*------------efeito para cada imagem da tela------------*/
-.assassins:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.baldur:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.battlefield:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.forza:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.mariogolf:hover {
+.games_img:hover {
     transform: scale(1.11);
     filter: drop-shadow(10px 10px 10px black);
 }
 
-.mariogalaxy:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.callofduty:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.mariokart:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.fifa23:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.liesofp:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-
-.f1:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.spider:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.hitman:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.mariotennis:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.starfield:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-
-.persona:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.sekiro:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.nba:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.rainbow:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.ufc:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-
-.rocket:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.halo:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.granturismo:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.ori:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-.moto:hover {
-    transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
-}
-
-/*-----------------------------------------------------------------------------------*/
 h2 {
     font-family: "carter one";
     text-align: center;
@@ -459,7 +358,7 @@ h2 {
 }
 
 img {
-    border-radius: 20px 20px 20px 20px;    
+    border-radius: 20px;    
 }
 
 @media (max-width: 1500px) {
