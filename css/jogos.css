@@ -323,30 +323,54 @@ header nav ul{
     transition: 0.5s;
 }
 
-figcaption {
+/*figcaption {
     line-height: 15px;
     color:orangered;
     text-align: center;
     margin-bottom: 10px;
     font-family:  'carter one', cursive;
-}
+}*/
 
 #img_jogos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    box-shadow: #000000;
-    filter:drop-shadow(10px 10px 10px black);
+    box-shadow: black;
+    filter:drop-shadow(20px 20px 10px black);
     gap: 50px;
     padding-bottom: 50px; 
     margin-left: 90px;
     margin-right: 90px;  
 }
 
-/*------------efeito para cada imagem da tela------------*/
-.games_img:hover {
+/*-----------------efeito para as imagens da tela-----------------*/
+
+body {
+    margin: 0 auto;
+}
+
+main {
+    background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
+    margin: 0 auto;
+    height: 0 auto;
+    width: 0 auto;
+}
+
+main ul  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: black;
+    filter:drop-shadow(20px 20px 10px black);
+    padding-bottom: 50px; 
+    margin-left: 90px;
+    margin-right: 90px;  
+    gap: 50px;
+}
+
+.game-img:hover {
     transform: scale(1.11);
-    filter: drop-shadow(10px 10px 10px black);
+    filter: drop-shadow(5px 5px 10px #d3c013);
 }
 
 .legenda {
@@ -355,19 +379,18 @@ figcaption {
     position: absolute;
     bottom: 3.5px;
     left: 0px;
-    height: 3.5rem;
+    height: 50px;
     width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     opacity: 0;
-    
 }
 
 li {
     list-style: none;
 }
 
-.game-image:hover .legenda {
+.game-img:hover .legenda {
     opacity: 1;
 }
 
@@ -378,11 +401,6 @@ li {
     align-items: center;
     font-size: 1rem;
     text-align: center;
-    
-}
-
-main ul {
-    display: flex;
 }
 
 h2 {
@@ -394,7 +412,7 @@ h2 {
 }
 
 img {
-    border-radius: 20px;    
+    border-radius: 20px;
 }
 
 @media (max-width: 1500px) {
@@ -473,17 +491,6 @@ img {
     header a h1 {
         font-size: 28px;
     }
-}
-
-body {
-    margin: 0 auto;
-}
-
-main {
-    background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
-    margin: 0 auto;
-    height: 0 auto;
-    width: 0 auto;
 }
 
 footer {

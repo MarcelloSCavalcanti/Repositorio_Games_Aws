@@ -1,2 +1,0 @@
-window resizer
-Responsive Viewer
