@@ -1,26 +1,55 @@
 .game-image{
     border-radius: 1rem;
-    margin: 1rem 1rem;
-    height: 390px;
-    width: 290px;
+    margin: 35px;
+    height: 380px;
+    width: 280px;
     box-shadow: 0rem 0rem 1rem #163FE5;
+    flex:1;
 }
 
 .game-image-primeiro{
-    border-radius: 1rem;
-    margin: 3rem 4rem;
-    height: 390px;
-    width: 290px;
+    border-radius: 16px;
+    margin: 35px;
+    height: 380px;
+    width: 280px;
     box-shadow: 0rem 0rem 1rem #d3c013;
 }
 
-main table {
+.game-image:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.game-image:not(:hover) {
+    transition: 0.3s;
+}
+
+.game-image-primeiro:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.game-image-primeiro:not(:hover) {
+    transition: 0.3s;
+}
+
+
+.container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
 
 h2{
     display: flex;
     justify-content: center;
 }
+
+h1{
+    font-size: 45px;
+}
+
 
