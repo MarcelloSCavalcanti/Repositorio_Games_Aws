@@ -258,31 +258,8 @@ body{
     cursor: default;
 }
 
-#notadojogoeestrelas{
-    display: flex;
-}
-
-#disponivelemetexto{
-    display: flex;
-}
-
-#precosevalor{
-    display: flex;
-}
-
-#categoriasequais{
-    display: flex;
-}
-
-#comentarioetexto{
-    display: flex;
-}
-
-#traileregameplay{
-    display: flex;
-}
-
-#publicar{
+/*Aplicando display flex para os elementos pais referêntes a cada section da página*/
+.conteudoFlex{
     display: flex;
 }
 

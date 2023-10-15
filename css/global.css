@@ -23,6 +23,10 @@ header {
     box-shadow: 0rem 0rem 2rem #163FE5;
 }
 
+header img {
+    border-radius: 20px;
+}
+
 @media (max-width: 660px) {
     header {
         padding: 0 24px;

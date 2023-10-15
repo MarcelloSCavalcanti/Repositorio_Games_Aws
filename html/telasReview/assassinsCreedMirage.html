@@ -34,11 +34,13 @@
     </header>
     <!--Corpo na qual se tem o conteúdo principal da página-->
     <main>
+        <!--Área do conteúdo na página-->
         <section id="areaConteudo">
             <div class="h1review">
                 <h1> REVIEW </h1>
             </div>
-            <section id="notadojogoeestrelas">
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section id="notaDoJogoEEstrelas" class="conteudoFlex">
                 <div id="nota-do-jogo">
                     <h3>Nota do jogo:</h3>
                 </div>
@@ -46,13 +48,13 @@
                     <h5>5 estrelas</h5>
                 </div>
             </section>
-            <section id="disponivelemetexto"> 
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section id="disponivelemetexto" class="conteudoFlex"> 
                 <div id="disponiveis"> 
                     <h3>Disponível em:</h3>
                 </div>
                 <div class="disponiveltexto"> 
                     <h5> PS5 </h5>
-
                 </div>
                 <div class="disponiveltexto">
                     <h5> PS4 </h5>
@@ -71,48 +73,9 @@
                 </div>
                 <div class="disponiveltexto">
                     <h5> PC </h5>
+            </section>
 
-                </div>
-                <div class="disponiveltexto">
-                    <h5> PS4 </h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> EPIC </h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> XBOX ONE</h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> XBOX SERIES X|S</h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> AMAZON LUNA</h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> PC </h5>
-                </div>
-            </section>
-            <div class="h1review">
-                <h1> REVIEW </h1>
-            </div>
-
-            <section id="notadojogoeestrelas">
-                <div id="nota-do-jogo">
-                    <h3>Nota do jogo:</h3>
-                </div>
-                <div id="estrelas5">
-                    <h5>5 estrelas</h5>
-                </div>
-            </section>
-            <section id="disponiveletexto"> 
-                <div id="disponiveis"> 
-                    <h3>Disponível em:</h3>
-                </div>
-                <div id="disponiveltexto"> 
-                    <h5>PS5, PS4, EPIC, XBOX ONE, XBOX SERIES X|S, AMAZON LUNA, PC</h5>
-                </div>
-            </section>
-            <section id="traileregameplay"> 
+            <section id="traileregameplay" class="conteudoFlex"> 
                 <div id="trailer"> 
                     <center> 
                         <h3>Trailer</h3> 
@@ -126,7 +89,7 @@
                     <a href="https://www.youtube.com/watch?v=mxpYHW-M_Ac&pp=ygUXdHJhaWxlciBtaXJhZ2UgZ2FtZXBsYXk%3D"> <img src="/src/img/review_img/assassinscreedmiragegameplay.jpg" alt="Imagem de Gameplay Assassins Creed Mirage" height="200rem"> </a>    
                 </div>
             </section>
-            <section id="precosevalor"> 
+            <section id="precosevalor" class="conteudoFlex"> 
                 <div id="precos"> 
                     <h3>Preço</h3>
                 </div>
@@ -135,7 +98,7 @@
                 </div>
             </section>
 
-            <section id="categoriasequais"> 
+            <section id="categoriasequais" class="conteudoFlex"> 
                 <div id="categorias"> 
                     <h3> Categoria </h3>
                 </div>
@@ -144,13 +107,7 @@
                 </div>  
             </section>
 
-
-            <section id="publicar">
-                <div id="titulopublicar">
-                    <h4 for="nome">Deixe seu comentário!</h4>   
-                </div>
-            </section>
-            <section id="publicar">
+            <section id="publicar" class="conteudoFlex">
                 <div id="titulopublicar">
                     <h4 for="nome">Deixe seu comentário!</h4>   
                 </div>
@@ -159,7 +116,7 @@
                 <form action="">
                     <fieldset>
                         <div id="escrevaaqui">
-                            <textarea name="nome" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="4" cols="50"></textarea>
+                            <textarea name="nome" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="5" cols="75"></textarea>
                         </div>
                     </form>  
                     <button>Clique aqui para publicar para nosso site!</button>     
@@ -178,12 +135,13 @@
                 </div>
                 
                 <div id="publicar-comentarios"> 
-                    <form action="">
-                        <fieldset>
-                            <div id="escrevaaqui">
-                                <input type="text" name="nome" id="nome" class="inputUser" required>
-                            </div>
-                        </fieldset>
+                        <div id="escrevaaqui">
+                            <label for="comentarioGame">
+                                <textarea id="comentarioGame" name="comentarioGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="5" cols="98" required></textarea>
+                                <span>Nota (de 0 a 5):</span>
+                                <input type="number" name="nota" id="nota" value="" min="0" max="5" required>
+                            </label>
+                        </div>
                     </form>
                     <button>Clique aqui para publicar para nosso site!</button>
                 </div>
