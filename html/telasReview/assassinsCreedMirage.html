@@ -34,96 +34,119 @@
     </header>
     <!--Corpo na qual se tem o conteúdo principal da página-->
     <main>
-        <div class="h1review">
-            <h1> REVIEW </h1>
-        </div>
+        <!--Área do conteúdo na página-->
+        <section id="areaConteudo">
+            <div class="h1review">
+                <h1> REVIEW </h1>
+            </div>
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section id="notaDoJogoEEstrelas" class="conteudoFlex">
+                <div id="nota-do-jogo">
+                    <h3>Nota do jogo:</h3>
+                </div>
+                <div id="estrelas">
+                    <h5>5 estrelas</h5>
+                </div>
+            </section>
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section id="disponivelemetexto" class="conteudoFlex"> 
+                <div id="disponiveis"> 
+                    <h3>Disponível em:</h3>
+                </div>
+                <div class="disponiveltexto"> 
+                    <h5> PS5 </h5>
+                </div>
+                <div class="disponiveltexto">
+                    <h5> PS4 </h5>
+                </div>
+                <div class="disponiveltexto">
+                    <h5> EPIC </h5>
+                </div>
+                <div class="disponiveltexto">
+                    <h5> XBOX ONE</h5>
+                </div>
+                <div class="disponiveltexto">
+                    <h5> XBOX SERIES X|S</h5>
+                </div>
+                <div class="disponiveltexto">
+                    <h5> AMAZON LUNA</h5>
+                </div>
+                <div class="disponiveltexto">
+                    <h5> PC </h5>
+            </section>
 
-        <section id="notadojogoeestrelas">
-            <div id="nota-do-jogo">
-                <h3>Nota do jogo:</h3>
-            </div>
-            <div id="estrelas5">
-                <h5>5 estrelas</h5>
-            </div>
+            <section id="traileregameplay" class="conteudoFlex"> 
+                <div id="trailer"> 
+                    <center> 
+                        <h3>Trailer</h3> 
+                    </center>
+                    <a href="https://www.youtube.com/watch?v=RK4hYnhaFis&pp=ygUOdHJhaWxlciBtaXJhZ2U%3D"> <img src="/src/img/review_img/assasinscreedmiragetrailer.png.jpg" alt="Imagem de game Assassins Creed Mirage" height="200rem"> </a>
+                </div>
+                <div id="gameplay">
+                    <center> 
+                        <h3>Gameplay</h3> 
+                    </center>
+                    <a href="https://www.youtube.com/watch?v=mxpYHW-M_Ac&pp=ygUXdHJhaWxlciBtaXJhZ2UgZ2FtZXBsYXk%3D"> <img src="/src/img/review_img/assassinscreedmiragegameplay.jpg" alt="Imagem de Gameplay Assassins Creed Mirage" height="200rem"> </a>    
+                </div>
+            </section>
+            <section id="precosevalor" class="conteudoFlex"> 
+                <div id="precos"> 
+                    <h3>Preço</h3>
+                </div>
+                <div id="valor">
+                    <h5>R$ 260,00</h5>
+                </div>
+            </section>
+
+            <section id="categoriasequais" class="conteudoFlex"> 
+                <div id="categorias"> 
+                    <h3> Categoria </h3>
+                </div>
+                <div id="quais">
+                    <h5>Ação    Aventura    RPG</h5>
+                </div>  
+            </section>
+
+            <section id="publicar" class="conteudoFlex">
+                <div id="titulopublicar">
+                    <h4 for="nome">Deixe seu comentário!</h4>   
+                </div>
+            
+                <div id="publicar-comentarios"> 
+                <form action="">
+                    <fieldset>
+                        <div id="escrevaaqui">
+                            <textarea name="nome" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="5" cols="75"></textarea>
+                        </div>
+                    </form>  
+                    <button>Clique aqui para publicar para nosso site!</button>     
+                </div>
+            </section>
+
+            <center>
+                <div id="vermais">
+                    <h3> Ver mais</h3>
+                </div>
+            </center>
+
+            <section id="publicar">
+                <div id="titulopublicar">
+                    <label for="nome">Deixe seu comentário!</label>   
+                </div>
+                
+                <div id="publicar-comentarios"> 
+                        <div id="escrevaaqui">
+                            <label for="comentarioGame">
+                                <textarea id="comentarioGame" name="comentarioGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="5" cols="98" required></textarea>
+                                <span>Nota (de 0 a 5):</span>
+                                <input type="number" name="nota" id="nota" value="" min="0" max="5" required>
+                            </label>
+                        </div>
+                    </form>
+                    <button>Clique aqui para publicar para nosso site!</button>
+                </div>
+            </section>
         </section>
-
-        <section id="disponiveletexto"> 
-            <div id="disponiveis"> 
-                <h3>Disponível em:</h3>
-            </div>
-            <div id="disponiveltexto"> 
-                <h5>PS5, PS4, EPIC, XBOX ONE, XBOX SERIES X|S, AMAZON LUNA, PC</h5>
-            </div>
-        </section>
-        
-        <section id="traileregameplay"> 
-            <div id="trailer"> 
-                <center> 
-                    <h3>Trailer</h3> 
-                </center>
-                <a href="https://www.youtube.com/watch?v=RK4hYnhaFis&pp=ygUOdHJhaWxlciBtaXJhZ2U%3D"> <img src="/src/img/assasinscreedmiragetrailer.png.jpg" alt="Imagem de game Assassins Creed Mirage" height="200rem"> </a>
-            </div>
-            <div id="gameplay">
-                <center> 
-                    <h3>Gameplay</h3> 
-                </center>
-                <a href="https://www.youtube.com/watch?v=mxpYHW-M_Ac&pp=ygUXdHJhaWxlciBtaXJhZ2UgZ2FtZXBsYXk%3D"> <img src="/src/img/assassinscreedmiragegameplay.jpg" alt="Imagem de Gameplay Assassins Creed Mirage" height="200rem"> </a>    
-            </div>
-        </section>
-
-    <section id="precosevalor"> 
-        <div id="precos"> 
-            <h3>Preço</h3>
-        </div>
-        <div id="valor">
-            <h5>R$ 260,00</h5>
-        </div>
-    </section>
-
-    <section id="categoriasequais"> 
-        <div id="categorias"> 
-            <h3> Categoria </h3>
-        </div>
-        <div id="quais">
-            <h5>Ação    Aventura    RPG</h5>
-        </div>  
-    </section>
-
-    <section id="comentarioetexto"> 
-        <div id="comentarios"> 
-            <h3>Comentários</h3>
-        </div>
-            <div id="textocomentario1">
-                <p>Sou muito viciado nesse jogo! Jogo todo dia e sou feliz por isso!</p>
-            </div>
-            <div id="textocomentario2">    
-                <p>O jogo é muito bom, mas recentemente está tendo problemas de conexão.</p>
-            </div>
-    </section>
-
-    <center>
-        <div id="vermais">
-            <h3> Ver mais</h3>
-        </div>
-    </center>
-
-    <section id="publicar">
-        <div id="titulopublicar">
-            <label for="nome">Deixe seu comentário!</label>   
-        </div>
-        
-        <div id="publicar-comentarios"> 
-            <form action="">
-                <fieldset>
-                    <div id="escrevaaqui">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                    </div>
-                </fieldset>
-            </form>
-            <button>Clique aqui para publicar para nosso site!</button>
-        </div>
-    </section>
-
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
     <footer>

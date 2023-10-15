@@ -1,3 +1,40 @@
+/*media responsivity*/
+@media (max-width: 1340px) {
+    #areaConteudo {
+        width:952px;
+    }
+}
+
+@media (max-width:1020px) {
+    #areaConteudo {
+        width:624px;
+    }
+}
+
+@media (max-width: 660px) {
+    #areaConteudo {
+        width: 296px;
+    }
+}
+
+@media (max-width: 320px) {
+    #areaConteudo {
+        padding: 16px 0;
+        width: 200px;
+    }
+}
+/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
+@media (max-width: 320px) {
+    .game-image {
+        max-height: 270px;
+        max-width: 190px;
+    }
+    .image {
+        max-height: 270px;
+        max-width: 190px;
+    }
+}
+
 main h3 {
     margin: 32px 0px;
 }
@@ -26,9 +63,9 @@ main div {
     list-style: none;
 }
 
-.game-image img{
-    height: 100%;
-    width: 100%;
+.image{
+    height: 396px;
+    width: 296px;
     border-radius: 16px;
 }
 
@@ -38,15 +75,18 @@ main div {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    height: 3.5rem;
+    height: 3rem;
     width: 100%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    opacity: 0;
     transition: 0.75s;
+    opacity: 0;
 }
-
+/*parte necesária para transformar */
 .game-image:hover .legenda {
+    display:flex;
+    justify-content: center;
+    align-content: center;
     opacity: 1;
 }
 
@@ -58,20 +98,13 @@ main div {
     font-size: 1rem;
     text-align: center;
 }
-
-@media (max-width: 320px) {
-    .game-image {
-        height: 300px;
-        width: 200px;
-    }
-}
-
+/*:hover e not(:hover) dão a animação para quando o mouse entra sobre a imagem e sai da imagem*/
 .game-image:hover {
-    transition: 0.75s;
+    transition: 0.35s;
     transform: scale(1.1);
     cursor: pointer;
 }
 
 .game-image:not(:hover) {
-    transition: 0.75s;
+    transition: 0.35s;
 }

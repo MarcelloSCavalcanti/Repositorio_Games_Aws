@@ -73,10 +73,9 @@ body{
 
 #disponiveltexto{
     background-color: black;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 10px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
@@ -141,11 +140,10 @@ body{
 
 #valor{
     background-color: black;
-    margin-left: 30px;
+    margin-left: 120px;
     margin-top: 20px;
     margin-bottom: 10px;
     width: 80px;
-    padding-left: 10px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
@@ -175,7 +173,7 @@ body{
 
 #quais{
     background-color: black;
-    margin-left: 30px;
+    margin-left: 80px;
     margin-top: 20px;
     margin-bottom: 10px;
     width: 170px;
@@ -210,11 +208,10 @@ body{
 
 #textocomentario1{
     background-color: black;
-    margin-left: 30px;
+    margin-left: 60px;
     margin-top: 20px;
     width: 380px;
     padding-top: 30px;
-    padding-left: 10px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
@@ -276,17 +273,52 @@ body{
 
 #publicar-comentarios{
     background-color: black;
-    margin-left: 30px;
+    margin-left: 75px; 
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 380px;
-    padding-top: 30px;
-    padding-left: 10px;
+    width: 430px;
     background-color: #163FE5;
     padding: 0.5rem;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
+<<<<<<< HEAD
     height: 70px;
 }  
+=======
+    height: 100px;
+}
+
+#estrelas{
+    background-color: black;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 70px;
+    background-color: #163FE5;
+    padding: 0.5rem;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+/*Aplicando display flex para os elementos pais referêntes a cada section da página*/
+.conteudoFlex{
+    display: flex;
+}
+
+form{
+    padding-left: 20px;
+}
+
+button{
+    margin-left: 80px;
+}
+
+footer{
+    background-color: black;
+    padding-left: 100px;
+} 
+>>>>>>> main
