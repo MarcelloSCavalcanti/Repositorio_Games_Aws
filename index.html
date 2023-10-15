@@ -16,56 +16,100 @@
     <!--link para a estilização do css-->
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
+        <!--linkagem com os arquivos JS-->
+        <script src="/js/index.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
     <header id="navBar">
         <!--Logo da FOREVER GAMES serve como imagem interativa para returnar a página principal-->
-        <a href="/"><img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja" height="40Rem"></a>
-        <span>FOREVER GAMES</span>
+        <a href="/">
+            <img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja"><h1>FOREVER GAMES</h1>
+        </a>
         <!--Barra de navegação para outras páginas-->
         <nav>
             <ul>
-                <li><a href="/html/top.html">TOP 3</a></li>
-                <li><a href="/html/jogos.html">JOGOS</a></li>
-                <li><a href="/html/login.html">LOGIN</a></li>
+                <li class="nav-bar-top" id="littleScreens"><img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer"></img></li>
+                <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
+                <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
+                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
             </ul>
         </nav>
     </header>
     <!--Corpo na qual se tem o conteúdo principal da página-->
     <main>
         <!--Título da página-->
-        <h1>NEWS</h1>
         <!--Ainda precisa personalizar essas imagens-->
         <!--Seção referente a novidades do mês contem título de secção e imagens para o carrossel dentro de uma tag DIV-->
-        <section>
-            <h2>Novidades</h2>
-            <div id="novidadeMes">
-                <!--O width foi usado para corrigir o tamanho que a tabela ocupa na página-->
-                <table width="95%">
-                    <tr>
-                        <td><img src="/src/img/capaAssassinsCreedMirage.jpeg" alt="capa do Assassins Creed Mirage" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaStarfield.jpg" alt="capa do jogo Starfield" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaBaldur'sGate3.jpg" alt="capa do jogo Baldur's Gate 3" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaCallOfDutyMW2.jpg" alt="capa do jogo Call Of Duty MW2" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaLiesOfP.jpg" alt="capa do jogo Lies Of P" height="350rem" width="250rem"></td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+        <section id="areaConteudo">
+            <h2>NEWS</h2>
+            <h3>Novidades</h3>
+                <div id="novidadeMes">
+                <!--Parte necessária a fim de aparecer a imagem dos jogos e da descrição sobre houver do mouse-->
+                    <div class="game-image">
+                        <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaAssassinsCreedMirage.jpeg" alt="capa do Assassins Creed Mirage" class="image"></a>
+                        <div class="legenda">
+                            <a href="./html/telasReview/assassinsCreedMirage.html">Assassins Creed Mirage<br>RPG - Ação - Aventura</a>
+                        </div>
+                    </div>
+                    <div class="game-image">
+                        <a href="./html/telasReview/assassinsCreedMirage.html"><img src="./src/img/capaStarfield.jpg" alt="capa do jogo Starfield" class="image"></a>
+                        <div class="legenda">
+                            <a href="./html/telasReview/assassinsCreedMirage.html">Starfield<br>RPG - Ação - Aventura</a>
+                        </div>
+                    </div>
+                    <div class="game-image">
+                        <a href="./html/telasReview/assassinsCreedMirage.html"><img src="./src/img/capaBaldur'sGate3.jpg" alt="capa do jogo Baldur's Gate 3" class="image"></a>
+                        <div class="legenda">
+                            <a href="./html/telasReview/assassinsCreedMirage.html">Baldur's Gate 3<br>RPG - Ação - Aventura</a>
+                        </div>
+                    </div>
+                    <div class="game-image">
+                        <a href="./html/telasReview/assassinsCreedMirage.html"><img img src="./src/img/capaCallOfDutyMW2.jpg" alt="capa do jogo Call Of Duty MW2" class="image"></a>
+                        <div class="legenda">
+                            <a href="./html/telasReview/assassinsCreedMirage.html">Call Of Duty MW 2<br>RPG - Ação - Aventura</a>
+                        </div>
+                    </div>
+                    <div class="game-image">
+                        <a href="./html/telasReview/assassinsCreedMirage.html"><img src="./src/img/capaLiesOfP.jpg" alt="capa do jogo Lies Of P" class="image"></a>
+                        <div class="legenda">
+                            <a href="./html/telasReview/assassinsCreedMirage.html">Lies Of P<br>RPG - Ação - Aventura</a>
+                        </div>
+                    </div>
+                </div>
         <!--Seção referente a Recomendações contem título de secção e imagens para o carrossel dentro de uma tag DIV-->
-        <section>
-            <h2>Recomendações</h2>
-            <div id="novidadeMes">
-                <table width="95%">
-                    <tr>
-                        <td><img src="/src/img/capaHaloInfinite.png" alt="capa do jogo Halo Infinite" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaBattlefield_3.png" alt="capa do jogo Battlefield 3" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaForzaHorizon3.jpg" alt="capa do jogo Forza Horizon 3" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaHitmanIII.jpg" alt="capa do jogo Hitman 3" height="350rem" width="250rem"></td>
-                        <td><img src="/src/img/capaSekiroShadowsDieTwice.png" alt="capa do jogo Sekiro Shadows Die Twice" height="350rem" width="250rem"></td>
-                    </tr>
-                </table>
+            <h3>Recomendações</h3>
+            <div id="recomendacoes">
+                <div class="game-image">
+                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaHaloInfinite.png" alt="capa do jogo Halo Infinite" class="image"></a>
+                    <div class="legenda">
+                        <a href="./html/telasReview/assassinsCreedMirage.html">Halo Infinite<br>RPG - Ação - Aventura</a>
+                    </div>
+                </div>
+                <div class="game-image">
+                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaBattlefield_3.png" alt="capa do jogo Battlefield 3" class="image"></a>
+                    <div class="legenda">
+                        <a href="./html/telasReview/assassinsCreedMirage.html">Battlefield 3<br>RPG - Ação - Aventura</a>
+                    </div>
+                </div>
+                <div class="game-image">
+                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaForzaHorizon3.jpg" alt="capa do jogo Forza Horizon 3" class="image"></a>
+                    <div class="legenda">
+                        <a href="./html/telasReview/assassinsCreedMirage.html">Forza Horizon 3<br>RPG - Ação - Aventura</a>
+                    </div>
+                </div>
+                <div class="game-image">
+                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaHitmanIII.jpg" alt="capa do jogo Hitman 3" class="image"></a>
+                    <div class="legenda">
+                        <a href="./html/telasReview/assassinsCreedMirage.html">Hitman III<br>RPG - Ação - Aventura</a>
+                    </div>
+                </div>
+                <div class="game-image">
+                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaSekiroShadowsDieTwice.png" alt="capa do jogo Sekiro Shadows Die Twice" class="image"></a>
+                    <div class="legenda">
+                        <a href="./html/telasReview/assassinsCreedMirage.html">Sekiro Shadows Die Twice<br>RPG - Ação - Aventura</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -74,12 +118,10 @@
         <h6>&copy; FOREVER GAMES - Todos os direitos reservados - 2023</h6>
         <nav>
             <ul>
-                <li><a href="#navBar">Retornar ao topo</a></li>
-                <li><a href="/html/contato.html">CONTATO</a></li>
+                <li class="nav-bar-bot" id="return"><a href="#navBar">Retornar ao topo</a></li>
+                <li class="nav-bar-bot" id="contato"><a href="/html/contato.html">CONTATO</a></li>
             </ul>
         </nav>
     </footer>
-    <!--linkagem com os arquivos JS-->
-    <script src="/js/index.js"></script>
 </body>
 </html>

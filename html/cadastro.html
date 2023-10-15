@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOREVER GAMES - LOGIN</title>
+    <title>FOREVER GAMES - Cadastro</title>
     <!--google fonts para alterar a familha das fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <!--link para a estilização do css-->
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
     <!--linkagem com os arquivos JS-->
-    <script src="/js/login.js" defer></script>
+    <script src="/js/cadastro.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
@@ -28,25 +28,31 @@
                 <li class="nav-bar-top"><a href="/">NEWS</a></li>
                 <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
                 <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
+                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
             </ul>
         </nav>
     </header>
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
         <section id="areaConteudo">
-            <div>
-                <h1>Bem vindo</h1>
-        <!--login-->
-            <form action="login">
+            <h1>Cadastro</h1>
+            <p>Por favor preencha o formulário abaixo:</p>
+            <!--Formulário para cadastro contendo Nome, email, senha e checkbox para receber novos emails-->
+            <form action="">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="nome" placeholder="Digite seu nome">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha"><br>
-                <button type="submit">Entrar</button>
-                <p><a href="/html/cadastro.html">Cadastrar</a></p>
-                <p><a href="/html/esqueceuSenha.html">Esqueceu a Senha</a></p>
+                <input type="text" id="name" name="nome" placeholder="Digite seu nome"><br><br>
+                <lable for="email">Email:</lable>
+                <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+                <lable for="email2">Confirme seu Email:</lable>
+                <input type="email" id="email2" name="email2" placeholder="Digite seu emal"><br><br>
+                <lable for="password">Escolha uma senha:</lable>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha"><br><br>
+                <label for="password2">Digite novamente a senha:</label>
+                <input type="password" id="password2" name="password2" placeholder="Digite sua senha"><br><br>
+                <input type="checkbox" id="yesEmail" name="yesEmail" value="yesEmail">
+                <label for="yesEmail">Deseja receber avisos de novas avaliações via email?</label><br><br>
+                <button type="submit">Cadastrar</button>
             </form>
-        </div>
         </section>
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->

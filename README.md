@@ -8,8 +8,13 @@ Com esse site esperamos alcançar um site que seja padronizado, limpo visualment
 Cada tela inicial do projeto foi dividida para um participante do grupo sendo somente a tela de contatos de responsabilidade de todos. 
 
 Ele será composto em 5 etapas (sprints), sendo:
+
 1 - Desenvolvimento da ideia do projeto --------------------- (Apresentado no dia 13/09/2023)
-2 - Desenvolvimento da estrutura (HTML) do arquivo
+
+2 - Desenvolvimento da estrutura (HTML) do arquivo----------- (Apresentado no dia 20/09/2023)
+
 3 - Desenvolvimento do visual (CSS) do arquivo
+
 4 - A Ser discutida ainda
+
 5 - A Ser discutida ainda

@@ -1,17 +1,206 @@
 /*Esse arquivo é para a estilização padrão dos tipos de páginas como: NEWS(index), TOP, JOGOS, LOGIN, REVIEW e CONTATO*/
-
-/*FONTES QUE IREMOS USAR NO TRABALHO*/
-
-/*font-family: 'Carter One', cursive;
-font-family: 'Inter', sans-serif;*/
-/* {
+* {
     color:orangered;
-    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*para andar pela página de forma suave quando selecionado o retornar para o topo*/
+html{
+    scroll-behavior: smooth;
 }
 
 header {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #163FE5;
+    padding: 0 48px;
+    top: inherit;
+    box-shadow: 0rem 0rem 2rem #163FE5;
 }
+
+header img {
+    border-radius: 20px;
+}
+
+@media (max-width: 660px) {
+    header {
+        padding: 0 24px;
+    }
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1160px) {
+    header nav ul li{
+        display: none;
+    }
+}
+
+#littleScreens {
+    display:none;
+}
+
+@media (max-width: 1160px) {
+    #littleScreens {
+        display: block;
+    }
+}
+
+header img {
+    height: 3rem;
+    filter: drop-shadow(0rem 0rem 1rem black);
+}
+
+@media (max-width: 700px) {
+    #navBar {
+        height: 73.6px;
+    }
+    
+    header a h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 660px) {
+    header img {
+        margin: 8px;
+    }
+    header h1 {
+        display:none;
+    }
+}
+
+header img:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+header img:not(:hover) {
+    transition: 0.5s;
+}
+
+header h1{
+    font-family: 'Carter One', cursive;
+    padding: 0 32px;
+    font-size: 3rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+header h1:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+@media (max-width: 660px) {
+    header h1 {
+        display:none;
+    } 
+}
+
+header h1:not(:hover) {
+    transition: 0.5s;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-bar-top a {
+    font-family: 'Carter One', cursive;
+    font-size: 2rem;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+.nav-bar-top:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-top:not(:hover) {
+    transition: 0.5s;
+}
+
+main {
+    background-image: url("/src/img/backgroundCinzaEscuroFundo20.png");
+    margin: 0 auto;
+    height: 0 auto;
+    width: 0 auto;
+}
+
+#areaConteudo {
+    padding: 32px 0px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
 footer {
-    background-color: #ffffff;
-}/*
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: #163FE5;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+    text-shadow: 0rem 0rem 0.1rem black;
+    cursor: default;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    gap:48px;
+}
+
+@media (max-width: 660px) {
+    h6 {
+        font-size: 0.6rem;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    #contato {
+    font-size: 1rem;
+    }
+}
+
+.nav-bar-bot a {
+    font-family: 'Carter One', cursive;
+    text-shadow: 0rem 0rem 0.5rem black;
+}
+
+@media (max-width: 660px) {
+    .nav-bar-bot {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    #return {
+    display: none;
+    }
+}
+
+.nav-bar-bot:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.nav-bar-bot:not(:hover) {
+    transition: 0.5s;
+}

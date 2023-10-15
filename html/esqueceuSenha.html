@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOREVER GAMES - LOGIN</title>
+    <title>FOREVER GAMES - Esqueceu senha</title>
     <!--google fonts para alterar a familha das fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <!--link para a estilização do css-->
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/esqueceuSenha.css">
     <!--linkagem com os arquivos JS-->
-    <script src="/js/login.js" defer></script>
+    <script src="/js/esqueceuSenha.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
@@ -28,25 +28,23 @@
                 <li class="nav-bar-top"><a href="/">NEWS</a></li>
                 <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
                 <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
+                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
             </ul>
         </nav>
     </header>
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
         <section id="areaConteudo">
-            <div>
-                <h1>Bem vindo</h1>
-        <!--login-->
-            <form action="login">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="nome" placeholder="Digite seu nome">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha"><br>
-                <button type="submit">Entrar</button>
-                <p><a href="/html/cadastro.html">Cadastrar</a></p>
-                <p><a href="/html/esqueceuSenha.html">Esqueceu a Senha</a></p>
-            </form>
-        </div>
+            <h1>Esqueceu esquici minha senha</h1>
+               <div>
+                    <!--Formulário para recuperar senha-->
+                    <form action="">
+                        <label for="emailPassword">Digite seu email</label><br>
+                        <input type="email" id="emailPassword" name="emailPassword" placeholder="Digite seu email"><br>
+                        <button >Enviar</button>
+                    </form>
+                </div>
+            <p>Caso não receba um email dentro de 10 minutos<br> por favor tente novamente. Lembre-se de checar o span e a lixeira!</p>
         </section>
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
