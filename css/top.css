@@ -1,3 +1,4 @@
+/*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image{
     border-radius: 1rem;
     margin: 35px;
@@ -6,7 +7,7 @@
     box-shadow: 0rem 0rem 1rem #163FE5;
     flex:1;
 }
-
+/*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image-primeiro{
     border-radius: 16px;
     margin: 35px;
@@ -15,41 +16,46 @@
     box-shadow: 0rem 0rem 1rem #d3c013;
 }
 
+/*Realiza a animação de zoom*/
 .game-image:hover {
     transition: 0.3s;
     transform: scale(1.1);
     cursor: pointer;
 }
 
+/*Realiza a animação de tirar zoom*/
 .game-image:not(:hover) {
     transition: 0.3s;
 }
 
+/*Realiza a animação de zoom*/
 .game-image-primeiro:hover {
     transition: 0.3s;
     transform: scale(1.1);
     cursor: pointer;
 }
 
+/*Realiza a animação de tirar zoom*/
 .game-image-primeiro:not(:hover) {
     transition: 0.3s;
 }
 
-
+/*Se refere às divs que contêm as divs de imagens*/
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 1050px;
+    
 }
 
-
+/*TEXTO DE CATEGORIAS*/
 h2{
     display: flex;
     justify-content: center;
 }
 
+/*texto TOP3*/
 h1{
     font-size: 45px;
 }
-
-
