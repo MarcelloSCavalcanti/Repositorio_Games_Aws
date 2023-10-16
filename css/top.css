@@ -1,3 +1,62 @@
+/*media responsivity*/
+@media (max-width: 1340px) {
+    #areaConteudo {
+        width:1050px;
+    }
+}
+
+@media (max-width:1100px) {
+    #areaConteudo {
+        width: 850px;
+    }
+    /*CSS PARA IMAGENS DE JOGOS TOP1*/
+    .game-image {
+        max-height: 300px;
+        max-width: 221.05px;
+    }
+    .game-image-primeiro {
+        max-height: 300px;
+        max-width: 221.05px;
+    }
+    .container div{
+        width: 260px;
+    }
+}
+
+@media (max-width: 870px) {
+    #areaConteudo {
+        width: 610px;
+    }
+    .game-image {
+        max-height: 250px;
+        max-width: 184.21px;
+    }
+    .game-image-primeiro {
+        max-height: 250px;
+        max-width: 184.21px;
+    }
+    .container div{
+        width: 203px;
+    }
+}
+
+@media (max-width: 610px) {
+    #areaConteudo {
+        width: 140px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    #areaConteudo {
+        padding: 16px 0;
+        width: 140px;
+    }
+}
+
+/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
+
+
 /*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image{
     border-radius: 1rem;
@@ -45,8 +104,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1050px;
-    
+}
+
+.container div{
+    display:flex;
+    justify-content: center;
 }
 
 /*TEXTO DE CATEGORIAS*/
@@ -58,4 +120,8 @@ h2{
 /*texto TOP3*/
 h1{
     font-size: 45px;
+    font-family: "carter one";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
