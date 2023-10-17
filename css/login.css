@@ -6,10 +6,12 @@ main{
  margin-left: 30px;
  text-align: center;
  display: flex;
-
- 
- 
+ background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
+ margin: 0 auto;
+ height: 0 auto;
+ width: 0 auto;
 }
+
 div{
    background-color: rgb(7, 62, 181);
    padding:15px;
