@@ -73,10 +73,10 @@ main div {
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(1px);
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    justify-self: center;
+    align-self: end;
     height: 3rem;
-    width: 100%;
+    width: 296px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     transition: 0.75s;
@@ -84,17 +84,12 @@ main div {
 }
 /*parte necesária para transformar */
 .game-image:hover .legenda {
-    display:flex;
-    justify-content: center;
-    align-content: center;
     opacity: 1;
 }
 
 .legenda a {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
     font-size: 1rem;
     text-align: center;
 }
