@@ -34,97 +34,73 @@
     </header>
     <!--Corpo na qual se tem o conteúdo principal da página-->
     <main>
-        <div class="h1review">
-            <h1> REVIEW </h1>
-        </div>
-
-        <section id="notadojogoeestrelas">
-            <div id="nota-do-jogo">
-                <h3>Nota do jogo:</h3>
-            </div>
-            <div id="estrelas5">
-                <h5>5 estrelas</h5>
-            </div>
-        </section>
-
-        <section id="disponiveletexto"> 
-            <div id="disponiveis"> 
-                <h3>Disponível em:</h3>
-            </div>
-            <div id="disponiveltexto"> 
-                <h5>Nintendo Switch, Wii U</h5>
-            </div>
-        </section>
-        
-        <section id="traileregameplay"> 
-            <div id="trailer"> 
-                <center> 
-                    <h3>Trailer</h3> 
-                </center>
-                <a href="https://www.youtube.com/watch?v=tKlRN2YpxRE"> <img src="/src/img/review_img/marioKart8Trailer.png" alt="Imagem de trailer Mario Kart 8" height="200rem"> </a> <figcaption>Canal Youtube: Nintendo of America</figcaption>
-            </div>
-            <div id="gameplay">
-                <center> 
-                    <h3>Gameplay</h3> 
-                </center>
-                <a href="https://www.youtube.com/watch?v=Zo6Cvlr8OkA"> <img src = "/src/img/review_img/marioKart8Gameplay.png" alt="Imagem de Gameplay Mario Kart 8" height="200rem"> </a>
-                <figcaption>Canal Youtube: BRKsEDU</figcaption>    
-            </div>
-        </section>
-
-    <section id="precosevalor"> 
-        <div id="precos"> 
-            <h3>Preço</h3>
-        </div>
-        <div id="valor">
-            <h5>R$ 299,89</h5>
-        </div>
-    </section>
-
-    <section id="categoriasequais"> 
-        <div id="categorias"> 
-            <h3> Categoria </h3>
-        </div>
-        <div id="quais">
-            <h5>Corrida, Ação</h5>
-        </div>  
-    </section>
-
-    <section id="comentarioetexto"> 
-        <div id="comentarios"> 
-            <h3>Comentários</h3>
-        </div>
-            <div id="textocomentario1">
-                <p>Jogo muito lindo!!!</p>
-            </div>
-            <div id="textocomentario2">    
-                <p>Um dos melhores jogos de corrida de todos os tempos!!!</p>
-            </div>
-    </section>
-
-    <center>
-        <div id="vermais">
-            <h3> Ver mais</h3>
-        </div>
-    </center>
-
-    <section id="publicar">
-        <div id="titulopublicar">
-            <label for="nome">Deixe seu comentário!</label>   
-        </div>
-        
-        <div id="publicar-comentarios"> 
-            <form action="">
-                <fieldset>
-                    <div id="escrevaaqui">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
+       <!--Área do conteúdo na página-->
+       <section id="areaConteudo">
+                <h2 class="textBox"> REVIEW </h2>
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section class="flexAndGap">
+                <span class="textBox">Nota do jogo:</span>
+                <h5 class="textBox">5 estrelas</h5>
+            </section>
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section class="flexAndGap"> 
+                <span class="textBox">Disponível em:</span>
+                <h5 class="textBox"> SWITCH </h5>
+                <h5 class="textBox"> WII U </h5>
+            </section>
+            <!--Parte Referente a imagem que leva ao vídeo no youtube-->
+            <section class="trailerEGameplay"> 
+                <div>
+                    <h3 class="textBox tituloTrailerEGameplay">Trailer</h3> 
+                    <iframe width="460" height="260" src="https://www.youtube.com/embed/tKlRN2YpxRE?si=aNCiVTmbPHktGuLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="textBox tituloTrailerEGameplay">Gameplay</h3> 
+                    <iframe width="460" height="260" src="https://www.youtube.com/embed/Zo6Cvlr8OkA?si=TQTwsBJudHPRV6Um" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
                     </div>
-                </fieldset>
-            </form>
-            <button>Clique aqui para publicar para nosso site!</button>
-        </div>
-    </section>
-
+            </section>
+            <section class="flexAndGap"> 
+                <span class="textBox">Preço</span>
+                <span class="textBox">R$ 299,89</span>
+            </section>
+        
+            <section class="flexAndGap"> 
+                <span class="textBox">Categoria</span>
+                <span class="textBox">Ação</span>
+                <span class="textBox">Corrida</span>
+            </section>
+            <section>
+                <h3 class="textBox">Comentários</h3>
+                <div id="comentariosAnteriores">
+                    <div class="textBox">
+                        <p>Nota: 5</p>
+                        <p>Jogo muito viciante!</p>
+                    </div>
+                    <div class="textBox">
+                        <p>Nota: 4</p>   
+                        <p>Preço muito caro como todos os jogos da Nintendo, mas um jogo de corrida com poderes incríveis e divertido para jogar com toda a família!!!</p>
+                    </div>
+                </div>
+                <div class="flexAndGap" id="centerText">
+                    <button type="button" class="textBox" id="lerMaisButton">Ler mais comentários</button>
+                </div>
+            </section>
+            <section>
+                <form>
+                    <h3 for="nome" class="textBox">Deixe seu comentário!</h3>
+                    <span class="textBox" id="nota">Qual nota esse game merece?</span>
+                    <label for="nota">
+                        <button type="button"  id="btnSubtrairNota">-</button>
+                        <input type="number" name="nota" id="nota" min="0" max="5" placeholder="Nota de 0 a 5">
+                        <button type="button" id="btnAdicionarNota">+</button>
+                    </label>
+                </form>
+                <label for="avaliacaoGame">
+                    <textarea id="avaliacaoGame" name="avaliacaoGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="3" cols="35" required></textarea><br>
+                </label>
+                <button id="btnPublicar">Publicar comentário!</button>
+            </section>
+        </section>
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
     <footer>
