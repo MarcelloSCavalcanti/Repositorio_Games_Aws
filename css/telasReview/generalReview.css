@@ -1,324 +1,132 @@
-body{
-    background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
+* {
+    font-weight: bold;
 }
 
-.h1review{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 140px;
-    padding-left: 10px;
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h5, span, p {
+    font-size: 1.3rem;
+}
+/*margin das sections a fim de ficar de fácil identificação visual o término e início de outra section*/
+section {
+    margin: 32px;
+}
+/*estilização de elementos usado em todos os elementos que contenham texto*/
+.textBox{
     background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 10px 10px;
+    margin: 5px;
+    width: max-content;
+    height: max-content;
+    text-shadow: 0px 0px 5px black;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: inset 0px 0px 10px 5px black;
     cursor: default;
 }
-
-#notadojogoeestrelas{
+/*Aplicando display flex para os elementos filhos e um gap de 20px entre elementos*/
+.flexAndGap {
     display: flex;
+    gap: 5px;
 }
-
-#nota-do-jogo{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 140px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    padding-left: 10px;
-}
-
-#estrelas5{
-    background-color: black;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    width: 70px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#disponiveletexto {
+/*Área do trailer e do gameplay*/
+.trailerEGameplay {
     display: flex;
+    justify-content: space-evenly;
 }
-
-#disponiveis{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+/*estilização do título dos vídeos*/
+.tituloTrailerEGameplay {
+    margin: 0px auto 20px auto;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 5px black;
+}
+/*Config da imagem do vídeo do google, não usar width nem height visto que desfoca a imagem o melhor é usar essas no html*/
+iframe {
+    box-shadow: 0px 0px 16px #163FE5;
+    border-radius: 20px;
+}
+/*Estilização dos input do campo do valor da nota*/
+input {
+    background-color: #163FE5;
+    color: #ffffff;
+    box-shadow: inset 0px 0px 10px 5px black;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px black;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
     width: 150px;
-    height: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
+}
+
+#avaliacaoGame {
+    margin: 0px 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
     background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: inset 0px 0px 10px 5px black;
+    resize: none;
 }
-
-#disponiveltexto{
-    background-color: black;
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/*margin entre os elementos da nota*/
+#nota {
+    margin: 20px 5px;
+}
+/*config do botão de avaliação da nota*/
+button {
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 5px black;
+    border-radius: 50%;
+    margin: 0px 0px;
     background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
+    box-shadow: inset 0px 0px 10px 5px black;
+}
+/*aparecer as setas do campo number no firefox*/
+input[type=number] { 
+    appearance: textfield;
 }
 
-#traileregameplay{
-    display: flex;
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*para dar efeito de botão quando clicado*/
+button:active {
+    scale: 0.95;
+    background-color:#647ee6;
 }
 
-#trailer{
-    background-color: black;
-    margin-left: 200px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 380px;
-    height: 240px;
-    padding-left: 10px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
+#btnSubtrairNota:active, #btnAdicionarNota:active {
+    scale:0.80;
 }
-
-#gameplay{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    width: 380px;
-    height: 240px;
-    padding-left: 10px;
+/*section de comentários*/
+#comentariosAnteriores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
-
-#precosevalor{
-    display: flex;
+/*parte referente ao bloco de texto dos comentários*/
+p {
+    width: 500px;
+    word-wrap: break-word;
 }
-
-#precos{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 80px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    padding-left: 10px;
+/*borão de publicar comentário*/
+#btnPublicar {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
 }
-
-#valor{
-    background-color: black;
-    margin-left: 120px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 80px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
+/*id a fim de centralizar e ganhar um avastamento do elemento de cima*/
+#lerMaisButton {
+    margin: 0 auto;
+    margin-top: 5px;
 }
-
-#categoriasequais{
-    display: flex;
-}
-
-#categorias{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 120px;
-    padding-left: 20px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#quais{
-    background-color: black;
-    margin-left: 80px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 170px;
-    padding-left: 10px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#comentarios{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 140px;
-    height: 30px;
-    padding-left: 20px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#comentarioetexto{
-    display: flex;
-}
-
-#textocomentario1{
-    background-color: black;
-    margin-left: 60px;
-    margin-top: 20px;
-    width: 380px;
-    padding-top: 30px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    height: 50px;
-}
-
-#textocomentario2{
-    background-color: black;
-    margin-left: 30px;
-    margin-top: 20px;
-    width: 380px;
-    padding-top: 30px;
-    padding-left: 10px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-    height: 50px;
-}
-
-#vermais{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 100px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-#titulopublicar{
-    background-color: black;
-    margin-left: 100px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 120px;
-    height: 50px;
-    padding-left: 20px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default; 
-} 
-
-#publicar{
-    display: flex;
-}
-
-#publicar-comentarios{
-    background-color: black;
-    margin-left: 75px; 
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 430px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-<<<<<<< HEAD
-    height: 70px;
-}  
-=======
-    height: 100px;
-}
-
-#estrelas{
-    background-color: black;
-    margin-left: 70px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    width: 70px;
-    background-color: #163FE5;
-    padding: 0.5rem;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-/*Aplicando display flex para os elementos pais referêntes a cada section da página*/
-.conteudoFlex{
-    display: flex;
-}
-
-form{
-    padding-left: 20px;
-}
-
-button{
-    margin-left: 80px;
-}
-
-footer{
-    background-color: black;
-    padding-left: 100px;
-} 
->>>>>>> main
