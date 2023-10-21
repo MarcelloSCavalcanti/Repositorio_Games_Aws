@@ -1,3 +1,9 @@
+#areaConteudo {
+    padding: 32px 0px;
+    width: 1070px;
+    margin: 0 auto;
+}
+
 /*media responsivity*/
 @media (max-width: 1340px) {
     #areaConteudo {
@@ -18,8 +24,9 @@
         max-height: 300px;
         max-width: 221.05px;
     }
-    .container div{
-        width: 260px;
+    .image {
+        max-height: 300px;
+        max-width: 221.05px;
     }
 }
 
@@ -28,21 +35,22 @@
         width: 610px;
     }
     .game-image {
-        max-height: 250px;
-        max-width: 184.21px;
+        max-height: 270px;
+        max-width: 198.95px;
     }
     .game-image-primeiro {
-        max-height: 250px;
-        max-width: 184.21px;
+        max-height: 270px;
+        max-width: 198.95px;
     }
-    .container div{
-        width: 203px;
+    .image {
+        max-height: 270px;
+        max-width: 198.95px;
     }
 }
 
 @media (max-width: 610px) {
     #areaConteudo {
-        width: 140px;
+        width: 300px;
     }
     
 }
@@ -50,29 +58,33 @@
 @media (max-width: 360px) {
     #areaConteudo {
         padding: 16px 0;
-        width: 140px;
+        width: 300px;
     }
 }
 
-/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
-
-
 /*CSS PARA IMAGENS DE JOGOS TOP1*/
-.game-image{
-    border-radius: 1rem;
-    margin: 35px;
+.game-image {
+    border-radius: 16px;
+    margin: 30px;
+    margin-bottom: 65px;
     height: 380px;
     width: 280px;
-    box-shadow: 0rem 0rem 1rem #163FE5;
-    flex:1;
+    box-shadow: 0px 0px 16px #163FE5;
 }
+
+.image{
+    height: 380px;
+    width: 280px;
+    border-radius: 16px;
+}
+
 /*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image-primeiro{
     border-radius: 16px;
-    margin: 35px;
+    margin: 30px;
     height: 380px;
     width: 280px;
-    box-shadow: 0rem 0rem 1rem #d3c013;
+    box-shadow: 0px 0px 16px #d3c013;
 }
 
 /*Realiza a animação de zoom*/
@@ -112,10 +124,19 @@
 }
 
 /*TEXTO DE CATEGORIAS*/
-h2{
+h2{ 
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    cursor: default;
+    text-align: center;
+    background-color: #163FE5;
+    padding: 10px;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
 }
+
 
 /*texto TOP3*/
 h1{
@@ -124,4 +145,42 @@ h1{
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    cursor: default;
+}
+
+.legenda {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3rem;
+    width: 100%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: 0.3s;
+    opacity: 0;
+}
+/*parte necesária para transformar */
+.game-image:hover .legenda {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 1;
+}
+
+.game-image-primeiro:hover .legenda {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 1;
+}
+
+.legenda a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
 }
