@@ -321,12 +321,27 @@ img {
     }
     
     main img {
-        height: 310px; 
-        width: 230px;
+        height: 330px; 
+        width: 250px;
     }
 
     main ul {
         gap: 40px;
+    }
+}
+
+@media (max-width: 1610px) {
+    h2{
+        font-size: 50px;
+    }
+    
+    main img {
+        height: 300px; 
+        width: 220px;
+    }
+
+    main ul {
+        gap: 35px;
     }
 }
 /*Resolução HD  - 720p*/
