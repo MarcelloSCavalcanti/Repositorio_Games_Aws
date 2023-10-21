@@ -14,13 +14,11 @@ html{
 }
 
 header {
+    background-color: #163FE5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #163FE5;
     padding: 0 48px;
-    top: inherit;
-    box-shadow: 0rem 0rem 2rem #163FE5;
 }
 
 header img {
@@ -153,7 +151,6 @@ footer {
     background-color: #163FE5;
     align-items: center;
     font-size: 24px;
-    box-shadow: 0rem 0rem 1rem #163FE5;
     text-shadow: 0rem 0rem 0.1rem black;
     cursor: default;
 }

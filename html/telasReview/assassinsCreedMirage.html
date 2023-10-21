@@ -36,115 +36,78 @@
     <main>
         <!--Área do conteúdo na página-->
         <section id="areaConteudo">
-            <div class="h1review">
-                <h1> REVIEW </h1>
-            </div>
+                <h2 class="textBox"> REVIEW </h2>
             <!--Parte da área de conteúdo referente a nota do jogo-->
-            <section id="notaDoJogoEEstrelas" class="conteudoFlex">
-                <div id="nota-do-jogo">
-                    <h3>Nota do jogo:</h3>
-                </div>
-                <div id="estrelas">
-                    <h5>5 estrelas</h5>
-                </div>
+            <section class="flexAndGap">
+                <span class="textBox">Nota do jogo:</span>
+                <h5 class="textBox">5 estrelas</h5>
             </section>
             <!--Parte da área de conteúdo referente a nota do jogo-->
-            <section id="disponivelemetexto" class="conteudoFlex"> 
-                <div id="disponiveis"> 
-                    <h3>Disponível em:</h3>
-                </div>
-                <div class="disponiveltexto"> 
-                    <h5> PS5 </h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> PS4 </h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> EPIC </h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> XBOX ONE</h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> XBOX SERIES X|S</h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> AMAZON LUNA</h5>
-                </div>
-                <div class="disponiveltexto">
-                    <h5> PC </h5>
+            <section class="flexAndGap"> 
+                <span class="textBox">Disponível em:</span>
+                <h5 class="textBox"> PS5 </h5>
+                <h5 class="textBox"> PS4 </h5>
+                <h5 class="textBox"> EPIC </h5>
+                <h5 class="textBox"> XBOX ONE</h5>
+                <h5 class="textBox"> XBOX SERIES X|S</h5>
+                <h5 class="textBox"> AMAZON LUNA</h5>
+                <h5 class="textBox"> PC </h5>
             </section>
-
-            <section id="traileregameplay" class="conteudoFlex"> 
-                <div id="trailer"> 
-                    <center> 
-                        <h3>Trailer</h3> 
-                    </center>
-                    <a href="https://www.youtube.com/watch?v=RK4hYnhaFis&pp=ygUOdHJhaWxlciBtaXJhZ2U%3D"> <img src="/src/img/review_img/assasinscreedmiragetrailer.png.jpg" alt="Imagem de game Assassins Creed Mirage" height="200rem"> </a>
+            <!--Parte Referente a imagem que leva ao vídeo no youtube-->
+            <section class="trailerEGameplay"> 
+                <div>
+                    <h3 class="textBox tituloTrailerEGameplay">Trailer</h3> 
+                    <iframe width="460" height="260" src="https://www.youtube.com/embed/x55lAlFtXmw?si=Vxut1Li1lbrzXp7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div id="gameplay">
-                    <center> 
-                        <h3>Gameplay</h3> 
-                    </center>
-                    <a href="https://www.youtube.com/watch?v=mxpYHW-M_Ac&pp=ygUXdHJhaWxlciBtaXJhZ2UgZ2FtZXBsYXk%3D"> <img src="/src/img/review_img/assassinscreedmiragegameplay.jpg" alt="Imagem de Gameplay Assassins Creed Mirage" height="200rem"> </a>    
+                <div>
+                    <h3 class="textBox tituloTrailerEGameplay">Gameplay</h3> 
+                    <iframe width="460" height="260" src="https://www.youtube.com/embed/mxpYHW-M_Ac?si=QTvOYG4IUQ_a_GmK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
                 </div>
             </section>
-            <section id="precosevalor" class="conteudoFlex"> 
-                <div id="precos"> 
-                    <h3>Preço</h3>
+            <section class="flexAndGap"> 
+                <span class="textBox">Preço</span>
+                <span class="textBox">R$ 260,00</span>
+            </section>
+            <section class="flexAndGap"> 
+                <span class="textBox">Categoria</span>
+                <span class="textBox">Ação</span>
+                <span class="textBox">Aventura</span>
+                <span class="textBox">RPG</span>
+            </section>
+            <section>
+                <h3 class="textBox">Comentários</h3>
+                <div id="comentariosAnteriores">
+                    <div class="textBox">
+                        <p>Nota: 5</p>
+                        <p>Sou muito viciado neste jogo! Jogo todo dia e sou feliz por isso!</p>
+                    </div>
+                    <div class="textBox">
+                        <p>Nota: 4</p>
+                        <p>O jogo é muito bom, mas recentemente está tendo problemas de conexão.</p>
+                    </div>
+                    <div class="textBox">
+                        <p>Nota: 5</p>
+                        <p>Sou muito viciado neste jogo! Jogo todo dia e sou feliz por isso!</p>
+                    </div>
                 </div>
-                <div id="valor">
-                    <h5>R$ 260,00</h5>
+                <div class="flexAndGap" id="centerText">
+                    <button type="button" class="textBox" id="lerMaisButton">Ler mais comentários</button>
                 </div>
             </section>
-
-            <section id="categoriasequais" class="conteudoFlex"> 
-                <div id="categorias"> 
-                    <h3> Categoria </h3>
-                </div>
-                <div id="quais">
-                    <h5>Ação    Aventura    RPG</h5>
-                </div>  
-            </section>
-
-            <section id="publicar" class="conteudoFlex">
-                <div id="titulopublicar">
-                    <h4 for="nome">Deixe seu comentário!</h4>   
-                </div>
-            
-                <div id="publicar-comentarios"> 
-                <form action="">
-                    <fieldset>
-                        <div id="escrevaaqui">
-                            <textarea name="nome" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="5" cols="75"></textarea>
-                        </div>
-                    </form>  
-                    <button>Clique aqui para publicar para nosso site!</button>     
-                </div>
-            </section>
-
-            <center>
-                <div id="vermais">
-                    <h3> Ver mais</h3>
-                </div>
-            </center>
-
-            <section id="publicar">
-                <div id="titulopublicar">
-                    <label for="nome">Deixe seu comentário!</label>   
-                </div>
-                
-                <div id="publicar-comentarios"> 
-                        <div id="escrevaaqui">
-                            <label for="comentarioGame">
-                                <textarea id="comentarioGame" name="comentarioGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="5" cols="98" required></textarea>
-                                <span>Nota (de 0 a 5):</span>
-                                <input type="number" name="nota" id="nota" value="" min="0" max="5" required>
-                            </label>
-                        </div>
-                    </form>
-                    <button>Clique aqui para publicar para nosso site!</button>
-                </div>
+            <section>
+                <form>
+                    <h3 for="nome" class="textBox">Deixe seu comentário!</h3>
+                    <span class="textBox" id="nota">Qual nota esse game merece?</span>
+                    <label for="nota">
+                        <button type="button"  id="btnSubtrairNota">-</button>
+                        <input type="number" name="nota" id="nota" min="0" max="5" placeholder="Nota de 0 a 5">
+                        <button type="button" id="btnAdicionarNota">+</button>
+                    </label>
+                </form>
+                <label for="avaliacaoGame">
+                    <textarea id="avaliacaoGame" name="avaliacaoGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="3" cols="35" required></textarea><br>
+                </label>
+                <button id="btnPublicar">Publicar comentário!</button>
             </section>
         </section>
     </main>
