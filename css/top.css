@@ -46,6 +46,9 @@
         max-height: 270px;
         max-width: 198.95px;
     }
+    .legenda{
+        min-height: 64px;
+    }
 }
 
 @media (max-width: 610px) {
@@ -148,20 +151,22 @@ h1{
     cursor: default;
 }
 
+/*Parte referente à legenda*/
 .legenda {
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(1px);
     position: absolute;
     bottom: 0px;
     left: 0px;
-    height: 3rem;
+    height: 48px;
     width: 100%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     transition: 0.3s;
     opacity: 0;
 }
-/*parte necesária para transformar */
+
+/*Animação da legenda*/
 .game-image:hover .legenda {
     display:flex;
     justify-content: center;
