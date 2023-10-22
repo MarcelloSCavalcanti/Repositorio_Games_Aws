@@ -185,7 +185,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -217,6 +217,15 @@ img {
         gap: 100px;
         
     }
+
+    .legenda {
+        height: 140px;
+    }
+
+    .legenda a {
+        font-size: 50px;
+    }
+    
 }
 /*Resolução 4k*/
 @media (max-width: 3560px) {
@@ -233,6 +242,14 @@ img {
         margin-left: 100px;
         margin-right: 100px;
         gap: 80px;
+    }
+
+    .legenda {
+        height: 120px;
+    }
+
+    .legenda a {
+        font-size: 44px;
     }
 }
 
@@ -251,6 +268,14 @@ img {
         margin-right: 100px;
         gap: 60px;
     }
+
+    .legenda {
+        height: 100px;
+    }
+
+    .legenda a {
+        font-size: 34px;
+    }
 }
 
 @media (max-width: 2700px) {
@@ -268,6 +293,14 @@ img {
         margin-right: 100px;
         gap: 60px;
     }
+
+    .legenda {
+        height: 80px;
+    }
+
+    .legenda a {
+        font-size: 29px;
+    }
 }
 /*Resolução 2k*/
 @media (max-width: 2350px) {
@@ -283,6 +316,14 @@ img {
     main ul {
         gap: 50px;
     }
+
+    .legenda {
+        height: 80px;
+    }
+
+    .legenda a {
+        font-size: 27px;
+    }
 }
 /*Resolução 2k*/
 @media (max-width: 2050px) {
@@ -297,6 +338,14 @@ img {
 
     main ul {
         gap: 40px;
+    }
+
+    .legenda {
+        height: 70px;
+    }
+
+    .legenda a {
+        font-size: 24px;
     }
 }
 /*Resolução FULLHD - 1080p*/
@@ -328,6 +377,15 @@ img {
     main ul {
         gap: 40px;
     }
+
+    .legenda {
+        height: 60px;
+    }
+
+    .legenda a {
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 1610px) {
@@ -342,6 +400,14 @@ img {
 
     main ul {
         gap: 35px;
+    }
+
+    .legenda {
+        height: 50px;
+    }
+    
+    .legenda a {
+        font-size: 18px;
     }
 }
 /*Resolução HD  - 720p*/
@@ -358,6 +424,14 @@ img {
     main ul {
         gap: 35px;
     }
+
+    .legenda {
+        height: 45px;
+    }
+
+    .legenda a {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 1350px) {
@@ -373,12 +447,24 @@ img {
     main ul {
         gap: 30px;
     }
+
+    .legenda a {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 1300px) {
     main img {
         height: 250px; 
         width: 170px;
+    }
+
+    .legenda {
+        height: 40px;
+    }
+
+    .legenda a {
+        font-size: 14px;
     }
 }
 
@@ -392,6 +478,14 @@ img {
     }
     header {
         padding: 10px;
+    }
+
+    .legenda {
+        height: 35px;
+    }
+
+    .legenda a {
+        font-size: 13px;
     }
 }
 
@@ -407,6 +501,14 @@ img {
     
     main ul {
         gap: 30px;
+    }
+
+    .legenda {
+        height: 35px;
+    }
+
+    .legenda a {
+        font-size: 11px;
     }
 }
 
@@ -435,6 +537,14 @@ img {
         gap: 30px;
         
     }
+
+    .legenda {
+        height: 30px;
+    }
+
+    .legenda a {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -449,6 +559,14 @@ img {
     
     main ul {
         gap: 25px;
+    }
+
+    .legenda {
+        height: 25px;
+    }
+
+    .legenda a {
+        font-size: 8px;
     }
 }
 
@@ -465,6 +583,10 @@ img {
     main ul {
         gap: 30px;
     }
+
+    .legenda a {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -479,6 +601,10 @@ img {
     
     main ul {
         gap: 25px;
+    }
+
+    .legenda a {
+        font-size: 9px;
     }
 }
 
@@ -495,6 +621,10 @@ img {
     main ul {
         gap: 30px;
     }
+
+    .legenda a {
+        font-size: 9px;
+    }
 }
 /*Resolução 480p*/
 @media (max-width: 590px) {
@@ -509,6 +639,13 @@ img {
     
     main ul {
         gap: 25px;
+    }
+
+    .legenda {
+        height: 20px;
+    }
+    .legenda a {
+        font-size: 7px;
     }
 }
 
@@ -525,6 +662,13 @@ img {
     main ul {
         gap: 30px;
     }
+
+    .legenda {
+        height: 20px;
+    }
+    .legenda a {
+        font-size: 8px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -539,6 +683,13 @@ img {
     
     main ul {
         gap: 30px;
+    }
+    
+    .legenda {
+        height: 20px;
+    }
+    .legenda a {
+        font-size: 8px;
     }
 }
 
