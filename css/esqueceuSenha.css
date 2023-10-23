@@ -74,7 +74,9 @@ form {
         font-size: 2rem;
     }
     form {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        gap: 12px;
+        
     }
     input {
         width: min-content;
@@ -88,4 +90,27 @@ form {
     p{
         font-size: 1.2rem;
     }
+    label{
+        padding-bottom: 12px;
+
+    }
 }
+.acao:hover {
+    transition: 0.75s;
+    transform: scale(30px);
+    cursor: pointer;
+}
+ 
+.acao:not(:hover) {
+    transition: 0.75s;
+}
+button:hover {
+    transition: 0.75s;
+    transform: scale(1.1);
+    transform-origin: center;
+    cursor: pointer;
+ }
+ 
+ button:not(:hover) {
+    transition: 0.75s;
+ }
