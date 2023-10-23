@@ -50,8 +50,20 @@
         }
 
     .nav-bar-bot a{
-        font-size: 20px;
+        font-size: 12px;
         padding-left: 5px;
+        margin:5px;
+    }
+    h6 {
+        padding: 8px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 320px){
+    #areaConteudo{
+        width: 190px;
+        margin: auto;
     }
 }
 
@@ -73,13 +85,43 @@ h1{
 form{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 50%;
     flex-wrap: wrap;
     background-color: #163FE5;
     padding: 25px;
     margin: 25px auto;
     border-radius: 16px;
     box-shadow: inset 0px 0px 48px 1px rgb(26, 24, 24);
+}
+
+@media (max-width: 320px){
+    form {
+        width: 190px;
+        padding: 8px;
+        margin: 8px;
+    }
+}
+
+button{
+    display: block;
+    margin: 8px auto;
+    font-size: 20px;
+    border-radius: 2rem;
+    padding: 16px;
+    background-color: #163FE5;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active {
+    scale: 0.95;
+    background-color:#647ee6;
 }
 
 .regras{
@@ -92,6 +134,14 @@ form{
     margin: 25px auto;
     width: 50%;
     box-shadow: inset 0px 0px 48px 1px rgb(26, 24, 24);
+}
+
+@media (max-width: 320px){
+    .regras {
+        width: 190px;
+        padding: 8px;
+        margin: 8px;
+    }
 }
 
 .regras p{
@@ -151,10 +201,36 @@ h1{
 
 form strong{
     font-size: 20px;
-    margin: 15px 0px;
 }
 
-input{
-    height: 30px;
-    margin: 10px 0;
+input {
+    width: 90%;
+    font-size: 20px;
+    border-radius: 16px;
+    padding: 8px;
+    gap: 1rem;
+    margin: 10px;
+    background-color: #163FE5;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: text;  
+}
+
+@media (max-width: 500px){
+    button {
+        font-size: 16px;
+        margin:auto;
+        padding: 8px;
+    }
+    input {
+        font-size: 12px;
+    }
+    strong {
+font-size: 16px;
+    }
+}
+
+input:focus {
+    color: white;
+    background-color:#0425a6;
+    transition:0.3s;
 }
