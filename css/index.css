@@ -87,16 +87,31 @@ main div {
     transition: 0.3s;
     opacity: 0;
 }
-/*parte necesária para transformar */
-.game-image:hover .legenda {
-    opacity: 1;
+
+@media (max-width: 320px){
+    .legenda{
+        width: 190px;
+        height: 2.5rem;
+    }
 }
 
 .legenda a {
-    width: 100%;
-    font-size: 1rem;
+    width: 290px;
+    font-size: 16px;
     text-align: center;
     align-self: center;
+}
+
+@media (max-width: 320px){
+    .legenda a{
+        width: 190px;
+        font-size: 10px;
+        font-size: 12px;
+    }
+}
+/*parte necesária para transformar */
+.game-image:hover .legenda {
+    opacity: 1;
 }
 /*:hover e not(:hover) dão a animação para quando o mouse entra sobre a imagem e sai da imagem*/
 .game-image:hover {
