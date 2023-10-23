@@ -1,5 +1,4 @@
 section {
-    height: 85.9vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -17,7 +16,7 @@ form{
 }
 input {
     width: max-content;
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 1rem;
     padding: 8px;
     background-color: #163FE5;
@@ -55,9 +54,4 @@ button:hover{
 button:active {
     scale: 0.95;
     background-color:#647ee6;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
 }
