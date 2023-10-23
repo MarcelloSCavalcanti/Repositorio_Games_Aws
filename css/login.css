@@ -6,23 +6,13 @@ main{
  margin-left: 30px;
  text-align: center;
  display: flex;
-
  background-image: url(/src/img/backgroundCinzaEscuroFundo20.png);
  margin:  auto;
  height:  auto;
  width:  auto;
 }
-div{
-   background-color: rgb(7, 62, 181);
-   padding:15px;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   display: flex;
-   margin: auto auto;
-   border-radius: 1px;
-}
+
 section {
-   height: 85.9vh;
    display: flex;
    justify-content: center;
    align-content: center;
@@ -32,7 +22,7 @@ section {
 
 form{
    text-shadow: 0px 0px 5px black;
-   font-size: 65px;
+   font-size: 30px;
    background-color: #163FE5;
    color: rgb(231, 122, 12);
    margin:  auto;
@@ -217,7 +207,3 @@ p:active {
    background-color:#647ee6;
 }
 
-footer {
-   position: fixed;
-   bottom: 0;
-}
