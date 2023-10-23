@@ -18,7 +18,6 @@ header {
     background-color: #163FE5;
     padding: 0 48px;
     top: inherit;
-    box-shadow: 0px 0px 32px #163FE5;
 }
 
 @media (max-width: 660px) {
@@ -156,7 +155,7 @@ main ul  {
 
 .game-img:hover {
     transform: scale(1.11);
-    filter: drop-shadow(5px 5px 10px #d3c013);
+    filter: drop-shadow(5px 5px 10px #163FE5);
 }
 
 .legenda {
@@ -190,11 +189,17 @@ li {
 }
 
 h2 {
-    font-family: "carter one";
+    font-size: 2.5rem;
+    max-width: max-content;
+    margin: 16px auto;
+    cursor: default;
     text-align: center;
-    font-size: 40px;
-    padding-top: 10px;
-    margin-bottom: 30px;
+    background-color: #163FE5;
+    padding: 10px;
+    text-shadow: 0px 0px 1px black;
+    border-radius: 16px;
+    box-shadow: inset 0px 0px 48px 1px black;
+    cursor: default;
 }
 
 img {
@@ -734,4 +739,3 @@ img {
     font-size: 1rem;
     }
 }
-

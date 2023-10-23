@@ -72,7 +72,6 @@
     margin-bottom: 65px;
     height: 380px;
     width: 280px;
-    box-shadow: 0px 0px 16px #163FE5;
 }
 
 .image{
@@ -92,6 +91,7 @@
 
 /*Realiza a animação de zoom*/
 .game-image:hover {
+    box-shadow: 0px 0px 16px #163FE5;
     transition: 0.3s;
     transform: scale(1.1);
     cursor: pointer;
@@ -126,28 +126,25 @@
     justify-content: center;
 }
 
-/*TEXTO DE CATEGORIAS*/
-h2{ 
-    display: flex;
-    justify-content: center;  
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/*TEXTO DE CATEGORIAS E TOP 3*/
+h2, h3{ 
+    max-width: max-content;
+    margin: 16px auto;
     cursor: default;
     text-align: center;
     background-color: #163FE5;
     padding: 10px;
-    text-shadow: 0rem 0rem 0.1rem black;
-    border-radius: 2rem;
-    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;
-}
-
-
-/*texto TOP3*/
-h1{
-    font-size: 45px;
-    font-family: "carter one";
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+    text-shadow: 0px 0px 1px black;
+    border-radius: 16px;
+    box-shadow: inset 0px 0px 48px 1px black;
     cursor: default;
 }
 

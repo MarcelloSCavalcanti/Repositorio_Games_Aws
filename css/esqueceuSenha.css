@@ -1,35 +1,59 @@
 section {
-    height: 86vh;
+    height: 85.9vh;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
+h2 {
+    width: max-content;
+    margin: auto;
+}
+label {
+    width: max-content;
+    margin:10px;
+}
 input {
-    margin: 8px;
-    width: max-content; 
+    width: 1175px;
     height: 20px;
     font-size: 38px;
     border-radius: 1rem;
     padding: 16px;
     gap: 1rem;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: #163FE5;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: default;  
+    cursor: text;  
 }
+
+input:focus {
+    color: white;
+    background-color:#0425a6;
+    transition:0.3s;
+}
+
 button{
     display: block;
-    margin: auto;
+    margin: 16px auto;
     font-size: 38px;
     border-radius: 2rem;
-    padding: 8px;
+    padding: 16px;
     background-color: #163FE5;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
 }  
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active {
+    scale: 0.95;
+    background-color:#647ee6;
+}
+
 form{
     margin: auto;
     width: max-content;
@@ -42,12 +66,14 @@ form{
     padding: 16px;
 
 }
+
 p{
+    font-size: 35px;
     padding: 8px;
     width: max-content;
     text-shadow: 0rem 0rem 01rem black;
     border-radius: 32px;
-    margin: 8px auto;
+    margin: 10px auto;
 }
 
 footer {

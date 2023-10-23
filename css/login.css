@@ -1,5 +1,5 @@
 section {
-   height: 86vh;
+   height: 85.9vh;
    display: flex;
    justify-content: center;
    align-content: center;
@@ -16,7 +16,7 @@ div{
 
 form{
    text-shadow: 0px 0px 5px black;
-   font-size: 40px;
+   font-size: 65px;
    background-color: #163FE5;
    color: rgb(231, 122, 12);
    margin:  auto;
@@ -26,28 +26,43 @@ form{
 }
 input {
    width: max-content; 
-   height: 20px;
-   font-size: 40px;
+   font-size: 65px;
    border-radius: 1rem;
    padding: 16px;
-   gap: 1rem;
    margin-bottom: 10px;
    background-color: #163FE5;
-   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;  
+   box-shadow: inset 0px 0px 48px 1px black;
+   cursor: text;  
 }
+
+input:focus {
+   color: white;
+   background-color:#0425a6;
+   transition:0.3s;
+}
+
 button{
    display: block;
-   margin: auto;
-   font-size: 40px;
+   margin: 16px auto;
+   font-size: 65px;
    border-radius: 2rem;
-   padding: 8px;
+   padding: 16px;
    background-color: #163FE5;
-   text-shadow: 0rem 0rem 0.1rem black;
+   text-shadow: 0px 0px rem black;
    border-radius: 2rem;
-   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+   box-shadow: inset 0px 0px 48px 1px black;
    cursor: default;
 }
+
+button:hover{
+   cursor: pointer;
+}
+
+button:active {
+   scale: 0.95;
+   background-color:#647ee6;
+}
+
 label{
    display: grid;
    place-items: left;
@@ -62,7 +77,12 @@ p{
    text-shadow: 0rem 0rem 0.1rem black;
    border-radius: 32px;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   margin: 8px auto;
+   margin: 16px auto;
+}
+
+p:active {
+   scale: 0.95;
+   background-color:#647ee6;
 }
 
 footer {
