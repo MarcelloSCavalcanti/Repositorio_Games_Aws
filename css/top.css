@@ -1,22 +1,191 @@
-.game-image{
-    border-radius: 1rem;
-    margin: 1rem 1rem;
-    box-shadow: 0rem 0rem 1rem #163FE5;
+#areaConteudo {
+    padding: 32px 0px;
+    width: 1070px;
+    margin: 0 auto;
 }
 
+/*media responsivity*/
+@media (max-width: 1340px) {
+    #areaConteudo {
+        width:1050px;
+    }
+}
+
+@media (max-width:1100px) {
+    #areaConteudo {
+        width: 850px;
+    }
+    /*CSS PARA IMAGENS DE JOGOS TOP1*/
+    .game-image {
+        max-height: 300px;
+        max-width: 221.05px;
+    }
+    .game-image-primeiro {
+        max-height: 300px;
+        max-width: 221.05px;
+    }
+    .image {
+        max-height: 300px;
+        max-width: 221.05px;
+    }
+}
+
+@media (max-width: 870px) {
+    #areaConteudo {
+        width: 610px;
+    }
+    .game-image {
+        max-height: 270px;
+        max-width: 198.95px;
+    }
+    .game-image-primeiro {
+        max-height: 270px;
+        max-width: 198.95px;
+    }
+    .image {
+        max-height: 270px;
+        max-width: 198.95px;
+    }
+    .legenda{
+        min-height: 64px;
+    }
+}
+
+@media (max-width: 610px) {
+    #areaConteudo {
+        width: 300px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    #areaConteudo {
+        padding: 16px 0;
+        width: 300px;
+    }
+}
+
+/*CSS PARA IMAGENS DE JOGOS TOP1*/
+.game-image {
+    border-radius: 16px;
+    margin: 30px;
+    margin-bottom: 65px;
+    height: 380px;
+    width: 280px;
+    box-shadow: 0px 0px 16px #163FE5;
+}
+
+.image{
+    height: 380px;
+    width: 280px;
+    border-radius: 16px;
+}
+
+/*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image-primeiro{
-    border-radius: 1rem;
-    margin: 3rem 4rem;
-    box-shadow: 0rem 0rem 1rem #d3c013;
+    border-radius: 16px;
+    margin: 30px;
+    height: 380px;
+    width: 280px;
+    box-shadow: 0px 0px 16px #d3c013;
 }
 
-main table {
+/*Realiza a animação de zoom*/
+.game-image:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*Realiza a animação de tirar zoom*/
+.game-image:not(:hover) {
+    transition: 0.3s;
+}
+
+/*Realiza a animação de zoom*/
+.game-image-primeiro:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*Realiza a animação de tirar zoom*/
+.game-image-primeiro:not(:hover) {
+    transition: 0.3s;
+}
+
+/*Se refere às divs que contêm as divs de imagens*/
+.container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-h2{
-    display: flex;
+.container div{
+    display:flex;
     justify-content: center;
 }
 
+/*TEXTO DE CATEGORIAS*/
+h2{ 
+    display: flex;
+    justify-content: center;  
+    cursor: default;
+    text-align: center;
+    background-color: #163FE5;
+    padding: 10px;
+    text-shadow: 0rem 0rem 0.1rem black;
+    border-radius: 2rem;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    cursor: default;
+}
+
+
+/*texto TOP3*/
+h1{
+    font-size: 45px;
+    font-family: "carter one";
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+/*Parte referente à legenda*/
+.legenda {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 48px;
+    width: 100%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+/*Animação da legenda*/
+.game-image:hover .legenda {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 1;
+}
+
+.game-image-primeiro:hover .legenda {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 1;
+}
+
+.legenda a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
