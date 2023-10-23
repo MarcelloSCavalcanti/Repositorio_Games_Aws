@@ -163,8 +163,14 @@ footer nav ul{
     padding: 0 48px;
 }
 
-h6 {
-    padding: 0 48px;
+@media (max-width: 320px) {
+    footer {
+        padding:4px 20px;
+    }
+    ul {
+    font-size: 1rem;
+    margin:0;
+    }
 }
 
 @media (max-width: 660px) {
