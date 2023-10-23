@@ -1,0 +1,160 @@
+@media (max-width: 1280px){
+    #areaConteudo{
+        max-width: 800px;
+    }
+
+    img{
+        max-height: 150px
+    }
+    .membro{
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 800px){
+    #areaConteudo{
+        max-width: 450px;
+    }
+
+    img{
+        max-height: 150px
+    }
+    .membro{
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 800px){
+    #areaConteudo{
+        max-width: 500px;
+    }
+    form input{
+        margin: 10px auto;
+    }
+
+    footer nav ul{
+        padding: 0px;
+    }
+}
+
+    @media (max-width: 500px){
+        #areaConteudo{
+            max-width: 320px;
+        }
+        form input{
+            margin: 10px auto;
+        }
+    
+        footer nav ul{
+            padding: 0px;
+        }
+
+    .nav-bar-bot a{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    margin: 25px auto;
+    cursor: default;
+    text-align: center;
+    background-color: #163FE5;
+    padding: 10px;
+    text-shadow: 0px 0px 1px black;
+    border-radius: 16px;
+    cursor: default;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    flex-wrap: wrap;
+    background-color: #163FE5;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 16px;
+    box-shadow: inset 0px 0px 48px 1px rgb(26, 24, 24);
+}
+
+.regras{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #163FE5;
+    padding: 25px;
+    border-radius: 16px;
+    margin: 25px auto;
+    width: 50%;
+    box-shadow: inset 0px 0px 48px 1px rgb(26, 24, 24);
+}
+
+.regras p{
+    margin: 5px;
+    font-size: 17px;
+}
+
+.membros{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.membro{
+    margin: 20px 50px;
+    background-color: #163FE5;
+    border-radius: 16px;
+    padding: 20px;
+    width: 250px;
+    padding: 25px 35px;
+    
+}
+
+.membro h4{
+    font-size: 20px;
+}
+
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    margin: 0px auto;
+    cursor: default;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0px 0px 1px black;
+    border-radius: 16px;
+    cursor: default;
+}
+
+#membro_h2{
+    background-color: #163FE5;
+    margin: 25px auto;
+}
+
+img{
+    height: 250px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+form strong{
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+input{
+    height: 30px;
+    margin: 10px 0;
+}
