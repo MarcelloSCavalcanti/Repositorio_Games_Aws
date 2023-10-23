@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOREVER GAMES - REVIEW</title>
+    <!--google fonts para alterar a familha das fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--link para a estilização do css-->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/telasReview/generalReview.css">
+    <!--linkagem com os arquivos JS-->
+    <script src="/js/telasReview/generalReview.js" defer></script>
+</head>
+<body>
+    <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
+    <header id="navBar">
+        <!--Logo da FOREVER GAMES serve como imagem interativa para returnar a página principal-->
+        <a href="/">
+            <img src="/src/img/logoControle.png" alt="Logo da FOREVER GAMES - Um controle laranja" height="40rem"><h1>FOREVER GAMES</h1>
+        </a>
+        <!--Barra de navegação para outras páginas-->
+        <nav>
+            <ul>
+                <li class="nav-bar-top" id="littleScreens"><img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer"></img></li>
+                <li class="nav-bar-top"><a href="/">NEWS</a></li>
+                <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
+                <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
+                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Corpo na qual se tem o conteúdo principal da página-->
+    <main>
+        <!--Área do conteúdo na página-->
+        <section id="areaConteudo">
+                <h2 class="textBox"> REVIEW </h2>
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section class="flexAndGap">
+                <span class="textBox">Nota do jogo:</span>
+                <h5 class="textBox">4 estrelas</h5>
+            </section>
+            <!--Parte da área de conteúdo referente a nota do jogo-->
+            <section class="flexAndGap"> 
+                <span class="textBox">Disponível em:</span>
+                <h5 class="textBox"> XBOX ONE</h5>
+                <h5 class="textBox"> XBOX SERIES X|S</h5>
+                <h5 class="textBox"> PC </h5>
+            </section>
+            <!--Parte Referente a imagem que leva ao vídeo no youtube-->
+            <section class="trailerEGameplay"> 
+                <div>
+                    <h3 class="textBox tituloTrailerEGameplay">Trailer</h3> 
+                    <iframe width="460" height="260" src="https://www.youtube.com/embed/vVP-41wMO4I?si=c_oofDvY5BqJhJua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3 class="textBox tituloTrailerEGameplay">Gameplay</h3> 
+                    <iframe width="460" height="260"  src="https://www.youtube.com/embed/nE7a9ux7jqM?si=_o-G9pxsfNQoxOEu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="flexAndGap"> 
+                    <span class="textBox">Preço</span>
+                    <span class="textBox">R$ 299,00</span>
+            </section>
+            <section class="flexAndGap"> 
+                <span class="textBox">Categoria</span>
+                <span class="textBox">Ação</span>
+                <span class="textBox">Aventura</span>
+            </section>
+            <section>
+                <h3 class="textBox">Comentários</h3>
+                <div id="comentariosAnteriores">
+                    <div class="textBox">
+                        <p>Nota: 4</p>
+                        <p>Ritmo lento, mas bom Telas boas e de carregamento demais, no geral deveria ter sido melhor</p>
+                    </div>
+                    <div class="textBox">
+                        <p>Nota: 5</p>
+                        <p>Meu tempo em Starfield foi incrível, gostei de tudo</p>
+                    </div>
+                    <div class="textBox">
+                        <p>Nota: 2</p>
+                        <p>Joguei por dias e simplesmente não consigo passar da introdução. Então voltei para Skyrim.</p>
+                    </div>
+                </div>
+                <div class="flexAndGap" id="centerText">
+                    <button type="button" class="textBox" id="lerMaisButton">Ler mais comentários</button>
+                </div>
+            </section>
+            <section>
+                <form>
+                    <h3 for="nome" class="textBox">Deixe seu comentário!</h3>
+                    <span class="textBox" id="nota">Qual nota esse game merece?</span>
+                    <label for="nota">
+                        <button type="button"  id="btnSubtrairNota">-</button>
+                        <input type="number" name="nota" id="nota" min="0" max="5" placeholder="Nota de 0 a 5">
+                        <button type="button" id="btnAdicionarNota">+</button>
+                    </label>
+                </form>
+                <label for="avaliacaoGame">
+                    <textarea id="avaliacaoGame" name="avaliacaoGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="3" cols="35" required></textarea><br>
+                </label>
+                <button id="btnPublicar">Publicar comentário!</button>
+            </section>
+        </section>
+    </main>
+    <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
+    <footer>
+        <h6>&copy; FOREVER GAMES - Todos os direitos reservados - 2023</h6>
+        <nav>
+            <ul>
+                <li class="nav-bar-bot" id="return"><a href="#navBar">Retornar ao topo</a></li>
+                <li class="nav-bar-bot" id="contato"><a href="/html/contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html> 

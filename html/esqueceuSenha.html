@@ -14,7 +14,7 @@
     <!--linkagem com os arquivos JS-->
     <script src="/js/esqueceuSenha.js" defer></script>
 </head>
-<body>
+<body id="a">
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
     <header id="navBar">
         <!--Logo da FOREVER GAMES serve como imagem interativa para returnar a página principal-->
@@ -35,14 +35,16 @@
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
         <section id="areaConteudo">
-        <!--Formulário para recuperar senha-->
-            <form action="">
-                <h2>Esqueceu sua senha</h2>
-                <p><label for="emailPassword">Digite seu email</label><p>
-                <input type="email" id="emailPassword" name="emailPassword" placeholder="Digite seu email"><br>
-                <button type="button" >Enviar</button>
-                <p>Caso não receba um email dentro de 10 minutos<br> por favor tente novamente. Lembre-se de checar o span e a lixeira!</p>
-            </form>
+            <h1>Esqueci minha senha</h1>
+               <div>
+                    <!--Formulário para recuperar senha-->
+                    <form action="">
+                        <label for="emailPassword">Digite seu email</label><br>
+                        <input type="email" id="emailPassword" name="emailPassword" placeholder="Digite seu email"><br>
+                        <button >Enviar</button>
+                    </form>
+                </div>
+            <p>Caso não receba um email dentro de 10 minutos<br> por favor tente novamente. Lembre-se de checar o span e a lixeira!</p>
         </section>
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->
