@@ -137,7 +137,7 @@ h3 {
 /*TEXTO DE CATEGORIAS E TOP 3*/
 h2, h3{ 
     max-width: max-content;
-    margin: 16px auto;
+    margin: 25px auto;
     cursor: default;
     text-align: center;
     background-color: #163FE5;
