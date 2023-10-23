@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <!--link para a estilização do css-->
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
     <!--linkagem com os arquivos JS-->
     <script src="/js/login.js" defer></script>
 </head>
@@ -35,16 +35,16 @@
     <main>
         <section id="areaConteudo">
             <div>
-                <h1>Bem vindo</h1>
-        <!--login-->
+                <!--login-->
             <form action="login">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="nome" placeholder="Digite seu nome">
-                <label for="password">Password:</label>
+                <h1>Bem vindo</h1>
+                <label for="name">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+                <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" placeholder="Digite sua senha"><br>
                 <button type="submit">Entrar</button>
                 <p><a href="/html/cadastro.html">Cadastrar</a></p>
-                <p><a href="/html/esqueceuSenha.html">Esqueceu a Senha</a></p>
+                <p><a href="/html/esqueceuSenha.html" id="btnEsqueceu">Esqueceu a Senha</a></p>
             </form>
         </div>
         </section>

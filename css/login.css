@@ -1,61 +1,52 @@
-
-main{
- background-color: rgb(0, 0, 0);
- padding: 110px;
- font-size: 30px;
- margin-left: 30px;
- text-align: center;
- display: flex;
-
- 
- 
-}
-div{
-   background-color: rgb(7, 62, 181);
-   padding:15px;
-   padding-left: 1rem;
-   padding-right: 1rem;
+section {
+   height: 86vh;
    display: flex;
-   
-   display: grid;
-   margin-bottom: 10px;
-  margin-right: 30px;
-  margin: 0 auto;
-  border-radius: 1rem;
- 
+   justify-content: center;
+   align-content: center;
 }
+
+div{
+   padding:15px;
+   padding-left: 16px;
+   padding-right: 1px;
+   display: flex;
+   margin: auto auto;
+   border-radius: 1px;
+}
+
 form{
+   text-shadow: 0px 0px 5px black;
+   font-size: 40px;
+   background-color: #163FE5;
    color: rgb(231, 122, 12);
-   display: table-column;
-   place-items: flex;
-   padding: 1rem;
    margin:  auto;
-   border-radius: 1rem;
+   border-radius: 16px;
    border: 2px solid;
-   margin-bottom: 10px;
-   
-
-
+   padding: 16px;
 }
 input {
-   width: 300px; 
+   width: max-content; 
    height: 20px;
-   font-size: medium;
-   text-align: center;
+   font-size: 40px;
    border-radius: 1rem;
-   padding: 0.4rem;
+   padding: 16px;
    gap: 1rem;
    margin-bottom: 10px;
+   background-color: #163FE5;
+   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+   cursor: default;  
 }
 button{
-   width: 300px; 
-   height: 33px;
-   font-size: 30px;
+   display: block;
+   margin: auto;
+   font-size: 40px;
    border-radius: 2rem;
-   margin-bottom: 10px;
-   
-   
-
+   padding: 8px;
+   background-color: #163FE5;
+   text-shadow: 0rem 0rem 0.1rem black;
+   border-radius: 2rem;
+   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+   cursor: default;
 }
 label{
    display: grid;
@@ -63,46 +54,18 @@ label{
    border-radius: 1rem;
    margin-bottom: 1px;
 }
-input{
-   width: min-content;
-   background-color: #163FE5;
-   padding: 0.5rem;
-   border-radius: 2rem;
-   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;
-}
-button{
-   width: min-content;
-   background-color: #163FE5;
-   padding-left: 4.5rem;
-   padding-right: 4.5rem;
-   padding-bottom: 2.5rem;
-   padding-top: 0.2rem;
-   text-shadow: 0rem 0rem 0.1rem black;
-   border-radius: 2rem;
-   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;
-   margin-bottom: 10px;
-}
+
 p{
-   width: min-content;
    background-color: #163FE5;
-   padding-left: 3rem;
-   padding-right: 3rem;
-   padding-top: 0.5rem;
-   padding-bottom: 0.5rem;
+   padding: 8px 8px 8px 8px;
+   width: max-content;
    text-shadow: 0rem 0rem 0.1rem black;
-   border-radius: 2rem;
+   border-radius: 32px;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;
-   margin-bottom: 10px;
-   
+   margin: 8px auto;
 }
-.botao-acao:hover {
-   transition: 0.75s;
-   transform: scale(1.1);
-   cursor: pointer;
-}
-.botao-acao:not(:hover) {
-   transition: 0.75s;
+
+footer {
+   position: fixed;
+   bottom: 0;
 }

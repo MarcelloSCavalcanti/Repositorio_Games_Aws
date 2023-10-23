@@ -74,7 +74,7 @@ main div {
     backdrop-filter: blur(1px);
     position: absolute;
     justify-self: center;
-    align-self: end;
+    align-self: flex-end;
     height: 3rem;
     width: 296px;
     border-bottom-left-radius: 16px;
@@ -89,9 +89,9 @@ main div {
 
 .legenda a {
     width: 100%;
-    justify-self: center;
     font-size: 1rem;
     text-align: center;
+    align-self: center;
 }
 /*:hover e not(:hover) dão a animação para quando o mouse entra sobre a imagem e sai da imagem*/
 .game-image:hover {
