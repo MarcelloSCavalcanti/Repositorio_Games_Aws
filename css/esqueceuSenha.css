@@ -1,29 +1,114 @@
-section {
-    height: 85.9vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+/*media responsivity*/
+@media (max-width: 1340px) {
+    #areaConteudo {
+        width:1278px;
+    }
+}
+
+@media (max-width:1280px) {
+    #areaConteudo {
+        width:1000px;
+    }
+}
+
+@media (max-width: 1010px) {
+    #areaConteudo {
+        width: 800px;
+    }
+}
+
+@media (max-width: 810px) {
+    #areaConteudo {
+        width: 600px;
+    }
+}
+
+@media (max-width: 610px) {
+    #areaConteudo {
+        width: 400px;
+    }
+    input {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 410px) {
+    #areaConteudo {
+        width: 210px;
+    }
+    h2 {
+        font-size: 30px;
+        margin: 4px;
+        text-align: center;
+    }
+    label {
+        font-size:16px;
+        text-align: center;
+    }
+}
+
+form {
+    margin: auto;
+    height: max-content;
+    text-shadow: 0px 0px 5px black;
+    font-size: 30px;
+    background-color: #163FE5;
+    color: rgb(231, 122, 12);
+    border-radius: 16px;
+    border: 2px solid;
+    padding: 16px;
+}
+
+@media (max-width: 410px) {
+    form {
+        padding: 4px;
+    }
 }
 
 h2 {
-    width: max-content;
+    width: 90%;
     margin: auto;
+    text-align: center;
 }
+
+@media (max-width: 410px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
 label {
     width: max-content;
-    margin:10px;
+
 }
+
+
 input {
-    width: 1175px;
-    height: 20px;
+    width: 90%;
     font-size: 38px;
-    border-radius: 1rem;
+    border-radius: 16px;
     padding: 16px;
     gap: 1rem;
     margin: 10px;
     background-color: #163FE5;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: text;  
+}
+
+@media (max-width: 610px) {
+    input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 410px) {
+    input {
+        font-size: 12px;
+        padding: 8px;
+        margin: 0px;
+        justify-self: center;
+    }
+    
 }
 
 input:focus {
@@ -43,7 +128,14 @@ button{
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
-}  
+} 
+
+@media (max-width: 410px) {
+    button {
+        padding: 6px;
+        margin:4px auto;
+    }
+}
 
 button:hover{
     cursor: pointer;
@@ -54,28 +146,29 @@ button:active {
     background-color:#647ee6;
 }
 
-form{
-    margin: auto;
-    width: max-content;
-    text-shadow: 0px 0px 5px black;
-    font-size: 38px;
-    background-color: #163FE5;
-    color: rgb(231, 122, 12);
-    border-radius: 16px;
-    border: 2px solid;
-    padding: 16px;
-
+@media (max-width: 410px) {
+    button {
+        font-size: 16px;
+    }
 }
 
 p{
-    font-size: 35px;
+    text-align: center;
+    font-size: 30px;
     padding: 8px;
-    width: max-content;
+    width: 90%;
     text-shadow: 0rem 0rem 01rem black;
     border-radius: 32px;
-    margin: 10px auto;
+    margin: 8px auto;
 }
 
+@media (max-width: 410px) {
+    p {
+        font-size: 16px;
+        margin:4px;
+        padding: 0px;
+    }
+}
 footer {
     position: fixed;
     bottom: 0;
