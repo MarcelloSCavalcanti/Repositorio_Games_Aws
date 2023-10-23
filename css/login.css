@@ -17,47 +17,48 @@ div{
    padding:15px;
    padding-left: 1rem;
    padding-right: 1rem;
-   display: flex;
-   
-   display: grid;
-   margin-bottom: 10px;
-  margin-right: 30px;
-  margin: 0 auto;
-  border-radius: 1rem;
- 
 }
+section {
+   height: 85.9vh;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+div{
+   padding:15px;
+   padding-left: 16px;
+   padding-right: 1px;
+   display: flex;
+   margin: auto auto;
+   border-radius: 1px;
+}
+
 form{
+   text-shadow: 0px 0px 5px black;
+   font-size: 65px;
+   background-color: #163FE5;
    color: rgb(231, 122, 12);
-   display: table-column;
-   place-items: flex;
-   padding: 1rem;
    margin:  auto;
-   border-radius: 1rem;
+   border-radius: 16px;
    border: 2px solid;
-   margin-bottom: 10px;
-   
-
-
+   padding: 16px;
 }
 input {
-   width: 300px; 
-   height: 20px;
-   font-size: medium;
-   text-align: center;
+   width: max-content; 
+   font-size: 65px;
    border-radius: 1rem;
-   padding: 0.4rem;
-   gap: 1rem;
+   padding: 16px;
    margin-bottom: 10px;
+   background-color: #163FE5;
+   box-shadow: inset 0px 0px 48px 1px black;
+   cursor: text;  
 }
-button{
-   width: 300px; 
-   height: 33px;
-   font-size: 30px;
-   border-radius: 2rem;
-   margin-bottom: 10px;
-   
-   
 
+input:focus {
+   color: white;
+   background-color:#0425a6;
+   transition:0.3s;
 }
 @media screen and (max-width: 450px) and (max-height: 900px) {
    div {
@@ -68,46 +69,44 @@ button{
     main {
      padding: 15px;
       }}
+
+button{
+   display: block;
+   margin: 16px auto;
+   font-size: 65px;
+   border-radius: 2rem;
+   padding: 16px;
+   background-color: #163FE5;
+   text-shadow: 0px 0px rem black;
+   border-radius: 2rem;
+   box-shadow: inset 0px 0px 48px 1px black;
+   cursor: default;
+}
+
+button:hover{
+   cursor: pointer;
+}
+
+button:active {
+   scale: 0.95;
+   background-color:#647ee6;
+}
+
 label{
    display: grid;
    place-items: left;
    border-radius: 1rem;
    margin-bottom: 1px;
 }
-input{
-   width: min-content;
-   background-color: #163FE5;
-   padding: 0.5rem;
-   border-radius: 2rem;
-   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;
-}
-button{
-   width: min-content;
-   background-color: #163FE5;
-   padding-left: 4.5rem;
-   padding-right: 4.5rem;
-   padding-bottom: 2.5rem;
-   padding-top: 0.2rem;
-   text-shadow: 0rem 0rem 0.1rem black;
-   border-radius: 2rem;
-   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;
-   margin-bottom: 10px;
-}
+
 p{
-   width: min-content;
    background-color: #163FE5;
-   padding-left: 3rem;
-   padding-right: 3rem;
-   padding-top: 0.5rem;
-   padding-bottom: 0.5rem;
+   padding: 8px 8px 8px 8px;
+   width: max-content;
    text-shadow: 0rem 0rem 0.1rem black;
-   border-radius: 2rem;
+   border-radius: 32px;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   cursor: default;
-   margin-bottom: 10px;
-   
+   margin: 16px auto;
 }
 .acao:hover {
    transition: 0.75s;
@@ -206,4 +205,13 @@ button:hover {
 
 button:not(:hover) {
    transition: 0.75s;
+}
+p:active {
+   scale: 0.95;
+   background-color:#647ee6;
+}
+
+footer {
+   position: fixed;
+   bottom: 0;
 }

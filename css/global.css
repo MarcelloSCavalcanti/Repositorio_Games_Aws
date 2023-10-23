@@ -8,6 +8,10 @@
     border: 0;
 }
 
+body {
+    background-image: url("/src/img/backgroundCinzaEscuroFundo20.png");
+}
+
 /*para andar pela página de forma suave quando selecionado o retornar para o topo*/
 html{
     scroll-behavior: smooth;
@@ -132,7 +136,6 @@ header nav ul{
 }
 
 main {
-    background-image: url("/src/img/backgroundCinzaEscuroFundo20.png");
     margin: 0 auto;
     height: 0 auto;
     width: 0 auto;
@@ -145,20 +148,23 @@ main {
 }
 
 footer {
+    background-color: #163FE5;
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
-    background-color: #163FE5;
     align-items: center;
-    font-size: 24px;
-    text-shadow: 0rem 0rem 0.1rem black;
-    cursor: default;
+    width: 100%;
+    font-size: 2rem;
 }
 
 footer nav ul{
     display: flex;
+    gap: 20px;
     list-style: none;
-    gap:48px;
+    padding: 0 48px;
+}
+
+h6 {
+    padding: 0 48px;
 }
 
 @media (max-width: 660px) {
