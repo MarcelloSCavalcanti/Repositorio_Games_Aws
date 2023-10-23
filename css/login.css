@@ -17,6 +17,9 @@ div{
    padding:15px;
    padding-left: 1rem;
    padding-right: 1rem;
+   display: flex;
+   margin: auto auto;
+   border-radius: 1px;
 }
 section {
    height: 85.9vh;
@@ -25,14 +28,7 @@ section {
    align-content: center;
 }
 
-div{
-   padding:15px;
-   padding-left: 16px;
-   padding-right: 1px;
-   display: flex;
-   margin: auto auto;
-   border-radius: 1px;
-}
+
 
 form{
    text-shadow: 0px 0px 5px black;
