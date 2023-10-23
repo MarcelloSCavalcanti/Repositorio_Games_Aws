@@ -18,6 +18,7 @@ header {
     background-color: #163FE5;
     padding: 0 48px;
     top: inherit;
+    box-shadow: 0px 0px 32px #163FE5;
 }
 
 @media (max-width: 660px) {
@@ -155,7 +156,7 @@ main ul  {
 
 .game-img:hover {
     transform: scale(1.11);
-    filter: drop-shadow(5px 5px 10px #163FE5);
+    filter: drop-shadow(5px 5px 10px #d3c013);
 }
 
 .legenda {
@@ -189,17 +190,11 @@ li {
 }
 
 h2 {
-    font-size: 2.5rem;
-    max-width: max-content;
-    margin: 16px auto;
-    cursor: default;
+    font-family: "carter one";
     text-align: center;
-    background-color: #163FE5;
-    padding: 10px;
-    text-shadow: 0px 0px 1px black;
-    border-radius: 16px;
-    box-shadow: inset 0px 0px 48px 1px black;
-    cursor: default;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
 
 img {
@@ -698,6 +693,23 @@ img {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: #163FE5;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0rem 0rem 1rem #163FE5;
+    text-shadow: 0rem 0rem 0.1rem black;
+    cursor: default;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    gap:48px;
+}
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
     text-shadow: 0rem 0rem 0.5rem black;
@@ -739,3 +751,4 @@ img {
     font-size: 1rem;
     }
 }
+
