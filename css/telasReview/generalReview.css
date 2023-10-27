@@ -64,6 +64,12 @@ input {
     width: 150px;
 }
 
+input:focus {
+    color: white;
+    background-color:#0425a6;
+    transition:0.3s;
+}
+
 #avaliacaoGame {
     margin: 0px 20px;
     border-radius: 20px;
