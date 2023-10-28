@@ -9,12 +9,12 @@ Cada tela inicial do projeto foi dividida para um participante do grupo sendo so
 
 Ele será composto em 5 etapas (sprints), sendo:
 
-1 - Desenvolvimento da ideia do projeto --------------------- (Apresentado no dia 13/09/2023)
+1 - Desenvolvimento da ideia do projeto ----------------------- (Apresentado no dia 13/09/2023)
 
-2 - Desenvolvimento da estrutura (HTML) do arquivo----------- (Apresentado no dia 20/09/2023)
+2 - Desenvolvimento da estrutura (HTML) dos arquivos ---------- (Apresentado no dia 20/09/2023)
 
-3 - Desenvolvimento do visual (CSS) do arquivo
+3 - Desenvolvimento do visual (CSS) dos arquivos -------------- (Apresentação no dia 23/10/2023)
 
-4 - A Ser discutida ainda
+4 - Desenvolvimento da "animação" (JS) dos arquivos ----------- (Apresentação ainda não efetuada)
 
-5 - A Ser discutida ainda
+5 - Desenvolvimento do banco de dados ------------------------- (Apresentação ainda não efetuada)
