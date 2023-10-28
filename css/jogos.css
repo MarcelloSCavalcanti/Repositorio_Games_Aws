@@ -139,6 +139,8 @@ main {
     margin: 0 auto;
     height: 0 auto;
     width: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px; 
 }
 
 main ul  {
@@ -147,6 +149,7 @@ main ul  {
     flex-wrap: wrap;
     box-shadow: black;
     filter:drop-shadow(20px 20px 10px black);
+    padding-top: 30px;
     padding-bottom: 50px; 
     margin-left: 90px;
     margin-right: 90px;  
@@ -155,6 +158,7 @@ main ul  {
 
 .game-img:hover {
     transform: scale(1.11);
+    transition: 0.3s;
     filter: drop-shadow(5px 5px 10px #163FE5);
 }
 
@@ -191,7 +195,7 @@ li {
 h2 {
     font-size: 2.5rem;
     max-width: max-content;
-    margin: 16px auto;
+    margin: 0 auto;
     cursor: default;
     text-align: center;
     background-color: #163FE5;
@@ -492,6 +496,14 @@ img {
     .legenda a {
         font-size: 13px;
     }
+
+    h6 {
+        font-size: 15px;
+    }
+
+    footer ul li {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1170px) {
@@ -698,6 +710,33 @@ img {
     }
 }
 
+@media (max-width: 330px) {
+    body {
+        width: 350px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    main img {
+        height: 250px; 
+        width: 170px;
+    } 
+    
+    main ul {
+        gap: 30px;
+    }
+    
+    .legenda {
+        height: 20px;
+    }
+    .legenda a {
+        font-size: 8px;
+    }
+}
+
+
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
     text-shadow: 0rem 0rem 0.5rem black;
@@ -738,4 +777,24 @@ img {
     #contato {
     font-size: 1rem;
     }
+}
+
+footer {
+    background-color: #163FE5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0 48px;
+}
+
+h6 {
+    padding: 0 48px;
 }

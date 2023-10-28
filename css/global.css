@@ -148,11 +148,11 @@ main {
 }
 
 footer {
+    padding:4px 20px;
     background-color: #163FE5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     font-size: 2rem;
 }
 
@@ -160,19 +160,74 @@ footer nav ul{
     display: flex;
     gap: 20px;
     list-style: none;
-    padding: 0 48px;
+    padding: 0 48px 0 8px;
+}
+
+@media (max-width: 1250px) {
+    ul {
+    font-size: 24px;
+    margin:0;
+    }
+
+    h6{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1170px) {
+    ul {
+    font-size: 20px;
+    margin:0;
+    }
+
+    h6{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1010px) {
+    ul {
+    font-size: 20px;
+    margin:0;
+    }
+
+    h6{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    ul {
+    font-size: 16px;
+    margin:0;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 440px) {
+    h6{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    h6{
+        font-size: 8px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    footer {
+        padding:4px 4px;
+    }
 }
 
 h6 {
-    padding: 0 48px;
-}
-
-@media (max-width: 660px) {
-    h6 {
-        font-size: 0.6rem;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
+    margin: 8px 8px 8px 48px;
 }
 
 @media (max-width: 320px) {
@@ -183,12 +238,12 @@ h6 {
 
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
-    text-shadow: 0rem 0rem 0.5rem black;
+    text-shadow: 0px 0px 1px black;
 }
 
 @media (max-width: 660px) {
     .nav-bar-bot {
-        margin-left: 16px;
+        margin-left: 8px;
     }
 }
 
