@@ -225,7 +225,7 @@ p:active {
  }
  
 /* ---------- Estilos dinâmicos ---------- */
- .required-popup::after {
+.required-popup::after {
    top: 0;
    right: 0;
    color: #DFDFDF;
@@ -234,20 +234,39 @@ p:active {
    width: auto;
    display: block;
    background-color: #202020;
- }
+}
  input.error {
    border: solid 2px #992020;
    background-color: #CCBBBB;
    color: #662020;
- }
+}
  
- input.correct {
+input.correct {
    background-color: #BBCCBB;
    border: solid 4px #206620;
    color: #206620;
- }
+}
  
- .visible {
+.visible {
    display: block;
- }
+}
 
+.mensagem-erro-senha {
+   color: red; /* Cor vermelha para indicar um erro */
+   font-size: 20px; /* Tamanho da fonte */
+   /* Adicione outros estilos conforme necessário */
+   border-color: firebrick;
+   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+   padding: 12px 23px 12px 23px;
+   border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+}
+.mensagem-erro-gmail {
+   color: red; /* Cor vermelha para indicar um erro */
+   font-size: 20px; /* Tamanho da fonte */
+   /* Adicione outros estilos conforme necessário */
+   border-color: firebrick;
+   box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+   padding: 15px 14px 14px 15px;
+   border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+   margin-bottom: 30px;
+}
