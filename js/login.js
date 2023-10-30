@@ -30,13 +30,15 @@ let usernameHelper = document.getElementById("username-helper");
 togglePopup(usernameInput, usernameLabel)
 
 // Validar valor do input
+const mensagemGmailInvalida = "Escreva um e-mail válido";
+const mensagemSenhaInvalida = "Escreva uma senha válida";
 usernameInput.addEventListener("change", (e)=> {
     let valor = e.target.value
   
     if(valor.includes("@") && valor.includes(".com") && valor.includes("gmail")){
       estilizarInputCorreto(usernameInput, usernameHelper);
     } else {
-      usernameHelper.innerText = "Escreva uma gmail valilido";
+      usernameHelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemGmailInvalida}</span>`;
       estilizarInputIncorreto(usernameInput, usernameHelper)
     }
 })
@@ -47,13 +49,15 @@ let senhahelper = document.getElementById("password-helper");
 
 togglePopup(senhaInput, senhaLabel)
 
-// Validar valor do input
-senhaInput.addEventListener("change", (e)=> {
-    let valor = e.target.value
-  
-    if(valor.length < 3){
-      senhahelper.innerText = "Escreva uma senha valilido";
-      estilizarInputIncorreto(senhaInput, senhahelper);
+// Defina uma variável para armazenar o texto da mensagem de erro
+
+senhaInput.addEventListener("change", (e) => {
+    let valor = e.target.value;
+
+    if (valor.length < 3) {
+        senhahelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemSenhaInvalida}</span>`;
+        estilizarInputIncorreto(senhaInput, senhahelper);
     } else {
-      estilizarInputCorreto(senhaInput, senhahelper)}
-  })
+        estilizarInputCorreto(senhaInput, senhahelper);
+    }
+})
