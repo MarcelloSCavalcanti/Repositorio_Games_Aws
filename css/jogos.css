@@ -1,6 +1,4 @@
 * {
-    color:orangered;
-    font-family: 'Inter', sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -143,6 +141,125 @@ main {
     padding-bottom: 30px; 
 }
 
+/*adicionei este bloco todasImg*/
+#todasImg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px 90px; 
+    /*border: 5px solid gold;*/
+}
+
+/*adicionei este bloco imgsComLegendas*/
+#imgsComLegendas {
+    /*border: 5px solid gold;*/
+    max-width: max-content;
+}  
+
+/*adicionei este bloco img*/
+section img {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    filter:drop-shadow(20px 20px 10px black);
+}
+
+/*adicionei este bloco legendas*/
+#legenda {
+    font-family: Inter;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+    width: 22.38%;
+    height: 43px;
+}
+
+/*adicionei este bloco navReview*/
+#navReview {
+    font-family: 'Carter One', cursive;
+    text-shadow: 0.3rem 0.3rem 0.3rem black;
+    width: 70px;
+    height: 35px;
+    font-size: 140%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: -100px;
+    margin-top: 0px;
+    border: 5px solid gold;
+    background-color: #163FE5;
+    filter: drop-shadow(10px 10px 5px #163FE5);
+    list-style: none;
+    padding: 5px 25px 10px 15px;
+    border-radius: 20px;
+}
+
+/*adicionei este bloco a*/
+a {
+    color:orangered;
+    text-decoration: none;
+    
+}
+
+/*adicionei este bloco divSemGap*/
+#divSemGap {
+    /*border: 5px solid gold;*/
+}
+
+/*adicionei este bloco divSemGap*/
+.divSemGap {
+    gap: 0px;
+    
+}
+
+/*adicionei este bloco maxSizeImg*/
+.maxSizeImg {
+    width: 250px;
+    height: 350px;
+}
+
+/*adicionei este bloco transition*/
+.transition {
+    transition: 0.6s;
+}
+
+/*adicionei este bloco dropShadowImg*/
+.dropShadowImg {
+    filter: drop-shadow(20px 20px 10px #163FE5);
+}
+
+/*adicionei este bloco visible1*/
+.visible1 {
+    display: block;
+}
+
+/*adicionei este bloco visible2*/
+.visible2 {
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*adicionei este bloco visible3*/
+.visible3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+/*adicionei este bloco noVisible*/
+.noVisible {
+    display: none;
+}
+
+
+
+/*removerei este bloco main ul
 main ul  {
     display: flex;
     justify-content: center;
@@ -154,14 +271,16 @@ main ul  {
     margin-left: 90px;
     margin-right: 90px;  
     gap: 50px;
-}
+}*/
 
+/*removerei este bloco game-img:hover
 .game-img:hover {
     transform: scale(1.11);
     transition: 0.3s;
     filter: drop-shadow(5px 5px 10px #163FE5);
-}
+}*/
 
+/*removerei este bloco legenda
 .legenda {
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(1px);
@@ -173,16 +292,19 @@ main ul  {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     opacity: 0;
-}
+}*/
 
+/*removerei este bloco li
 li {
     list-style: none;
-}
+}*/
 
+/*removerei este bloco game-img:hover legenda
 .game-img:hover .legenda {
     opacity: 1;
-}
+}*/
 
+/*removerei este bloco legenda
 .legenda a {
     width: 100%;
     display: flex;
@@ -190,9 +312,16 @@ li {
     align-items: center;
     font-size: 16px;
     text-align: center;
-}
+}*/
+
+/*removerei este bloco img
+img {
+    border-radius: 20px;
+}*/
 
 h2 {
+    font-family: 'Inter', sans-serif;
+    color:orangered;
     font-size: 2.5rem;
     max-width: max-content;
     margin: 0 auto;
@@ -203,12 +332,9 @@ h2 {
     text-shadow: 0px 0px 1px black;
     border-radius: 16px;
     box-shadow: inset 0px 0px 48px 1px black;
-    cursor: default;
 }
 
-img {
-    border-radius: 20px;
-}
+/*-----Reponsividade da tela jogos-----*/
 /*Resolução 4k*/
 @media (max-width: 4096px) {
     h2{
@@ -796,5 +922,7 @@ footer nav ul{
 }
 
 h6 {
+    font-family: 'Inter', sans-serif;
+    color:orangered;
     padding: 0 48px;
 }
