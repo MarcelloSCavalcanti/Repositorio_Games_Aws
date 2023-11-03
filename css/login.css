@@ -257,7 +257,7 @@ input.correct {
    /* Adicione outros estilos conforme necessário */
    border-color: firebrick;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   padding: 12px 23px 12px 23px;
+   padding: 14px 100px 14px 100px;
    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
 }
 .mensagem-erro-gmail {
@@ -266,7 +266,7 @@ input.correct {
    /* Adicione outros estilos conforme necessário */
    border-color: firebrick;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-   padding: 15px 14px 14px 15px;
+   padding: 14px 100px 14px 100px;
    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
    margin-bottom: 30px;
 }
