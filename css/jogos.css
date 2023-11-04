@@ -178,7 +178,7 @@ section img {
     opacity: 0.8;
 }
 
-/*adicionei este bloco navReview*/
+/*adicionei este bloco navReview e efeito glowing*/
 #navReview {
     font-family: 'Carter One', cursive;
     text-shadow: 0.3rem 0.3rem 0.3rem black;
@@ -191,12 +191,19 @@ section img {
     z-index: 1;
     margin-left: -100px;
     margin-top: 0px;
-    border: 5px solid gold;
-    background-color: #163FE5;
-    filter: drop-shadow(10px 10px 5px #163FE5);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    animation: glowing 20s linear infinite;
+    background-size: 400%;
+    filter: drop-shadow(6px 7px 5px blue);
     list-style: none;
     padding: 5px 25px 10px 15px;
     border-radius: 20px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 /*adicionei este bloco a*/
