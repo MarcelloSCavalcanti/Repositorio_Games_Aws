@@ -1,4 +1,3 @@
-
 function togglePopup(input, label) {
     input.addEventListener("focus", () => {
       label.classList.add("required-popup");
