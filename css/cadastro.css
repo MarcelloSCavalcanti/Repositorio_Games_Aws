@@ -57,7 +57,10 @@ button{
 button:hover{
     cursor: pointer;
 }
-
+#areConteudo {
+    padding: 32px 0px;
+    margin: 0 auto;
+}
 button:active {
     scale: 0.95;
     background-color:#647ee6;
@@ -106,7 +109,7 @@ input.correct {
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 100px 14px 100px;
-    border-radius: 2rem 2rem 2rem 2rem; /* Apenas a parte superior terá borda arredondada */
+    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
     transition: 1s;
  }
  .mensagem-erro-gmail {
@@ -115,8 +118,8 @@ input.correct {
     /* Adicione outros estilos conforme necessário */
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    padding: 11px 150px 11px 400px;
-    border-radius:  0 0 2rem 2rem; /* Apenas a parte superior terá borda arredondada */
+    padding: 11px 100px 14px 100px;
+    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
    margin-left: 12px;
  }
 div{
@@ -125,6 +128,45 @@ div{
     font-size: 2rem;
     
 }
+.mensagem-erro-password2 {
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 20px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 85px 14px 85px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+ .mensagem-erro-password {
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 18px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 12px 14px 12px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+ .mensagem-erro-nome{
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 17px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 11px 14px 11px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+.mensagem-erro-gamil2{
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 20px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 85px 14px 85px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
 
-  
+}
  

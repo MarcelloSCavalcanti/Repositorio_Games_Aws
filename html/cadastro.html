@@ -34,10 +34,11 @@
     </header>
     <!--Corpo na qual se tem o conteeúdo principal da página-->
     <main>
-        <section id="areaConteudo">
+        <section id="areConteudo">
             <!--Formulário para cadastro contendo Nome, email, senha e checkbox para receber novos emails-->
-            <form action="">
-                <h2>Cadastro</h2><p>Preencha o formulário abaixo</p> 
+            <form id="seuFormulario" action="" method="post">
+                <h2>Cadastro</h2>
+                <p>Preencha o formulário abaixo</p> 
                 <div>
                 <labe for="name">Nome</labe><br>
                 <h1 id="username-helper" class="helper-text"></h1>
@@ -54,7 +55,7 @@
                 <label for="password2">Confirme sua senha</label><br>
                 <h1 id="password2-helper" class="helper-text"></h1>
                 <input class="acao" type="password" id="password2" name="password2" placeholder="Digite sua senha"><br><br>
-                <button type="submit">Cadastrar</button>
+                <button id="botaoCadastro" type="submit">Cadastrar</button>
             </form>
         </section>
     </main>
