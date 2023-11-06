@@ -101,7 +101,7 @@ p{
       font-size: 1rem;
    }
    form {
-      font-size: 15px;
+      font-size: 12px;
    }
 
 input{
@@ -138,12 +138,12 @@ p{
    }
 
    h1{
-      font-size: 4rem;
+      font-size: 3rem;
    }
 
    form {
-      font-size: 4rem;
-      padding: 6rem 6rem 6rem 6rem;
+      font-size: 1rem;
+      padding: 2rem 1rem 2rem 1rem;
    }
 }
 
@@ -219,21 +219,66 @@ input.correct {
 }
 
 .mensagem-erro-senha {
-   color: red; /* Cor vermelha para indicar um erro */
-   font-size: 20px; /* Tamanho da fonte */
-   /* Adicione outros estilos conforme necessário */
+   color: red; 
+   font-size: 20px; 
    border-color: firebrick;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
    padding: 14px 100px 14px 100px;
-   border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+   border-radius: 2rem 2rem 0 0;
 }
 .mensagem-erro-gmail {
-   color: red; /* Cor vermelha para indicar um erro */
-   font-size: 20px; /* Tamanho da fonte */
-   /* Adicione outros estilos conforme necessário */
+   color: red;
+   font-size: 20px; 
    border-color: firebrick;
    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
    padding: 14px 100px 14px 100px;
-   border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+   border-radius: 2rem 2rem 0 0; 
    margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) and (max-height: 2000px) {
+   div{
+      padding: 1rem;
+   }
+
+   h1{
+      font-size: 2rem;
+   }
+
+   form {
+      font-size: 2rem;
+      padding: 2rem 1rem 2rem 1rem;
+   }
+   button{
+      font-size: 1.4rem;
+      padding: 16px  40px  16px  40px
+   }
+   p{
+      background-color: #163FE5;
+      padding: 16px  32px  16px  32px;
+      width: max-content;
+      text-shadow: 0rem 0rem 0.1rem black;
+      border-radius: 32px;
+      margin: 16px auto;
+      font-size: 1.4rem;
+   }
+   label{
+      border-radius: 1rem;
+      margin-bottom: 1px;
+      font-size: 1.4rem;
+   }
+   
+   input {
+      width: max-content; 
+      font-size: 1.4rem;
+      border-radius: 1rem;
+      padding: 16px;
+      margin-bottom: 10px;
+
+  
+   }
+   .mensagem-erro-senha {
+      font-size: 0.7rem; 
+      padding: 14px 86px 14px 86px;
+     
+   }
 }

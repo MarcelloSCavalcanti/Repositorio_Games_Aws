@@ -1,4 +1,4 @@
-/*media responsivity*/
+
 @media (max-width: 1340px) {
     #areaConteudo {
         width:1278px;
@@ -21,6 +21,8 @@
     #areaConteudo {
         width: 600px;
     }
+      
+ 
 }
 
 @media (max-width: 610px) {
@@ -30,6 +32,7 @@
     input {
         font-size: 20px;
     }
+    
 }
 
 @media (max-width: 410px) {
@@ -74,7 +77,9 @@ h2 {
 @media (max-width: 410px) {
     h2 {
         font-size: 30px;
+
     }
+  
 }
 
 label {
@@ -108,6 +113,14 @@ input {
         margin: 0px;
         justify-self: center;
     }
+    .mensagem-erro {
+        color: red; 
+        font-size: 12px; 
+        border-color: firebrick;
+        box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+        padding: 14px 120px 30px 120px;
+        border-radius: 2rem 2rem 0 0;
+     }
     
 }
 
@@ -150,6 +163,8 @@ button:active {
     button {
         font-size: 16px;
     }
+      
+ 
 }
 
 p{
@@ -173,4 +188,70 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+    
+  }
+  
+  .orientacao {
+    margin-top: 1.5rem;
+    font-size: .7rem;
+  }
+
+  
+  /* ---------- Estilos dinâmicos ---------- */
+  .required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }
+.mensagem-erro{
+    color: red; 
+    font-size: 30px; 
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 14px 120px 30px 120px;
+    border-radius: 2rem 2rem 0 0;
+ }
+ 
+ @media (max-width: 810px) {
+    p {
+        font-size: 16px;
+        margin:4px;
+        padding: 0px;
+    }
+    .mensagem-erro{
+        color: red; 
+        font-size: 16px; 
+        border-color: firebrick;
+        box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+        padding: 6px 120px 30px 120px;
+        border-radius: 2rem 2rem 0 0;
+     }
 }
