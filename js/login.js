@@ -2,8 +2,6 @@ function togglePopup(input, label) {
     input.addEventListener("focus", () => {
       label.classList.add("required-popup");
     });
-  
-    // Ocultar popup de campo obrigatório
     input.addEventListener("blur", () => {
       label.classList.remove("required-popup");
     });
@@ -20,7 +18,6 @@ function estilizarInputIncorreto(input, helper) {
     input.classList.add("error");
     input.classList.remove("correct");}
 
-// ---------- VALIDAÇÃO EMAIL ---------- //
 let usernameInput = document.getElementById("gmail");
 let usernameLabel = document.querySelector('label[for="gmail"]');
 let usernameHelper = document.getElementById("username-helper");
@@ -28,7 +25,7 @@ let usernameHelper = document.getElementById("username-helper");
 
 togglePopup(usernameInput, usernameLabel)
 
-// Validar valor do input
+
 const mensagemGmailInvalida = "Escreva um e-mail válido";
 const mensagemSenhaInvalida = "Escreva uma senha válida";
 usernameInput.addEventListener("change", (e)=> {
@@ -48,7 +45,6 @@ let senhahelper = document.getElementById("password-helper");
 
 togglePopup(senhaInput, senhaLabel)
 
-// Defina uma variável para armazenar o texto da mensagem de erro
 
 senhaInput.addEventListener("change", (e) => {
     let valor = e.target.value;
@@ -66,7 +62,7 @@ if (usernameInput && usernameHelper) {
 
   usernameInput.addEventListener("blur", function () {
       this.style.backgroundColor = "";
-      usernameHelper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+      usernameHelper.innerHTML = ""; 
   });
 } else {
   console.error("Elementos não encontrados. Verifique os IDs fornecidos.");
@@ -78,7 +74,7 @@ if (senhaInput && senhahelper) {
 
   senhaInput.addEventListener("blur", function () {
       this.style.backgroundColor = "";
-      senhahelper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+      senhahelper.innerHTML = ""; 
   });
 } else {
   console.error("Elementos não encontrados. Verifique os IDs fornecidos.");
@@ -101,11 +97,11 @@ elementosAcao.forEach(function(elemento) {
 
 function adicionarEventoTransicao(input) {
   input.addEventListener("focus", function () {
-      this.style.borderColor = "blue"; // ou qualquer cor desejada
+      this.style.borderColor = "blue"; 
       this.style.transition ="0.75s";
   });
 
   input.addEventListener("blur", function () {
-      this.style.borderColor = ""; // redefinir para a cor padrão ou remova esta linha se não desejar redefinir
+      this.style.borderColor = ""; 
   });
 }
