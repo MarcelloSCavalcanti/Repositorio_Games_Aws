@@ -1,4 +1,4 @@
-// Função para mostrar/ocultar popup de campo obrigatório
+
 function togglePopup(input, label) {
   input.addEventListener("focus", () => {
     label.classList.add("required-popup");
@@ -9,21 +9,18 @@ function togglePopup(input, label) {
   });
 }
 
-// Função para estilizar campo correto
 function estilizarInputCorreto(input, helper) {
   helper.classList.remove("visible");
   input.classList.remove("error");
   input.classList.add("correct");
 }
 
-// Função para estilizar campo incorreto
 function estilizarInputIncorreto(input, helper) {
   helper.classList.add("visible");
   input.classList.add("error");
   input.classList.remove("correct");
 }
 
-// ---------- VALIDAÇÃO USERNAME ---------- //
 
 let usernameInput = document.getElementById("name");
 let usernameLabel = document.querySelector('label[for="name"]');
@@ -66,19 +63,19 @@ if (usernameInput) {
   
     usernameInput.addEventListener("blur", function () {
         this.style.backgroundColor = "";
-        usernameHelper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+        usernameHelper.innerHTML = ""; 
     });
   } else {
     console.error("Elementos não encontrados. Verifique os IDs fornecidos.");
   }
 function adicionarEventoTransicao(input) {
   input.addEventListener("click", function () {
-      this.style.borderColor = "blue"; // ou qualquer cor desejada
+      this.style.borderColor = "blue"; 
       this.style.transition ="0.75s";
   });
 
   input.addEventListener("j", function () {
-      this.style.borderColor = ""; // redefinir para a cor padrão ou remova esta linha se não desejar redefinir
+      this.style.borderColor = ""; 
   });
 }
 var elementosAcao = document.querySelectorAll('.acao');
@@ -98,17 +95,14 @@ elementosAcao.forEach(function(elemento) {
 });
 function adicionarEventoTransicao(input) {
   input.addEventListener("focus", function () {
-      this.style.borderColor = "blue"; // ou qualquer cor desejada
+      this.style.borderColor = "blue"; 
       this.style.transition ="0.75s";
   });
 
   input.addEventListener("blur", function () {
-      this.style.borderColor = ""; // redefinir para a cor padrão ou remova esta linha se não desejar redefinir
+      this.style.borderColor = ""; 
   });
 }
-// Corrige este algoritmo:
-
-  // Corrige este algoritmo:
 
   let gmailInput = document.getElementById("email");
   let gmailLabel = document.querySelector('label[for="email"]');
@@ -131,7 +125,7 @@ function adicionarEventoTransicao(input) {
 
     gmailInput.addEventListener("blur", function () {
       this.style.backgroundColor = "";
-      gmailHelper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+      gmailHelper.innerHTML = ""; 
     });
   }
 
@@ -162,7 +156,7 @@ gmail2Input.addEventListener("input", function (e) {
 
     gmail2Input.addEventListener("blur", function () {
       this.style.backgroundColor = "";
-      gmail2Helper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+      gmail2Helper.innerHTML = ""; 
     });
   }
   let passwordInput = document.getElementById("password");
@@ -174,7 +168,7 @@ gmail2Input.addEventListener("input", function (e) {
     let valor = e.target.value;
   
      {
-      if (regex.test(valor)) {  // Corrigido aqui para verificar o tamanho usando length
+      if (regex.test(valor)) { 
         estilizarInputCorreto(passwordInput, passwordHelper);
       } else {
         estilizarInputIncorreto(passwordInput, passwordHelper);
@@ -190,7 +184,7 @@ gmail2Input.addEventListener("input", function (e) {
   
     passwordInput.addEventListener("blur", function () {
       this.style.backgroundColor = "";
-      passwordHelper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+      passwordHelper.innerHTML = ""; 
     });
   }
   
@@ -202,7 +196,7 @@ gmail2Input.addEventListener("input", function (e) {
     let valor = e.target.value;
  {
   if (regex.test(valor)){
-      if (valor === passwordInput.value) {  // Corrigido aqui para comparar com passwordInput.value
+      if (valor === passwordInput.value) { 
         estilizarInputCorreto(password2Input, password2Helper);
       } 
       else {
@@ -221,7 +215,7 @@ gmail2Input.addEventListener("input", function (e) {
   
     password2Input.addEventListener("blur", function () {
       this.style.backgroundColor = "";
-      password2Helper.innerHTML = ""; // Limpar a mensagem ao sair do elemento.
+      password2Helper.innerHTML = ""; 
     });
   }
 let formulario = document.getElementById("seuFormulario");
@@ -229,48 +223,47 @@ let botaoCadastro = document.getElementById("botaoCadastro");
 
 formulario.addEventListener("submit", function (event) {
   if (!validarCampos()) {
-    event.preventDefault(); // Impede o envio do formulário se os campos não estiverem corretos
+    event.preventDefault();
   }
 });
 
 botaoCadastro.addEventListener("click", function () {
   if (!validarCampos()) {
-    // Impede a submissão do formulário se os campos não estiverem corretos
+
     alert("Por favor, corrija os campos antes de enviar o formulário.");
   } else {
-    // Se todos os campos estiverem corretos, você pode executar outras ações aqui se necessário
+  
   }
 });
   function validarCampos() {
-    // Validar o campo de nome de usuário
+
     let usernameValor = usernameInput.value;
     if (!regexNome.test(usernameValor)) {
       estilizarInputIncorreto(usernameInput, usernameHelper);
       return false;
     }
-  
-    // Validar o campo de email
+
     let gmailValor = gmailInput.value;
     if (!regexGmail.test(gmailValor)) {
       estilizarInputIncorreto(gmailInput, gmailHelper);
       return false;
     }
   
-    // Validar o campo de confirmação de email
+
     let gmail2Valor = gmail2Input.value;
     if (!regexGmail.test(gmail2Valor) || gmail2Valor !== gmailValor) {
       estilizarInputIncorreto(gmail2Input, gmail2Helper);
       return false;
     }
   
-    // Validar o campo de senha
+
     let passwordValor = passwordInput.value;
     if (!regex.test(passwordValor)) {
       estilizarInputIncorreto(passwordInput, passwordHelper);
       return false;
     }
   
-    // Validar o campo de confirmação de senha
+
     let password2Valor = password2Input.value;
     if (!regex.test(password2Valor) || password2Valor !== passwordValor) {
       estilizarInputIncorreto(password2Input, password2Helper);
@@ -281,13 +274,12 @@ botaoCadastro.addEventListener("click", function () {
     return true;
   }
   
-  // Adicionar um evento de validação no formulário ou botão de envio
+
   formulario.addEventListener("submit", function (event) {
     if (!validarCampos()) {
-      event.preventDefault(); // Impede o envio do formulário se os campos não estiverem corretos
+      event.preventDefault(); 
     }
     else {
-      // Se todos os campos estiverem corretos, limpa o formulário
       formulario.reset();
     }
   });
