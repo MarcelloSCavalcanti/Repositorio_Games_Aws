@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    user-select:none;/*para evitar que as pessoas selecionem o texto geral do site apenas podendo selcionar quando ffor um form ou se ativado pelo código*/
 }
 
 body {
@@ -143,7 +144,7 @@ main {
 
 #areaConteudo {
     padding: 32px 0px;
-    width: 1280px;
+    width: 1700px;
     margin: 0 auto;
 }
 
