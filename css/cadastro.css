@@ -2,26 +2,33 @@ section {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin:  auto;
+    height:  auto;
+    width:  auto;  
 }
 
 form{
-    width: 100%;
+    width: auto;
     text-shadow: 0px 0px 5px black;
     font-size: 40px;
     background-color: #163FE5;
-    margin:  auto;
     border-radius: 16px;
     border: 2px solid;
     padding: 16px;
+    display: flex;
+    flex-direction: column; /* Para alinhar verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 input {
-    width: max-content;
-    font-size: 30px;
-    border-radius: 1rem;
-    padding: 8px;
+    width: min-content;
     background-color: #163FE5;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
-    cursor: text;  
+    cursor: default;
+    font-size: 2rem; 
 }
 
 input:focus {
@@ -50,8 +57,158 @@ button{
 button:hover{
     cursor: pointer;
 }
-
+#areConteudo {
+    padding: 32px 0px;
+    margin: 0 auto;
+}
 button:active {
     scale: 0.95;
     background-color:#647ee6;
 }
+.helper-text {
+    display: none;
+   font-size: 1.2rem;
+   color: rgb(231, 122, 12);
+   margin-top: 12px;
+   transition: 1s;
+}
+  
+  
+  /* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+  
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+  
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+ .visible {
+    display: block;
+}
+.mensagem-erro-senha {
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 20px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 100px 14px 100px;
+    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+ .mensagem-erro-gmail {
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 20px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 100px 14px 100px;
+    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+   margin-left: 12px;
+ }
+div{
+    text-align: center;
+    margin-left: center;
+    font-size: 2rem;
+    
+}
+.mensagem-erro-password2 {
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 20px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 85px 14px 85px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+ .mensagem-erro-password {
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 18px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 12px 14px 12px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+ .mensagem-erro-nome{
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 17px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 11px 14px 11px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+ }
+.mensagem-erro-gamil2{
+    color: red; /* Cor vermelha para indicar um erro */
+    font-size: 20px; /* Tamanho da fonte */
+    /* Adicione outros estilos conforme necessário */
+    border-color: firebrick;
+    box-shadow: inset 0rem 0rem 3rem 0.1rem black;
+    padding: 11px 85px 14px 85px;
+    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    transition: 1s;
+
+}
+@media screen and (max-width: 600px) and (max-height: 2000px) {
+    div{
+       padding: 1rem;
+    }
+ 
+    h2{
+       font-size: 2rem;
+    }
+ 
+    form {
+       font-size: 2rem;
+       padding: 2rem 1rem 2rem 1rem;
+    }
+    button{
+       font-size: 1.4rem;
+       padding: 16px  40px  16px  40px
+    }
+    p{
+       background-color: #163FE5;
+       padding: 16px  32px  16px  32px;
+       width: max-content;
+       text-shadow: 0rem 0rem 0.1rem black;
+       border-radius: 32px;
+     /*box-shadow: inset 0rem 0rem 3rem 0.1rem black;*/
+       margin: 16px auto;
+       font-size: 1.4rem;
+    }
+    label{
+       border-radius: 1rem;
+       margin-bottom: 1px;
+       font-size: 1.4rem;
+    }
+    
+    input {
+       width: max-content; 
+       font-size: 1.4rem;
+       border-radius: 1rem;
+       padding: 16px;
+       margin-bottom: 10px;
+ 
+   
+    }
+ }
