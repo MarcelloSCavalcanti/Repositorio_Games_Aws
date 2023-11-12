@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/index.css">
         <!--linkagem com os arquivos JS-->
         <script src="./js/index.js" defer></script>
+        <script src="../js/global.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
@@ -28,11 +29,11 @@
         </a>
         <!--Barra de navegação para outras páginas-->
         <nav>
-            <ul>
-                <li class="nav-bar-top" id="littleScreens"><img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer"></img></li>
-                <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
-                <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
-                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
+            <img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer" id="littleScreens"></img>
+            <ul id="nav-bar-top">
+                <li><a href="/html/top.html" class="nav-bar-top"  id="nav-bar-top-top" id="topPage">TOP 3</a></li>
+                <li><a href="/html/jogos.html" class="nav-bar-top"   id="nav-bar-top-jogos" id="jogosPage">JOGOS</a></li>
+                <li><a href="/html/login.html" class="nav-bar-top"   id="nav-bar-top-login" id="loginPage">LOGIN</a></li>
             </ul>
         </nav>
     </header>

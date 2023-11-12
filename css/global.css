@@ -41,12 +41,13 @@ header a {
     align-items: center;
 }
 
+/*PARA FUNCIONAR A TROCA DE BARRA DE NAVEGAÇÃO E MENU HAMBURGER
 @media (max-width: 1160px) {
     header nav ul li{
         display: none;
     }
 }
-
+*/
 #littleScreens {
     display:none;
 }
@@ -114,25 +115,38 @@ header h1:not(:hover) {
     transition: 0.5s;
 }
 
-header nav ul{
+#nav-bar-top {
     display: flex;
     list-style: none;
     gap: 48px;
-}
-
-.nav-bar-top a {
     font-family: 'Carter One', cursive;
     font-size: 2rem;
     text-shadow: 0rem 0rem 0.5rem black;
+    font-weight: bold;
 }
 
-.nav-bar-top:hover {
+#nav-bar-top-top:hover {
     transition: 0.5s;
     transform: scale(1.15);
     cursor: pointer;
 }
 
-.nav-bar-top:not(:hover) {
+#nav-bar-top-jogos:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+#nav-bar-top-login:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+
+
+.nav-bar-top-items:not(:hover) {
     transition: 0.5s;
 }
 
@@ -262,4 +276,31 @@ h6 {
 
 .nav-bar-bot:not(:hover) {
     transition: 0.5s;
+}
+
+/*------------ESTILIZAÇÃO MENU HAMBURGER-------------*/
+@media (max-width: 1160px) {
+    #nav-bar-top {
+        display:none;
+    }
+}
+
+@media (max-width: 1160px) {
+    
+        #nav-bar-top {
+            height: 300px;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            justify-content: space-evenly;
+            z-index: 3;/*para falar que sua relevância é sobre os demais*/
+            top: 0;
+            right: 0;
+            bottom:100%;
+            width: 100px;
+            padding-right: 80px;
+            padding-left: 20px;
+            background: linear-gradient(to bottom, #163FE5 74px, #1C1D1D);
+            border-bottom-left-radius: 40px;
+        }
 }
