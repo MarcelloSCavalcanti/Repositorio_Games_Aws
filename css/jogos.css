@@ -29,10 +29,14 @@ header a {
     align-items: center;
 }
 
-@media (max-width: 850px) {
-    header nav ul li{
-        display: none;
-    }
+#navTop {
+    display: block;
+    margin-right: 30px;
+}
+
+#nav-menuHamburguer {
+    display: none;
+    position: absolute;
 }
 
 #littleScreens {
@@ -40,12 +44,43 @@ header a {
 }
 
 @media (max-width: 850px) {
+    #NEWS, #TOP3, #LOGIN {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    #logo {
+        padding: 5px;
+    }
+
+    #navTop {
+        padding: 20px;
+    }
+
+    #nav-menuHamburguer {
+        font-size: 1.1rem;
+    }
+
+    #nav-menuHamburguer li {
+        font-family: 'inter';
+        font-size:1rem;
+        background-color: #163FE5;
+        border-radius: 16px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px;
+        text-shadow: 0px 0px 1px black;
+        box-shadow: inset 0px 0px 30px 1px black;
+        margin-top: 5px;
+    }
+
     #littleScreens {
         display: block;
     }
 
     header nav img {
-        height: 40px;
+        height: 30px;
     }
 }
 
@@ -351,26 +386,16 @@ h2 {
         font-size: 100px;
     }
 
-    main img {
-        height: 670px; 
-        width: 590px;
-    }
-
-    main ul {
+    #todasImg {
         margin-left: 100px;
         margin-right: 100px;
-        gap: 100px;
+        gap: 70px;
         
     }
 
-    .legenda {
+    #legenda {
         height: 140px;
     }
-
-    .legenda a {
-        font-size: 50px;
-    }
-    
 }
 /*Resolução 4k*/
 @media (max-width: 3560px) {
@@ -378,23 +403,14 @@ h2 {
         font-size: 100px;
     }
     
-    main img {
-        height: 600px; 
-        width: 520px;
-    }
-
-    main ul {
+    #todasImg {
         margin-left: 100px;
         margin-right: 100px;
-        gap: 80px;
+        gap: 70px;
     }
 
-    .legenda {
+    #legenda {
         height: 120px;
-    }
-
-    .legenda a {
-        font-size: 44px;
     }
 }
 
@@ -403,23 +419,14 @@ h2 {
         font-size: 80px;
     }
     
-    main img {
-        height: 530px; 
-        width: 450px;
-    }
-
-    main ul {
+    #todasImg {
         margin-left: 100px;
         margin-right: 100px;
-        gap: 60px;
+        gap: 70px;
     }
 
-    .legenda {
+    #legenda {
         height: 100px;
-    }
-
-    .legenda a {
-        font-size: 34px;
     }
 }
 
@@ -427,24 +434,15 @@ h2 {
     h2{
         font-size: 70px;
     }
-    
-    main img {
-        height: 460px; 
-        width: 380px;
-    }
 
-    main ul {
+    #todasImg {
         margin-left: 100px;
         margin-right: 100px;
-        gap: 60px;
+        gap: 70px;
     }
 
-    .legenda {
+    #legenda {
         height: 80px;
-    }
-
-    .legenda a {
-        font-size: 29px;
     }
 }
 /*Resolução 2k*/
@@ -453,21 +451,12 @@ h2 {
         font-size: 70px;
     }
     
-    main img {
-        height: 410px; 
-        width: 330px;
+    #todasImg {
+        gap: 70px;
     }
 
-    main ul {
-        gap: 50px;
-    }
-
-    .legenda {
+    #legenda {
         height: 80px;
-    }
-
-    .legenda a {
-        font-size: 27px;
     }
 }
 /*Resolução 2k*/
@@ -476,21 +465,12 @@ h2 {
         font-size: 60px;
     }
     
-    main img {
-        height: 370px; 
-        width: 290px;
+    #todasImg {
+        gap: 70px;
     }
 
-    main ul {
-        gap: 40px;
-    }
-
-    .legenda {
+    #legenda {
         height: 70px;
-    }
-
-    .legenda a {
-        font-size: 24px;
     }
 }
 /*Resolução FULLHD - 1080p*/
@@ -499,13 +479,8 @@ h2 {
         font-size: 50px;
     }
     
-    main img {
-        height: 370px; 
-        width: 290px;
-    }
-
-    main ul {
-        gap: 40px;
+    #todasImg {
+        gap: 70px;
     }
 }
 
@@ -514,23 +489,13 @@ h2 {
         font-size: 50px;
     }
     
-    main img {
-        height: 330px; 
-        width: 250px;
+    #todasImg {
+        gap: 70px;
     }
 
-    main ul {
-        gap: 40px;
-    }
-
-    .legenda {
+    #legenda {
         height: 60px;
     }
-
-    .legenda a {
-        font-size: 20px;
-    }
-
 }
 
 @media (max-width: 1610px) {
@@ -538,21 +503,12 @@ h2 {
         font-size: 50px;
     }
     
-    main img {
-        height: 300px; 
-        width: 220px;
+    #todasImg {
+        gap: 70px;
     }
 
-    main ul {
-        gap: 35px;
-    }
-
-    .legenda {
+    #legenda {
         height: 50px;
-    }
-    
-    .legenda a {
-        font-size: 18px;
     }
 }
 /*Resolução HD  - 720p*/
@@ -560,22 +516,13 @@ h2 {
     h2{
         font-size: 40px;
     }
-
-    main img {
-        height: 280px; 
-        width: 200px;
-    }
-    
-    main ul {
-        gap: 35px;
+   
+    #todasImg {
+        gap: 70px;
     }
 
-    .legenda {
+    #legenda {
         height: 45px;
-    }
-
-    .legenda a {
-        font-size: 17px;
     }
 }
 
@@ -584,40 +531,18 @@ h2 {
         font-size: 40px;
     }
 
-    main img {
-        height: 260px; 
-        width: 180px;
-    } 
-    
-    main ul {
-        gap: 30px;
-    }
-
-    .legenda a {
-        font-size: 15px;
+    #todasImg {
+        gap: 70px;
     }
 }
 
 @media (max-width: 1300px) {
-    main img {
-        height: 250px; 
-        width: 170px;
-    }
-
-    .legenda {
+    #legenda {
         height: 40px;
-    }
-
-    .legenda a {
-        font-size: 14px;
     }
 }
 
 @media (max-width: 1260px) {
-    main img {
-        height: 240px; 
-        width: 160px;
-    }
     header a h1 {
         font-size: 36.8px;
     }
@@ -625,12 +550,8 @@ h2 {
         padding: 10px;
     }
 
-    .legenda {
+    #legenda {
         height: 35px;
-    }
-
-    .legenda a {
-        font-size: 13px;
     }
 
     h6 {
@@ -647,21 +568,17 @@ h2 {
         font-size: 35px;
     }
 
-    main img {
+    section img {
         height: 220px; 
         width: 140px;
     } 
     
-    main ul {
-        gap: 30px;
+    #todasImg {
+        gap: 70px;
     }
 
-    .legenda {
+    #legenda {
         height: 35px;
-    }
-
-    .legenda a {
-        font-size: 11px;
     }
 }
 
@@ -686,17 +603,12 @@ h2 {
         width: 120px;
     } 
     
-    main ul {
-        gap: 30px;
-        
+    #todasImg {
+        gap: 70px;
     }
 
-    .legenda {
+    #legenda {
         height: 30px;
-    }
-
-    .legenda a {
-        font-size: 10px;
     }
 }
 
@@ -710,16 +622,12 @@ h2 {
         width: 100px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 25px;
     }
 
-    .legenda {
+    #legenda {
         height: 25px;
-    }
-
-    .legenda a {
-        font-size: 8px;
     }
 }
 
@@ -733,11 +641,11 @@ h2 {
         width: 120px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 30px;
     }
 
-    .legenda a {
+    #legenda a {
         font-size: 10px;
     }
 }
@@ -752,11 +660,11 @@ h2 {
         width: 110px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 25px;
     }
 
-    .legenda a {
+    #legenda a {
         font-size: 9px;
     }
 }
@@ -771,11 +679,11 @@ h2 {
         width: 110px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 30px;
     }
 
-    .legenda a {
+    #legenda a {
         font-size: 9px;
     }
 }
@@ -790,14 +698,15 @@ h2 {
         width: 90px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 25px;
     }
 
-    .legenda {
+    #legenda {
         height: 20px;
     }
-    .legenda a {
+
+    #legenda a {
         font-size: 7px;
     }
 }
@@ -812,14 +721,14 @@ h2 {
         width: 110px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 30px;
     }
 
-    .legenda {
+    #legenda {
         height: 20px;
     }
-    .legenda a {
+    #legenda a {
         font-size: 8px;
     }
 }
@@ -834,14 +743,14 @@ h2 {
         width: 170px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 30px;
     }
     
-    .legenda {
+    #legenda {
         height: 20px;
     }
-    .legenda a {
+    #legenda a {
         font-size: 8px;
     }
 }
@@ -860,14 +769,14 @@ h2 {
         width: 170px;
     } 
     
-    main ul {
+    #todasImg {
         gap: 30px;
     }
     
-    .legenda {
+    #legenda {
         height: 20px;
     }
-    .legenda a {
+    #legenda a {
         font-size: 8px;
     }
 }
@@ -886,33 +795,6 @@ h2 {
 
 .nav-bar-bot:not(:hover) {
     transition: 0.5s;
-}
-
-@media (max-width: 900px) {
-    #return {
-    display: none;
-    }
-    h6 {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 660px) {
-    h6 {
-        font-size: 0.6rem;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .nav-bar-bot {
-        margin-left: 16px;
-    }
-}
-
-@media (max-width: 320px) {
-    #contato {
-    font-size: 1rem;
-    }
 }
 
 footer {

@@ -121,20 +121,39 @@ const arrayReview = [
     }
 ]
 
+let navTop = document.querySelector('#navTop');
+let menuHamburguer = document.getElementById('littleScreens');
+let navMenuHamburguer = document.querySelector('#nav-menuHamburguer');
 let legenda = document.querySelectorAll('#legenda');
 let imgsComlegendas = document.querySelectorAll('#imgsComLegendas');
-let imgs = document.querySelectorAll('img')
+let imgs = document.querySelectorAll('img');
 let navReview = document.querySelectorAll('#navReview');
-let divSemGap = document.querySelectorAll('#divSemGap')
-let linkReview = document.querySelectorAll('#linkReview')
+let divSemGap = document.querySelectorAll('#divSemGap');
+let linkReview = document.querySelectorAll('#linkReview');
 
 //print das variáveis
+console.log(navTop)
+console.log(menuHamburguer)
+console.log(navMenuHamburguer)
 console.log(legenda)
 console.log(imgsComlegendas)
 console.log(imgs)
 console.log(navReview)
 console.log(divSemGap)
 console.log(linkReview)
+
+//evento para menu Hamburguer
+menuHamburguer.addEventListener('click', ()=> {
+    navMenuHamburguer.style.display = 'block';
+})
+
+navMenuHamburguer.addEventListener('mouseover', ()=> {
+    navMenuHamburguer.style.display = 'block';
+})
+
+navTop.addEventListener('mouseout', ()=> {
+    navMenuHamburguer.style.display = 'none';
+})
 
 //evento ao passar o mouse na Imagem
 for (let i=0; i<imgsComlegendas.length;i++) {
