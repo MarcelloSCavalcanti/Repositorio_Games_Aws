@@ -29,6 +29,12 @@ const arrayCarrossel1 = [{
     descicaoImg:"capa do jogo Lies Of P",
     legenda:"Lies Of P<br>Neowiz Games"
 },
+{
+    nextPage: ".html/telasReview/marioGolfSuperRush.html",
+    image:"./src/img/capaMarioGolf.png" ,
+    descicaoImg:"capa do jogo Mario Golf SuperRush",
+    legenda:"Mario Golf Super Rush<br>Nintendo"
+},
 ];
 
 for(let i = 0; i < arrayCarrossel1.length; i++) {
@@ -84,6 +90,12 @@ const arrayCarrossel2 = [{
     image:"/src/img/capaSekiroShadowsDieTwice.png" ,
     descicaoImg:"capa do jogo Sekiro Shadows Die Twice",
     legenda:"Sekiro Shadows Die Twice<br>Activision"
+},
+{
+    nextPage: "./html/telasReview/MarvelSpider-ManRemastered.html",
+    image:"/src/img/capaSpiderMan.png" ,
+    descicaoImg:"capa do jogo Spider Man Remestered",
+    legenda:"Spider Man Remastered<br>Sony Interactive Entertainment"
 },
 ];
 

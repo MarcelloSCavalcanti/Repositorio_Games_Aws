@@ -1,52 +1,3 @@
-/*media responsivity*/
-@media (max-width: 1700px) {
-    #areaConteudo {
-        width:1500px;
-    }
-}
-
-@media (max-width: 1500px) {
-    #areaConteudo {
-        width:1250px;
-    }
-}
-
-@media (max-width: 1340px) {
-    #areaConteudo {
-        width:952px;
-    }
-}
-
-@media (max-width:1020px) {
-    #areaConteudo {
-        width:624px;
-    }
-}
-
-@media (max-width: 660px) {
-    #areaConteudo {
-        width: 296px;
-    }
-}
-
-@media (max-width: 320px) {
-    #areaConteudo {
-        padding: 16px 0;
-        width: 200px;
-    }
-}
-/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
-@media (max-width: 320px) {
-    .game-image {
-        max-height: 270px;
-        max-width: 190px;
-    }
-    .image {
-        max-height: 270px;
-        max-width: 190px;
-    }
-}
-
 h2 {
     font-size: 2.5rem;
     margin: 16px auto 0px auto;
@@ -186,7 +137,7 @@ Escondendo a scrollbar para IE, Edge and Firefox
 .slide-track {
     flex-wrap: nowrap;
     display: flex;
-    animation: scroll 6s linear infinite;
+    animation: scroll 5s linear infinite;
     animation-direction:alternate;
 }
 
@@ -199,9 +150,10 @@ Escondendo a scrollbar para IE, Edge and Firefox
         transform: translateX(40px);/*movimento para o lado direito*/
     }
     100% {
-        transform: translate3d(-1000px, 0px,0px); /*movimento para o lado esquerdo*/
+        transform: translate3d(-276px, 0px,0px); /*movimento para o lado esquerdo*/
     }
 }
+
 
 .slide {
     height: 396px;
@@ -231,4 +183,181 @@ Escondendo a scrollbar para IE, Edge and Firefox
     right: 0;
     top: 0;
     transform: rotateZ(180deg);/*girando 180º*/
+}
+
+/*-----------------Responsividade do carrossel, da área de conteudo e das img--------------*/
+
+@media (max-width: 1700px) {
+    #areaConteudo {
+        width:1500px;
+    }
+    .slide-track {
+    animation-duration: 8s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-476px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    #areaConteudo {
+        width:1250px;
+    }
+    .slide-track {
+        animation-duration: 10s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-710px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    #areaConteudo {
+        width:952px;
+    }
+    .slide-track {
+        animation-duration: 14s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1025px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+
+    .slider::before,
+    .slider::after {
+        width: 20px;
+    }
+}
+
+@media (max-width:1020px) {
+    #areaConteudo {
+        width:624px;
+    }
+    .slide-track {
+        animation-duration: 18s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1350px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    #areaConteudo {
+        width: 396px;
+    }
+    .game-image {
+        max-height: 350px;
+        max-width: 250px;
+    }
+    .image {
+        max-height: 350px;
+        max-width: 250px;
+    }
+    .legenda {
+        width: 250px;
+    }
+    .slider {
+        height: 425px;
+    }
+    .slider::before,
+    .slider::after {
+        width: 20px;
+    }
+
+    .slide-track {
+        animation-duration: 18s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1300px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #areaConteudo {
+        padding: 0 auto;
+        width: 320px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0px auto 0px auto;
+    }
+    h3 {
+        font-size: 1.25rem;
+        margin: 16px auto 0px auto;
+    }
+    .slide-track {
+        animation-duration: 22s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1375px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
+@media (max-width: 320px) {
+    #areaConteudo {
+        padding: 0 auto;
+        width: 230px;
+    }
+    .game-image {
+        max-height: 270px;
+        max-width: 190px;
+    }
+    .image {
+        max-height: 270px;
+        max-width: 190px;
+    }
+
+    .legenda {
+        width: 190px;
+    }
+
+    .slider {
+        height: 350px;
+    }
+    .slider::before,
+    .slider::after {
+        width: 10px;
+    }
+
+    .slide-track {
+        animation-duration: 20s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1100px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
 }
