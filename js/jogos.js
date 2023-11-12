@@ -102,25 +102,6 @@ const arrayLegendas = [
     }
 ]
 
-//criei array para review caso precise usar a propriedade futuramente
-const arrayReview = [
-    {
-        review: `nomejogo`
-    },
-    {
-        review: `nomejogo`
-    },
-    {
-        review: `nomejogo`
-    },
-    {
-        review: `nomejogo`
-    },
-    {
-        review: `nomejogo`
-    }
-]
-
 let navTop = document.querySelector('#navTop');
 let menuHamburguer = document.getElementById('littleScreens');
 let navMenuHamburguer = document.querySelector('#nav-menuHamburguer');
