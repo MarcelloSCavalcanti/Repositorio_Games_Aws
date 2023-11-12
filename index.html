@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
         <!--linkagem com os arquivos JS-->
-        <script src="/js/index.js" defer></script>
+        <script src="./js/index.js" defer></script>
+        <script src="../js/global.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho da página contendo logo, título e barra de navegação com identificação de id para fazer um botão de retornar ao topo da página-->
@@ -28,11 +29,11 @@
         </a>
         <!--Barra de navegação para outras páginas-->
         <nav>
-            <ul>
-                <li class="nav-bar-top" id="littleScreens"><img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer"></img></li>
-                <li class="nav-bar-top"><a href="/html/top.html">TOP 3</a></li>
-                <li class="nav-bar-top"><a href="/html/jogos.html">JOGOS</a></li>
-                <li class="nav-bar-top"><a href="/html/login.html">LOGIN</a></li>
+            <img src="../src/img/menuButtonHamburger.png" alt="menu hamburguer" id="littleScreens"></img>
+            <ul id="nav-bar-top">
+                <li><a href="/html/top.html" class="nav-bar-top"  id="nav-bar-top-top" id="topPage">TOP 3</a></li>
+                <li><a href="/html/jogos.html" class="nav-bar-top"   id="nav-bar-top-jogos" id="jogosPage">JOGOS</a></li>
+                <li><a href="/html/login.html" class="nav-bar-top"   id="nav-bar-top-login" id="loginPage">LOGIN</a></li>
             </ul>
         </nav>
     </header>
@@ -43,74 +44,18 @@
         <!--Seção referente a novidades do mês contem título de secção e imagens para o carrossel dentro de uma tag DIV-->
         <section id="areaConteudo">
             <h2>NEWS</h2>
-            <h3>Novidades</h3>
-                <div id="novidadeMes">
-                <!--Parte necessária a fim de aparecer a imagem dos jogos e da descrição sobre houver do mouse-->
-                    <div class="game-image">
-                        <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaAssassinsCreedMirage.jpeg" alt="capa do Assassins Creed Mirage" class="image"></a>
-                        <div class="legenda">
-                            <a href="./html/telasReview/assassinsCreedMirage.html">Assassins Creed Mirage<br>Ubisoft</a>
-                        </div>
-                    </div>
-                    <div class="game-image">
-                        <a href="./html/telasReview/Starfield.html"><img src="./src/img/capaStarfield.jpg" alt="capa do jogo Starfield" class="image"></a>
-                        <div class="legenda">
-                            <a href="./html/telasReview/Starfield.html">Starfield<br>Bethesda Softworks</a>
-                        </div>
-                    </div>
-                    <div class="game-image">
-                        <a href="./html/telasReview/baldusGateIII.html"><img src="./src/img/capaBaldur'sGate3.jpg" alt="capa do jogo Baldur's Gate 3" class="image"></a>
-                        <div class="legenda">
-                            <a href="./html/telasReview/baldusGateIII.html">Baldur's Gate 3<br>Larian Studios</a>
-                        </div>
-                    </div>
-                    <div class="game-image">
-                        <a href="./html/telasReview/assassinsCreedMirage.html"><img img src="./src/img/capaCallOfDutyMW2.jpg" alt="capa do jogo Call Of Duty MW2" class="image"></a>
-                        <div class="legenda">
-                            <a href="./html/telasReview/assassinsCreedMirage.html">Call Of Duty MW 2<br>Activision</a>
-                        </div>
-                    </div>
-                    <div class="game-image">
-                        <a href="./html/telasReview/assassinsCreedMirage.html"><img src="./src/img/capaLiesOfP.jpg" alt="capa do jogo Lies Of P" class="image"></a>
-                        <div class="legenda">
-                            <a href="./html/telasReview/assassinsCreedMirage.html">Lies Of P<br>Neowiz Games </a>
-                        </div>
+                <h3>Novidades</h3>
+                <div class="slider">
+                    <div class="slide-track">
+                        <!--Renderização dos itens do carrossel no index.js-->
                     </div>
                 </div>
-        <!--Seção referente a Recomendações contem título de secção e imagens para o carrossel dentro de uma tag DIV-->
-            <h3>Recomendações</h3>
-            <div id="recomendacoes">
-                <div class="game-image">
-                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaHaloInfinite.png" alt="capa do jogo Halo Infinite" class="image"></a>
-                    <div class="legenda">
-                        <a href="./html/telasReview/assassinsCreedMirage.html">Halo Infinite<br>Xbox Game Studios</a>
+                <h3>Recomendações</h3>
+                <div class="slider">
+                    <div class="slide-track">
+                        <!--Renderização dos itens do carrossel no index.js-->
                     </div>
                 </div>
-                <div class="game-image">
-                    <a href="./html/telasReview/battlefield3.html"><img src="/src/img/capaBattlefield_3.png" alt="capa do jogo Battlefield 3" class="image"></a>
-                    <div class="legenda">
-                        <a href="./html/telasReview/battlefield3.html">Battlefield 3<br>Electronic Arts</a>
-                    </div>
-                </div>
-                <div class="game-image">
-                    <a href="./html/telasReview/forzahorizon3.html"><img src="/src/img/capaForzaHorizon3.jpg" alt="capa do jogo Forza Horizon 3" class="image"></a>
-                    <div class="legenda">
-                        <a href="./html/telasReview/forzahorizon3.html">Forza Horizon 3<br>Xbox Game Studios</a>
-                    </div>
-                </div>
-                <div class="game-image">
-                    <a href="./html/telasReview/HITMAN.html"><img src="/src/img/capaHitmanIII.jpg" alt="capa do jogo Hitman 3" class="image"></a>
-                    <div class="legenda">
-                        <a href="./html/telasReview/HITMAN.html">Hitman III<br>IO Interactive</a>
-                    </div>
-                </div>
-                <div class="game-image">
-                    <a href="./html/telasReview/assassinsCreedMirage.html"><img src="/src/img/capaSekiroShadowsDieTwice.png" alt="capa do jogo Sekiro Shadows Die Twice" class="image"></a>
-                    <div class="legenda">
-                        <a href="./html/telasReview/assassinsCreedMirage.html">Sekiro Shadows Die Twice<br>Activision</a>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
     <!--Rodapé da página contendo copyright link para página de contatos e retorno para o topo-->

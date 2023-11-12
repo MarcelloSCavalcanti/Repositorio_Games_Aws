@@ -1,48 +1,13 @@
-/*media responsivity*/
-@media (max-width: 1340px) {
-    #areaConteudo {
-        width:952px;
-    }
-}
-
-@media (max-width:1020px) {
-    #areaConteudo {
-        width:624px;
-    }
-}
-
-@media (max-width: 660px) {
-    #areaConteudo {
-        width: 296px;
-    }
-}
-
-@media (max-width: 320px) {
-    #areaConteudo {
-        padding: 16px 0;
-        width: 200px;
-    }
-}
-/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
-@media (max-width: 320px) {
-    .game-image {
-        max-height: 270px;
-        max-width: 190px;
-    }
-    .image {
-        max-height: 270px;
-        max-width: 190px;
-    }
-}
-
 h2 {
     font-size: 2.5rem;
     margin: 16px auto 0px auto;
+    /*Para evitar que o usuário possa selecionar o texto*/
 }
 
 h3 {
     font-size: 2rem;
     margin: 32px auto;
+    /*Para evitar que o usuário possa selecionar o texto*/
 }
 
 h2, h3 {
@@ -54,6 +19,7 @@ h2, h3 {
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
 }
+
 /*ao invés de margin na imagem usei o gap*/
 main div {
     display: flex;
@@ -65,16 +31,18 @@ main div {
     border-radius: 16px;
     height: 396px;
     width: 296px;
-    list-style: none;
 }
 
 .image{
     height: 396px;
     width: 296px;
     border-radius: 16px;
+
 }
 
 .legenda {
+    display:none;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(1px);
     position: absolute;
@@ -116,12 +84,280 @@ main div {
 }
 /*:hover e not(:hover) dão a animação para quando o mouse entra sobre a imagem e sai da imagem*/
 .game-image:hover {
-    box-shadow: 0px 0px 16px #163FE5;
+    box-shadow: 0px 0px 16px orangered;
     transition: 0.35s;
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
     cursor: pointer;
 }
 
 .game-image:not(:hover) {
     transition: 0.35s;
+}
+
+/*-------------------------ESTILIZAÇÃO DO CARROSSEL---------------------------*/
+/*------Estilização das setas laterais------*/
+
+/*z-index: 1; a fim de trazer as setas a frente das imagens (sem isso a da direita ficaria atras das imagens)*/
+
+.item {
+    height: 396px;
+    width: 296px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    border-radius: 16px;
+}
+
+.item:hover {
+    scale: 1.1;
+}
+
+/* Escondendo a scrollbar para Chrome, Safari and Opera 
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+Escondendo a scrollbar para IE, Edge and Firefox 
+.gallery-wrapper {
+    -ms-overflow-style: none;  IE and Edge 
+    scrollbar-width: none; Firefox 
+}*/
+
+/*Parte referente a animação do carrossel*/
+
+.slider {
+    height: 475px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    flex-wrap: nowrap;
+    display: flex;
+    animation: scroll 5s linear infinite;
+    animation-direction:alternate;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(40px);/*movimento para o lado direito*/
+    }
+    100% {
+        transform: translate3d(-276px, 0px,0px); /*movimento para o lado esquerdo*/
+    }
+}
+
+
+.slide {
+    height: 396px;
+    width: 296px;
+    display: flex;
+    align-items: center;
+    perspective: 100px;
+}
+
+.slider::before,
+.slider::after {
+    
+    background: linear-gradient(to right, rgba(28, 28, 29, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 40px;
+    z-index: 1;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);/*girando 180º*/
+}
+
+/*-----------------Responsividade do carrossel, da área de conteudo e das img--------------*/
+
+@media (max-width: 1700px) {
+    #areaConteudo {
+        width:1500px;
+    }
+    .slide-track {
+    animation-duration: 8s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-476px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    #areaConteudo {
+        width:1250px;
+    }
+    .slide-track {
+        animation-duration: 10s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-710px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    #areaConteudo {
+        width:952px;
+    }
+    .slide-track {
+        animation-duration: 14s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1025px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+
+    .slider::before,
+    .slider::after {
+        width: 20px;
+    }
+}
+
+@media (max-width:1020px) {
+    #areaConteudo {
+        width:624px;
+    }
+    .slide-track {
+        animation-duration: 18s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1350px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    #areaConteudo {
+        width: 396px;
+    }
+    .game-image {
+        max-height: 350px;
+        max-width: 250px;
+    }
+    .image {
+        max-height: 350px;
+        max-width: 250px;
+    }
+    .legenda {
+        width: 250px;
+    }
+    .slider {
+        height: 425px;
+    }
+    .slider::before,
+    .slider::after {
+        width: 20px;
+    }
+
+    .slide-track {
+        animation-duration: 18s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1300px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #areaConteudo {
+        padding: 0 auto;
+        width: 320px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0px auto 0px auto;
+    }
+    h3 {
+        font-size: 1.25rem;
+        margin: 16px auto 0px auto;
+    }
+    .slide-track {
+        animation-duration: 22s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1375px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
+}
+/*para telas muito pequenas temos uma redução da área do conteúdo e consequentemente a imagem precisa diminuir*/
+@media (max-width: 320px) {
+    #areaConteudo {
+        padding: 0 auto;
+        width: 230px;
+    }
+    .game-image {
+        max-height: 270px;
+        max-width: 190px;
+    }
+    .image {
+        max-height: 270px;
+        max-width: 190px;
+    }
+
+    .legenda {
+        width: 190px;
+    }
+
+    .slider {
+        height: 350px;
+    }
+    .slider::before,
+    .slider::after {
+        width: 10px;
+    }
+
+    .slide-track {
+        animation-duration: 20s;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(40px);/*movimento para o lado direito*/
+        }
+        100% {
+            transform: translate3d(-1100px, 0px,0px); /*movimento para o lado esquerdo*/
+        }
+    }
 }

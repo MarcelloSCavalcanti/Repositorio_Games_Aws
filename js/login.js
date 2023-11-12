@@ -1,10 +1,7 @@
-
 function togglePopup(input, label) {
     input.addEventListener("focus", () => {
       label.classList.add("required-popup");
     });
-  
-    // Ocultar popup de campo obrigatório
     input.addEventListener("blur", () => {
       label.classList.remove("required-popup");
     });
@@ -21,7 +18,6 @@ function estilizarInputIncorreto(input, helper) {
     input.classList.add("error");
     input.classList.remove("correct");}
 
-// ---------- VALIDAÇÃO EMAIL ---------- //
 let usernameInput = document.getElementById("gmail");
 let usernameLabel = document.querySelector('label[for="gmail"]');
 let usernameHelper = document.getElementById("username-helper");
@@ -29,16 +25,16 @@ let usernameHelper = document.getElementById("username-helper");
 
 togglePopup(usernameInput, usernameLabel)
 
-// Validar valor do input
+
 const mensagemGmailInvalida = "Escreva um e-mail válido";
 const mensagemSenhaInvalida = "Escreva uma senha válida";
 usernameInput.addEventListener("change", (e)=> {
     let valor = e.target.value
-  
-    if(valor.includes("@") && valor.includes(".com") && valor.includes("gmail")){
-      estilizarInputCorreto(usernameInput, usernameHelper);
-    } else {
-      usernameHelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemGmailInvalida}</span>`;
+    const regexGmail = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+    if (regexGmail.test(valor)) {
+    estilizarInputCorreto(usernameInput, usernameHelper);
+    }
+    else {
       estilizarInputIncorreto(usernameInput, usernameHelper)
     }
 })
@@ -49,15 +45,63 @@ let senhahelper = document.getElementById("password-helper");
 
 togglePopup(senhaInput, senhaLabel)
 
-// Defina uma variável para armazenar o texto da mensagem de erro
 
 senhaInput.addEventListener("change", (e) => {
     let valor = e.target.value;
 
     if (valor.length < 3) {
-        senhahelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemSenhaInvalida}</span>`;
         estilizarInputIncorreto(senhaInput, senhahelper);
     } else {
         estilizarInputCorreto(senhaInput, senhahelper);
     }
 })
+if (usernameInput && usernameHelper) {
+  usernameInput.addEventListener("focus", function () {
+      usernameHelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemGmailInvalida}</span>`;
+  });
+
+  usernameInput.addEventListener("blur", function () {
+      this.style.backgroundColor = "";
+      usernameHelper.innerHTML = ""; 
+  });
+} else {
+  console.error("Elementos não encontrados. Verifique os IDs fornecidos.");
+}
+if (senhaInput && senhahelper) {
+  senhaInput.addEventListener("focus", function () {
+    senhahelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemSenhaInvalida}</span>`;
+  });
+
+  senhaInput.addEventListener("blur", function () {
+      this.style.backgroundColor = "";
+      senhahelper.innerHTML = ""; 
+  });
+} else {
+  console.error("Elementos não encontrados. Verifique os IDs fornecidos.");
+}
+var elementosAcao = document.querySelectorAll('.acao');
+
+elementosAcao.forEach(function(elemento) {
+    elemento.addEventListener("mouseover", function () {
+        this.style.transform = "scale(1.1)";
+        this.style.transformOrigin = "center";
+        this.style.cursor = "pointer";
+        this.style.transform = "scale(30px)";
+        this.style.transition= "0.75s";
+    });
+
+    elemento.addEventListener("mouseout", function () {
+        this.style.transform = "";
+    });
+});
+
+function adicionarEventoTransicao(input) {
+  input.addEventListener("focus", function () {
+      this.style.borderColor = "blue"; 
+      this.style.transition ="0.75s";
+  });
+
+  input.addEventListener("blur", function () {
+      this.style.borderColor = ""; 
+  });
+}
