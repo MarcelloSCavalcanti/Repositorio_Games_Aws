@@ -1,4 +1,5 @@
 //Primeiro carrossel
+//array necessário para adição das informaçõe das imagens no carrossel
 const arrayCarrossel1 = [{
     nextPage: "./html/telasReview/assassinsCreedMirage.html",
     image:"/src/img/capaAssassinsCreedMirage.jpeg" ,
@@ -36,7 +37,7 @@ const arrayCarrossel1 = [{
     legenda:"Mario Golf Super Rush<br>Nintendo"
 },
 ];
-
+//estrutura de repetição para "confeção da estrutura innerHTML" no arquivo html
 for(let i = 0; i < arrayCarrossel1.length; i++) {
     //Criar elemento
     
@@ -60,6 +61,7 @@ for(let i = 0; i < arrayCarrossel1.length; i++) {
 }
 
 //Segundo Carrossel
+//array necessário para adição das informaçõe das imagens no carrossel
 const arrayCarrossel2 = [{
 
     //nextPage do hale ainda não disponível
@@ -99,7 +101,7 @@ const arrayCarrossel2 = [{
     legenda:"Spider Man Remastered<br>Sony Interactive Entertainment"
 },
 ];
-
+//estrutura de repetição para "confeção da estrutura innerHTML" no arquivo html
 for(let i = 0; i < arrayCarrossel2.length; i++) {
     //Criar elemento
     
