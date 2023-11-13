@@ -45,12 +45,13 @@ for(let i = 0; i < arrayCarrossel1.length; i++) {
     //Manipulando o elemento
     carrosselDiv1.innerHTML = `
     <div class="game-image item slide">
-        <a href="${arrayCarrossel1[i].nextPage}"><img src="${arrayCarrossel1[i].image}" alt="${arrayCarrossel1[i].descicaoImg}" class="image"></a>
+        <img src="${arrayCarrossel1[i].image}" alt="${arrayCarrossel1[i].descicaoImg}" class="image">
         <div class="legenda">
-            <a href="${arrayCarrossel1[i].nextPage}">${arrayCarrossel1[i].legenda}</a>
+        <a href="${arrayCarrossel1[i].nextPage}">${arrayCarrossel1[i].legenda}</a>
         </div>
     </div>`;
 
+    carrosselDiv1.id = 'array1';
     //capturar o elemento pai
     let divDadCarrossel = document.getElementsByClassName("slide-track")
     //atrelando o elemento filho ao pai
@@ -107,7 +108,7 @@ for(let i = 0; i < arrayCarrossel2.length; i++) {
     //Manipulando o elemento
     carrosselDiv1.innerHTML = `
     <div class="game-image item slide">
-        <a href="${arrayCarrossel2[i].nextPage}"><img src="${arrayCarrossel2[i].image}" alt="${arrayCarrossel2[i].descicaoImg}" class="image"></a>
+        <a ><img src="${arrayCarrossel2[i].image}" alt="${arrayCarrossel2[i].descicaoImg}" class="image"></a>
         <div class="legenda">
             <a href="${arrayCarrossel2[i].nextPage}">${arrayCarrossel2[i].legenda}</a>
         </div>
