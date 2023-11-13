@@ -162,8 +162,8 @@ gmail2Input.addEventListener("input", function (e) {
   let passwordInput = document.getElementById("password");
   let passwordLabel = document.querySelector('label[for="password"]');
   let passwordHelper = document.getElementById("password-helper");
-  const passwordInvalida = "Deve conter um numero e ter no minimo 5 caracter";
-  let regex = /^(?=.*\d).{5,}$/
+  const passwordInvalida = "Deve conter um numero, 5 caracter e uma letra maiúscula";
+  let regex = /^(?=.*\d).{6,}$/;
   passwordInput.addEventListener("input", function (e) {
     let valor = e.target.value;
   

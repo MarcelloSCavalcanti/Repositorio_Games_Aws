@@ -16,7 +16,7 @@ form{
     border: 2px solid;
     padding: 16px;
     display: flex;
-    flex-direction: column; /* Para alinhar verticalmente */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -103,23 +103,21 @@ input.correct {
     display: block;
 }
 .mensagem-erro-senha {
-    color: red; /* Cor vermelha para indicar um erro */
-    font-size: 20px; /* Tamanho da fonte */
-    /* Adicione outros estilos conforme necessário */
+    color: red; 
+    font-size: 18px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 100px 14px 100px;
-    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+    border-radius: 2rem 2rem 0 0;
     transition: 1s;
  }
  .mensagem-erro-gmail {
-    color: red; /* Cor vermelha para indicar um erro */
-    font-size: 20px; /* Tamanho da fonte */
-    /* Adicione outros estilos conforme necessário */
+    color: red; 
+    font-size: 20px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 100px 14px 100px;
-    border-radius: 2rem 2rem 0 0; /* Apenas a parte superior terá borda arredondada */
+    border-radius: 2rem 2rem 0 0; 
    margin-left: 12px;
  }
 div{
@@ -129,43 +127,38 @@ div{
     
 }
 .mensagem-erro-password2 {
-    color: red; /* Cor vermelha para indicar um erro */
-    font-size: 20px; /* Tamanho da fonte */
-    /* Adicione outros estilos conforme necessário */
+    color: red; 
+    font-size: 20px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 85px 14px 85px;
-    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    border-radius: 2rem 2rem 0 0 ;/
     transition: 1s;
  }
  .mensagem-erro-password {
-    color: red; /* Cor vermelha para indicar um erro */
-    font-size: 18px; /* Tamanho da fonte */
-    /* Adicione outros estilos conforme necessário */
+    color: red; 
+    font-size: 15px;
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 12px 14px 12px;
-    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    border-radius: 2rem 2rem 0 0 ;
     transition: 1s;
  }
  .mensagem-erro-nome{
-    color: red; /* Cor vermelha para indicar um erro */
-    font-size: 17px; /* Tamanho da fonte */
-    /* Adicione outros estilos conforme necessário */
+    color: red; 
+    font-size: 17px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 11px 14px 11px;
-    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
-    transition: 1s;
+    border-radius: 2rem 2rem 0 0 ;
  }
 .mensagem-erro-gamil2{
-    color: red; /* Cor vermelha para indicar um erro */
-    font-size: 20px; /* Tamanho da fonte */
-    /* Adicione outros estilos conforme necessário */
+    color: red; 
+    font-size: 20px;
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 85px 14px 85px;
-    border-radius: 2rem 2rem 0 0 ;/* Apenas a parte superior terá borda arredondada */
+    border-radius: 2rem 2rem 0 0 ;
     transition: 1s;
 
 }
@@ -187,21 +180,11 @@ div{
        padding: 16px  40px  16px  40px
     }
     p{
-       background-color: #163FE5;
        padding: 16px  32px  16px  32px;
-       width: max-content;
-       text-shadow: 0rem 0rem 0.1rem black;
-       border-radius: 32px;
-     /*box-shadow: inset 0rem 0rem 3rem 0.1rem black;*/
        margin: 16px auto;
        font-size: 1.4rem;
     }
-    label{
-       border-radius: 1rem;
-       margin-bottom: 1px;
-       font-size: 1.4rem;
-    }
-    
+
     input {
        width: max-content; 
        font-size: 1.4rem;
@@ -211,4 +194,29 @@ div{
  
    
     }
+    label{
+        font-size: 1.4rem;
+    }
+    .mensagem-erro-gamil2{
+        font-size: 12px;
+        padding: 11px 60px 14px 60px;
+    
+    }
+    .mensagem-erro-nome{
+        font-size: 11px;
+        padding: 11px 12px 14px 12px;
+     }
+     .mensagem-erro-gmail {
+        font-size: 12px;
+        padding: 11px 90px 14px 90px;
+     }
+     .mensagem-erro-password {
+        font-size: 11px; 
+        padding: 11px 12px 14px 12px;
+     }
+     .mensagem-erro-password2 {
+        font-size: 15px;
+        padding: 11px 20px 14px 20px;
+
+     }
  }
