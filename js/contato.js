@@ -66,7 +66,7 @@ usernameInput.addEventListener("blur", function () {
 });
 let comentarioInput = document.getElementById("comentario");
 let comentareHelper = document.getElementById("comentario-helper");
-let mensagemTexto = "voce ecedeu o limite maximo de 500"
+let mensagemTexto = "voce excedeu o limite maximo de 500"
 
 comentarioInput.addEventListener("focus", function () {
   if (this.classList.contains("error")) {
