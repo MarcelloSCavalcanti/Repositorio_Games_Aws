@@ -125,11 +125,11 @@ console.log(linkReview)
 
 //evento para menu Hamburguer
 menuHamburguer.addEventListener('click', ()=> {
-    navMenuHamburguer.style.display = 'block';
+    navMenuHamburguer.style.display = 'flex';
 })
 
 navMenuHamburguer.addEventListener('mouseover', ()=> {
-    navMenuHamburguer.style.display = 'block';
+    navMenuHamburguer.style.display = 'flex';
 })
 
 navTop.addEventListener('mouseout', ()=> {
