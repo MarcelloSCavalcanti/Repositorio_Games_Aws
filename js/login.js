@@ -67,6 +67,7 @@ if (usernameInput && usernameHelper) {
 } else {
   console.error("Elementos não encontrados. Verifique os IDs fornecidos.");
 }
+
 if (senhaInput && senhahelper) {
   senhaInput.addEventListener("focus", function () {
     senhahelper.innerHTML = `<span class="mensagem-erro-senha">${mensagemSenhaInvalida}</span>`;
