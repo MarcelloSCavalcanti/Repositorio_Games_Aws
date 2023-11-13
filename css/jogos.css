@@ -10,14 +10,18 @@ html{
 }
 
 header {
+    background-color: #163FE5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #163FE5;
     padding: 0 48px;
-    top: inherit;
 }
 
+header img {
+    border-radius: 20px;
+}
+
+/*Responsividade no Header*/
 @media (max-width: 660px) {
     header {
         padding: 0 24px;
@@ -31,7 +35,11 @@ header a {
 
 #navTop {
     display: block;
-    margin-right: 30px;
+    font-weight: bold;
+}
+
+#navTop li a {
+    font-family: 'inter';
 }
 
 #nav-menuHamburguer {
@@ -108,6 +116,8 @@ header img {
     }
 }
 
+/*---------------------------------------*/
+
 header img:hover {
     transition: 0.5s;
     transform: scale(1.15);
@@ -121,20 +131,14 @@ header img:not(:hover) {
 header h1{
     font-family: 'Carter One', cursive;
     padding: 0 32px;
-    font-size: 48px;
-    text-shadow: 0px 0px 8px black;
+    font-size: 3rem;
+    text-shadow: 0rem 0rem 0.5rem black;
 }
 
 header h1:hover {
     transition: 0.5s;
     transform: scale(1.15);
     cursor: pointer;
-}
-
-@media (max-width: 660px) {
-    header h1 {
-        display:none;
-    } 
 }
 
 header h1:not(:hover) {
@@ -203,13 +207,11 @@ section img {
 
 /*adicionei este bloco legendas*/
 #legenda {
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 18px;
     text-align: center;
-    text-shadow: 1px 1px 0.5px black;
     width: 220px;
-    height: 43px;
-    transition: 0.6s;
+    height: 35px;
     opacity: 0.8;
 }
 
@@ -224,8 +226,8 @@ section img {
     display: none;
     position: absolute;
     z-index: 1;
-    margin-left: -100px;
-    margin-top: 0px;
+    margin-left: -110px;
+    margin-top: -15px;
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     animation: glowing 20s linear infinite;
     background-size: 400%;
@@ -262,8 +264,7 @@ a {
 
 /*adicionei este bloco maxSizeImg*/
 .maxSizeImg {
-    width: 250px;
-    height: 350px;
+    transform: scale(1.2);
 }
 
 /*adicionei este bloco transition*/
@@ -301,8 +302,6 @@ a {
 .noVisible {
     display: none;
 }
-
-
 
 /*removerei este bloco main ul
 main ul  {
@@ -380,7 +379,7 @@ h2 {
 }
 
 /*-----Reponsividade da tela jogos-----*/
-/*Resolução 4k*/
+/*Resolução 4k
 @media (max-width: 4096px) {
     h2{
         font-size: 100px;
@@ -397,7 +396,7 @@ h2 {
         height: 140px;
     }
 }
-/*Resolução 4k*/
+
 @media (max-width: 3560px) {
     h2{
         font-size: 100px;
@@ -444,8 +443,8 @@ h2 {
     #legenda {
         height: 80px;
     }
-}
-/*Resolução 2k*/
+}*/
+/*Resolução 2k
 @media (max-width: 2350px) {
     h2{
         font-size: 70px;
@@ -459,7 +458,7 @@ h2 {
         height: 80px;
     }
 }
-/*Resolução 2k*/
+
 @media (max-width: 2050px) {
     h2{
         font-size: 60px;
@@ -472,8 +471,8 @@ h2 {
     #legenda {
         height: 70px;
     }
-}
-/*Resolução FULLHD - 1080p*/
+}*/
+/*Resolução FULLHD - 1080p
 @media (max-width: 1920px) {
     h2{
         font-size: 50px;
@@ -510,9 +509,9 @@ h2 {
     #legenda {
         height: 50px;
     }
-}
+}*/
 /*Resolução HD  - 720p*/
-@media (max-width: 1500px) {
+/*@media (max-width: 1500px) {
     h2{
         font-size: 40px;
     }
@@ -686,8 +685,8 @@ h2 {
     #legenda a {
         font-size: 9px;
     }
-}
-/*Resolução 480p*/
+}*/
+/*Resolução 480p
 @media (max-width: 590px) {
     h2{
         font-size: 25px;
@@ -779,8 +778,179 @@ h2 {
     #legenda a {
         font-size: 8px;
     }
+}*/
+
+/*Resolução 4096x2160(4k)*/
+@media (max-width: 4096px) {
+    header {
+        padding: 30px;
+    }
+
+    body {
+        width: 2560px;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    main img {
+        
+        width: 250px;
+        height: 350px;
+    } 
+    
+    #todasImg {
+        margin: auto;
+        height: 100vh;
+        width: 1500px;
+        gap: 120px;
+        margin-bottom: 40px;
+    }
+
+    #navReview {
+        margin-left: -50px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    h6 {
+        font-size: 1.3rem;
+    }
+    
+    #navFooter li {
+        font-size: 2rem;
+        
+    }
 }
 
+@media (max-width: 1920px) {
+    header {
+        padding: 0 48px;
+    }
+
+    body {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    main img {
+        width: 200px;
+        height: 300px;
+    } 
+    
+    #todasImg {
+        margin: auto;
+        height: auto;
+        width: auto;
+        gap: 54px;
+        margin: 0px 50px 50px 40px;
+    }
+
+    #navReview {
+        margin-left: -50px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #nav-menuHamburguer {
+        z-index: 1;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    main img {
+        width: 150px;
+        height: 250px;
+    } 
+    
+    #todasImg {
+        margin-left: 45px;
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    #navReview {
+        margin-left: -50px;
+    }
+
+    #legenda {
+        display: none;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    h6 {
+        font-size: 0.5rem;
+    }
+    
+    #navFooter li {
+        font-size: 0.8rem;
+    }
+}
+
+/*Galaxy Fold(280px), Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, Pixel 7(412px), Samsung Galaxy S8+(360px), iPhone 14 Pro Max(430px), iPhone 12 Pro(390px), iPhone XR(414px), iPhone SE(375px)*/
+@media (max-width: 430px) {
+    #nav-menuHamburguer {
+        z-index: 1;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    main img {
+        width: 150px;
+        height: 250px;
+    } 
+    
+    #todasImg {
+        margin-top: 40px;
+        gap: 15px;
+    }
+
+    #navReview {
+        margin-left: -50px;
+    }
+
+    #legenda {
+        display: none;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    h6 {
+        font-size: 0.5rem;
+    }
+    
+    #navFooter li {
+        font-size: 0.8rem;
+    }
+}
+/*---------------------------------*/
 
 .nav-bar-bot a {
     font-family: 'Carter One', cursive;
@@ -798,11 +968,11 @@ h2 {
 }
 
 footer {
+    padding:4px 20px;
     background-color: #163FE5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     font-size: 2rem;
 }
 
@@ -810,11 +980,13 @@ footer nav ul{
     display: flex;
     gap: 20px;
     list-style: none;
-    padding: 0 48px;
+    padding: 0 48px 0 8px;
 }
 
 h6 {
     font-family: 'Inter', sans-serif;
     color:orangered;
-    padding: 0 48px;
+
+    margin: 8px 8px 8px 48px;
+ 
 }
