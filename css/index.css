@@ -124,7 +124,7 @@ Escondendo a scrollbar para IE, Edge and Firefox
 }*/
 
 /*Parte referente a animação do carrossel*/
-
+/*div referente ao "quadrado de área do slider parte externa não animada"*/
 .slider {
     height: 475px;
     width: 100%;
@@ -134,18 +134,18 @@ Escondendo a scrollbar para IE, Edge and Firefox
     place-items: center;
     overflow: hidden;
 }
-
+/*parte interna do slider a qual é a parte animada tem também o tempo total para mostrar todos os itens*/
 .slide-track {
     flex-wrap: nowrap;
     display: flex;
     animation: scroll 5s linear infinite;
     animation-direction:alternate;
 }
-
+/*parte necessária para buscar a parada do movimento para melhor leitura e entrada na página respectiva, para retomar animação no pc tirar o mouse no celular clicar fora das imagens do slider*/
 .slide-track:hover {
     animation-play-state: paused;
 }
-
+/*Parte referente ao quanto o slider irá se deslocar para esquerda e para a direita*/
 @keyframes scroll {
     0% {
         transform: translateX(40px);/*movimento para o lado direito*/
@@ -154,8 +154,7 @@ Escondendo a scrollbar para IE, Edge and Firefox
         transform: translate3d(-276px, 0px,0px); /*movimento para o lado esquerdo*/
     }
 }
-
-
+/*alinhamento das imagens no slider*/
 .slide {
     height: 396px;
     width: 296px;
@@ -163,7 +162,7 @@ Escondendo a scrollbar para IE, Edge and Firefox
     align-items: center;
     perspective: 100px;
 }
-
+/*beiradas do slider a qual dão uma ideia da imagem se esconder atrás de uma cortina*/
 .slider::before,
 .slider::after {
     
@@ -174,12 +173,12 @@ Escondendo a scrollbar para IE, Edge and Firefox
     width: 40px;
     z-index: 1;
 }
-
+/*faz com que essa aba lateral estique e se posicione corretamente*/
 .slider::before {
     left: 0;
     top: 0;
 }
-
+/*além da diferença a cima temos a inversão da "cortina"*/
 .slider::after {
     right: 0;
     top: 0;
