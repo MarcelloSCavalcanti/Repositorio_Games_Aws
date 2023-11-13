@@ -21,13 +21,6 @@ header img {
     border-radius: 20px;
 }
 
-/*Responsividade no Header*/
-@media (max-width: 660px) {
-    header {
-        padding: 0 24px;
-    }
-}
-
 header a {
     display: flex;
     align-items: center;
@@ -45,18 +38,14 @@ header a {
 #nav-menuHamburguer {
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 #littleScreens {
     display:none;
 }
 
-@media (max-width: 850px) {
-    #NEWS, #TOP3, #LOGIN {
-        display: none;
-    }
-}
-
+/*Responsividade no Header*/
 @media (max-width: 850px) {
     #logo {
         padding: 5px;
@@ -66,13 +55,18 @@ header a {
         padding: 20px;
     }
 
-    #nav-menuHamburguer {
-        font-size: 1.1rem;
+    header a {
+        display: flex;
+        align-items: center;
+    }
+
+    #NEWS, #TOP3, #LOGIN {
+        display: none;
     }
 
     #nav-menuHamburguer li {
         font-family: 'inter';
-        font-size:1rem;
+        font-size: 1rem;
         background-color: #163FE5;
         border-radius: 16px;
         text-align: center;
@@ -92,9 +86,9 @@ header a {
     }
 }
 
-header img {
-    height: 48px;
-    filter: drop-shadow(0px 0px 16px black);
+    header img {
+        height: 48px;
+        filter: drop-shadow(0px 0px 16px black);
 }
 
 @media (max-width: 700px) {
@@ -108,14 +102,18 @@ header img {
 }
 
 @media (max-width: 660px) {
+    header {
+        padding: 0 24px;
+    }
+    
     header img {
         margin: 8px;
     }
+
     header h1 {
         display:none;
     }
 }
-
 /*---------------------------------------*/
 
 header img:hover {
@@ -166,6 +164,7 @@ header nav ul{
 .nav-bar-top:not(:hover) {
     transition: 0.5s;
 }
+
 /*-----------------efeito para as imagens da tela-----------------*/
 body {
     margin: 0 auto;
@@ -188,13 +187,13 @@ main {
     flex-wrap: wrap;
     gap: 70px;
     margin: 35px 90px; 
-    /*border: 5px solid gold;*/
+    /*border: 5px solid gold(para estudo);*/
 }
 
 /*adicionei este bloco imgsComLegendas*/
 #imgsComLegendas {
-    /*border: 5px solid gold;*/
     max-width: max-content;
+    /*border: 5px solid gold(para estudo);*/
 }  
 
 /*adicionei este bloco img*/
@@ -211,7 +210,7 @@ section img {
     font-size: 18px;
     text-align: center;
     width: 220px;
-    height: 35px;
+    height: 30px;
     opacity: 0.8;
 }
 
@@ -226,7 +225,7 @@ section img {
     display: none;
     position: absolute;
     z-index: 1;
-    margin-left: -110px;
+    margin-left: -50px;
     margin-top: -15px;
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     animation: glowing 20s linear infinite;
@@ -254,7 +253,7 @@ a {
 #divSemGap {
     width: 200px;
     height: 300px;
-    /*border: 5px solid gold;*/
+    /*border: 5px solid gold(para estudo);*/
 }
 
 /*adicionei este bloco divSemGap*/
@@ -269,7 +268,7 @@ a {
 
 /*adicionei este bloco transition*/
 .transition {
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 /*adicionei este bloco dropShadowImg*/
@@ -295,7 +294,6 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    
 }
 
 /*adicionei este bloco noVisible*/
@@ -379,6 +377,8 @@ h2 {
 }
 
 /*-----Reponsividade da tela jogos-----*/
+
+/*------------Atualmente em construção------*/
 /*Resolução 4k
 @media (max-width: 4096px) {
     h2{
@@ -783,89 +783,66 @@ h2 {
 /*Resolução 4096x2160(4k)*/
 @media (max-width: 4096px) {
     header {
-        padding: 30px;
+        
     }
 
     body {
-        width: 2560px;
-        margin: 0 auto;
+      
     }
 
     h2{
-        font-size: 30px;
-        margin-bottom: 40px;
+      
     }
 
     main img {
-        
-        width: 250px;
-        height: 350px;
+    
     } 
     
     #todasImg {
-        margin: auto;
-        height: 100vh;
-        width: 1500px;
-        gap: 120px;
-        margin-bottom: 40px;
-    }
-
-    #navReview {
-        margin-left: -50px;
+      
     }
 
     footer {
-        padding: 20px;
+        
     }
 
     h6 {
-        font-size: 1.3rem;
+      
     }
     
     #navFooter li {
-        font-size: 2rem;
+      
         
     }
 }
 
 @media (max-width: 1920px) {
     header {
-        padding: 0 48px;
+        
     }
 
     body {
-        width: auto;
-        margin: 0 auto;
+        
     }
 
     h2{
-        font-size: 30px;
-        margin-bottom: 40px;
+      
     }
 
     main img {
-        width: 200px;
-        height: 300px;
+      
     } 
     
     #todasImg {
-        margin: auto;
-        height: auto;
-        width: auto;
-        gap: 54px;
-        margin: 0px 50px 50px 40px;
-    }
-
-    #navReview {
-        margin-left: -50px;
+       
     }
 
     footer {
-        padding: 5px;
+        
     }
 
     h6 {
-        font-size: 1rem;
+        
     }
 }
 

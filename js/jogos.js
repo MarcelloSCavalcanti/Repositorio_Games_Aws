@@ -144,7 +144,7 @@ for (let i=0; i<imgsComlegendas.length;i++) {
         legenda[i].classList.add('visible2');
         legenda[i].classList.remove('noVisible');
         legenda[i].style.position = 'absolute';
-        legenda[i].style.transition = '3s';
+        legenda[i].classList.add('transition');
         legenda[i].style.color = 'orange';
         imgs[i + 2].classList.add('maxSizeImg');
         imgs[i + 2].classList.add('transition');
@@ -159,7 +159,6 @@ for (let i=0; i<imgsComlegendas.length;i++) {
     imgsComlegendas[i].addEventListener('mouseout', ()=> {
         legenda[i].classList.remove('visible2');
         legenda[i].classList.add('noVisible');
-        legenda[i].style.transition = '3s';
         imgs[i + 2].classList.remove('maxSizeImg');
         imgs[i + 2].classList.add('transition');
         imgs[i + 2].classList.remove('dropShadowImg');
