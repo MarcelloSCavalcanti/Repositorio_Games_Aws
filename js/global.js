@@ -10,7 +10,7 @@ const loginPage = document.getElementById("loginPage")
 
 
 if (mediaQuery.matches) {
-    linkLittleScreens.addEventListener("mouseover",()=> {
+    linkLittleScreens.addEventListener("click",()=> {
         navBarTop.style.display = "flex"
     })
     areaConteudo.addEventListener("mouseover",()=>{

@@ -31,6 +31,7 @@ main div {
     border-radius: 16px;
     height: 396px;
     width: 296px;
+    cursor: default;
 }
 
 .image{
@@ -68,6 +69,7 @@ main div {
     font-size: 16px;
     text-align: center;
     align-self: center;
+    
 }
 
 @media (max-width: 320px){
@@ -87,7 +89,6 @@ main div {
     box-shadow: 0px 0px 16px orangered;
     transition: 0.35s;
     /*transform: scale(1.1);*/
-    cursor: pointer;
 }
 
 .game-image:not(:hover) {
