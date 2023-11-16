@@ -177,7 +177,6 @@ header nav ul{
     transition: 0.5s;
 }
 
-/*-------efeito para as imagens da tela-----------*/
 body {
     margin: 0 auto;
 }
@@ -191,7 +190,6 @@ main {
     padding-bottom: 30px; 
 }
 
-/*adicionei este bloco todasImg*/
 #todasImg {
     display: flex;
     justify-content: center;
@@ -199,16 +197,13 @@ main {
     flex-wrap: wrap;
     gap: 70px;
     margin: 35px 140px;
-    /*border: 5px solid gold(para estudo);*/
+    /*border: 1px solid gold(para estudo);*/
 }
 
-/*adicionei este bloco imgsComLegendas*/
 #imgsComLegendas {
     max-width: max-content;
-    /*border: 5px solid gold(para estudo);*/
 }  
 
-/*adicionei este bloco img*/
 section img {
     width: 200px;
     height: 300px;
@@ -216,7 +211,6 @@ section img {
     filter:drop-shadow(20px 20px 10px black);
 }
 
-/*adicionei este bloco legendas*/
 #legenda {
     font-family: 'Inter';
     font-size: 18px;
@@ -226,7 +220,6 @@ section img {
     opacity: 0.8;
 }
 
-/*adicionei este bloco navReview e efeito glowing*/
 #navReview {
     font-family: 'Carter One', cursive;
     text-shadow: 0.3rem 0.3rem 0.3rem black;
@@ -254,46 +247,37 @@ section img {
     100% { background-position: 0 0; }
 }
 
-/*adicionei este bloco a*/
 a {
     color:orangered;
     text-decoration: none;
     
 }
 
-/*adicionei este bloco divSemGap*/
 #divSemGap {
     width: 200px;
     height: 300px;
-    /*border: 5px solid gold(para estudo);*/
 }
 
-/*adicionei este bloco divSemGap*/
 .divSemGap {
     gap: 0px;
 }
 
-/*adicionei este bloco maxSizeImg*/
 .maxSizeImg {
     transform: scale(1.2);
 }
 
-/*adicionei este bloco transition*/
 .transition {
     transition: 0.3s;
 }
 
-/*adicionei este bloco dropShadowImg*/
 .dropShadowImg {
     filter: drop-shadow(20px 20px 10px #163FE5);
 }
 
-/*adicionei este bloco visible1*/
 .visible1 {
     display: block;
 }
 
-/*adicionei este bloco visible2*/
 .visible2 {
     display: flex;
     align-items:end;
@@ -301,14 +285,12 @@ a {
     flex-wrap: wrap;
 }
 
-/*adicionei este bloco visible3*/
 .visible3 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-/*adicionei este bloco noVisible*/
 .noVisible {
     display: none;
 }
@@ -340,7 +322,7 @@ h2 {
 
     #todasImg {
         gap: 100px;
-        margin: 35px 430px;
+        margin: 35px 440px;
     }
 
     section img {
@@ -353,7 +335,7 @@ h2 {
 @media (max-width: 2560px) {
     #todasImg {
         gap: 100px;
-        margin: 35px 430px;
+        margin: 35px 440px;
     }
 
     section img {
@@ -365,7 +347,7 @@ h2 {
 @media (max-width: 2048px) {
     #todasImg {
         gap: 80px;
-        margin: 35px 220px;
+        margin: 35px 230px;
     }
 
     section img {
@@ -378,7 +360,7 @@ h2 {
 @media (max-width: 1920px) {
     #todasImg {
         gap: 50px;
-        margin: 35px 240px;
+        margin: 35px 250px;
     }
 
     section img {
@@ -390,14 +372,14 @@ h2 {
 @media (max-width: 1600px) {
     #todasImg {
         gap: 50px;
-        margin: 35px 80px;
+        margin: 35px 90px;
     }
 }
 
 @media (max-width: 1440px) {
     #todasImg {
         gap: 50px;
-        margin: 35px 0px;
+        margin: 35px 10px;
     }
 }
 
@@ -411,7 +393,7 @@ h2 {
 @media (max-width: 1280px) {
     #todasImg {
         gap: 10px;
-        margin: 35px 20px;
+        margin: 35px 30px;
     }
 
     section img {
@@ -427,7 +409,7 @@ h2 {
 @media (max-width: 1152px) {
     #todasImg {
         gap: 0px;
-        margin: 35px 0px;
+        margin: 35px 10px;
     }
 
     section img {
@@ -448,7 +430,8 @@ h2 {
     }
 
     #todasImg {
-        margin: 35px 10px;
+        margin: 35px 20px;
+        
     }
 
         footer h6, ul{
@@ -469,7 +452,7 @@ h2 {
     }
     
     #todasImg {
-        margin: 35px 20px;
+        margin: 35px 30px;
     }
 
     #legenda {
@@ -488,7 +471,7 @@ h2 {
     }
 
     #todasImg {
-        margin: 35px 20px;
+        margin: 35px 30px;
         gap: 30px;
     }
 
