@@ -1,0 +1,91 @@
+CREATE TABLE Loja_Jogos (
+ id_loja SERIAL PRIMARY KEY, 
+ telefone_loja VARCHAR(30) NOT NULL,  
+ nome_loja VARCHAR(25) NOT NULL,  
+ email_loja VARCHAR(25) NOT NULL,  
+ qnt_usuarios INT,
+ idEndereco INT NOT NULL
+); 
+
+CREATE TABLE Usuario (
+ id_usuario SERIAL PRIMARY KEY,
+ nome_usuario VARCHAR(50) NOT NULL,
+ telefone_usuario VARCHAR(30) NOT NULL,
+ email_usuario VARCHAR(25) NOT NULL,  
+ avaliacao_usuario FLOAT,
+ comentario_usuario VARCHAR(150),  
+ idLoja INT NOT NULL
+); 
+
+CREATE TABLE Endereco ( 
+ id_endereco SERIAL PRIMARY KEY,
+ logradouro VARCHAR(50) NOT NULL,
+ cidade VARCHAR(25) NOT NULL,
+ estado VARCHAR(25) NOT NULL,  
+ CEP INT NOT NULL,  
+ idUsuario INT
+);
+
+CREATE TABLE Jogos (
+ id_jogos SERIAL PRIMARY KEY,  
+ disponivel_jogo BOOLEAN NOT NULL,  
+ nome_jogo VARCHAR(50) NOT NULL,  
+ preco_jogo FLOAT,  
+ media_avaliacao_jogos FLOAT,  
+ qnt_jogos INT,  
+ qnt_comentarios INT,
+ compraUsuario INT 
+);
+
+ALTER TABLE Loja_Jogos ADD FOREIGN KEY(idEndereco) REFERENCES Endereco (id_endereco);
+ALTER TABLE Usuario ADD FOREIGN KEY(idLoja) REFERENCES Loja_Jogos (id_loja);
+ALTER TABLE Endereco ADD FOREIGN KEY(idUsuario) REFERENCES Usuario (id_usuario);
+ALTER TABLE Jogos ADD FOREIGN KEY(compraUsuario) REFERENCES Usuario (id_usuario);
+
+INSERT into Endereco (logradouro, cidade, estado, CEP) VALUES
+('Rua da Lua', 'São Paulo', 'São Paulo', 123456780);
+
+INSERT into Loja_Jogos (telefone_loja, nome_loja, email_loja, idEndereco) VALUES
+('(11)11111-1111', 'Forever Games', 'forevergames@gmail.com', 1);
+INSERT into Loja_Jogos (telefone_loja, nome_loja, email_loja, qnt_usuarios, idEndereco) VALUES
+('(11)11111-1111', 'Forever Games', 'forevergames@gmail.com', 1000, 1);
+
+INSERT INTO Usuario (nome_usuario, telefone_usuario, email_usuario, idLoja) VALUES
+('Victor Cardoso', '(11)11111-1111', 'email@gmail.com', 1);
+INSERT INTO Usuario (nome_usuario, telefone_usuario, email_usuario, avaliacao_usuario, comentario_usuario, idLoja) VALUES
+('Victor Cardoso', '(11)11111-1111', 'email@gmail.com', 5, 'Que jogo incrível, recomendo!!!', 1);
+
+INSERT into Endereco (logradouro, cidade, estado, CEP, idUsuario) VALUES
+('Rua do Sol', 'Fortaleza', 'Ceará', 123456780, 1),
+('Rua James Souza', 'Campo Grande', 'MS', 987654230, 3);
+
+INSERT INTO Jogos (disponivel_jogo, nome_jogo, compraUsuario) VALUES
+(FALSE, 'Assassins Creed Mirage', 0);
+INSERT INTO Jogos (disponivel_jogo, nome_jogo,  preco_jogo, media_avaliacao_jogos, qnt_jogos, qnt_comentarios, compraUsuario) VALUES
+(TRUE, 'Starfield', 350.00, 5, 20, 3, 1),
+(TRUE, 'Sekiro: Shadows Die Twice', 274.00, 5, 10, 4, 3),
+(TRUE, 'Persona 5 Royal', 300.00, 5, 18, 4, 4);
+
+INSERT INTO Usuario (nome_usuario, telefone_usuario, email_usuario, avaliacao_usuario, comentario_usuario, idLoja) VALUES
+('Eduardo Alves', '(11)11111-1111', 'email@gmail.com', 5, 'Amo demais esse jogo! Daria todo meu dinheiro para a empresa', 1),
+('Marcello Cavalcanti', '(11)11111-1111', 'email@gmail.com', 5, 'Adorei a gameplay do jogo', 1),
+('Luiz', '(11)11111-1111', 'email@gmail.com',4,'Jogasso',1),
+('Joao Vitor', '(11)11111-1111', 'email@gmail.com', 5, 'Adorei demais os gráficos e gameplay', 1);
+
+INSERT into Endereco (logradouro, cidade, estado, CEP, idUsuario) VALUES
+('Rua Street1', 'City1', 'State1', 11111111, 4),
+('Rua Street2', 'City2', 'State2', 11111111, 5),
+('Rua Street3', 'City3', 'State3', 11111111, 6);
+
+SELECT * FROM Loja_Jogos;
+SELECT * FROM Usuario;
+SELECT * FROM Endereco;
+SELECT * FROM Jogos;
+
+SELECT nome_loja FROM Loja_Jogos;
+SELECT nome_usuario FROM Usuario;
+SELECT nome_jogo, preco_jogo FROM Jogos WHERE preco_jogo > 200.00;
+SELECT * FROM Jogos WHERE preco_jogo > 200.00;
+SELECT nome_jogo FROM Jogos WHERE disponivel_jogo = 'TRUE';
+SELECT * FROM Jogos WHERE disponivel_jogo = 'FALSE';
+SELECT nome_usuario, telefone_usuario, email_usuario FROM Usuario;
