@@ -75,7 +75,7 @@ h1{
     margin: 25px auto;
     cursor: default;
     text-align: center;
-    background-color: #163FE5;
+    background-color: #717171;
     padding: 10px;
     text-shadow: 0px 0px 1px black;
     border-radius: 16px;
@@ -87,7 +87,7 @@ form{
     flex-direction: column;
     width: 50%;
     flex-wrap: wrap;
-    background-color: #163FE5;
+    background-color: #717171;
     padding: 25px;
     margin: 25px auto;
     border-radius: 16px;
@@ -108,7 +108,7 @@ button{
     font-size: 20px;
     border-radius: 2rem;
     padding: 16px;
-    background-color: #163FE5;
+    background-color: #717171;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -121,14 +121,14 @@ button:hover{
 
 button:active {
     scale: 0.95;
-    background-color:#647ee6;
+    background-color: #717171;
 }
 
 .regras{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #163FE5;
+    background-color: #717171;
     padding: 25px;
     border-radius: 16px;
     margin: 25px auto;
@@ -158,7 +158,7 @@ button:active {
 
 .membro{
     margin: 20px 50px;
-    background-color: #163FE5;
+    background-color: #717171;
     border-radius: 16px;
     padding: 20px;
     width: 250px;
@@ -186,7 +186,7 @@ h2{
 }
 
 #membro_h2{
-    background-color: #163FE5;
+    background-color: #717171;
     margin: 25px auto;
     box-shadow: inset 0px 0px 48px 1px rgb(26, 24, 24);
 }
