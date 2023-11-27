@@ -103,6 +103,7 @@ const arrayLegendas = [
 ]
 
 let navTop = document.querySelector('#navTop');
+let navBarTop = document.querySelectorAll('#nav-navBarTop a');
 let menuHamburguer = document.getElementById('littleScreens');
 let navMenuHamburguer = document.querySelector('#nav-menuHamburguer');
 let legenda = document.querySelectorAll('#legenda');
@@ -111,9 +112,11 @@ let imgs = document.querySelectorAll('img');
 let navReview = document.querySelectorAll('#navReview');
 let divSemGap = document.querySelectorAll('#divSemGap');
 let linkReview = document.querySelectorAll('#linkReview');
+let navBarFooter = document.querySelectorAll('#nav-navBarFooter a');
 
 //print das variáveis
 console.log(navTop)
+console.log(navBarTop[0])
 console.log(menuHamburguer)
 console.log(navMenuHamburguer)
 console.log(legenda)
@@ -122,6 +125,50 @@ console.log(imgs)
 console.log(navReview)
 console.log(divSemGap)
 console.log(linkReview)
+console.log(navBarFooter[0])
+
+//evento para colorir as navs header e footer
+//evento para colorir somente a nav do header
+navBarTop[0].addEventListener('mouseover', ()=> {
+    navBarTop[0].style.color = '#39ff14';
+})
+
+navBarTop[0].addEventListener('mouseout', ()=> {
+    navBarTop[0].style.color = 'white';
+})
+
+navBarTop[1].addEventListener('mouseover', ()=> {
+    navBarTop[1].style.color = '#39ff14';
+})
+
+navBarTop[1].addEventListener('mouseout', ()=> {
+    navBarTop[1].style.color = 'white';
+})
+
+navBarTop[2].addEventListener('mouseover', ()=> {
+    navBarTop[2].style.color = '#39ff14';
+})
+
+navBarTop[2].addEventListener('mouseout', ()=> {
+    navBarTop[2].style.color = 'white';
+})
+
+//evento para colorir somente a nav do footer
+navBarFooter[0].addEventListener('mouseover', ()=> {
+    navBarFooter[0].style.color = '#39ff14';
+})
+
+navBarFooter[0].addEventListener('mouseout', ()=> {
+    navBarFooter[0].style.color = 'white';
+})
+
+navBarFooter[1].addEventListener('mouseover', ()=> {
+    navBarFooter[1].style.color = '#39ff14';
+})
+
+navBarFooter[1].addEventListener('mouseout', ()=> {
+    navBarFooter[1].style.color = 'white';
+})
 
 //evento para menu Hamburguer
 menuHamburguer.addEventListener('click', ()=> {
