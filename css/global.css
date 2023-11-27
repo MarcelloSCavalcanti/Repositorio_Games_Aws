@@ -291,7 +291,8 @@ h6 {
 }
 
 .nav-bar-bot a {
-    font-family: 'Carter One', cursive;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
     text-shadow: 0px 0px 1px black;
 }
 
