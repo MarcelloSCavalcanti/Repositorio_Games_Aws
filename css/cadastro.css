@@ -11,7 +11,7 @@ form{
     width: auto;
     text-shadow: 0px 0px 5px black;
     font-size: 40px;
-    background-color: #163FE5;
+    background-color: #717171;
     border-radius: 16px;
     border: 2px solid;
     padding: 16px;
@@ -22,7 +22,7 @@ form{
 }
 input {
     width: min-content;
-    background-color: #163FE5;
+    background-color: #717171;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 1rem;
@@ -33,7 +33,6 @@ input {
 
 input:focus {
     color: white;
-    background-color:#0425a6;
     transition:0.3s;
 }
 
@@ -47,7 +46,7 @@ button{
     font-size: 40px;
     border-radius: 2rem;
     padding: 8px;
-    background-color: #163FE5;
+    background-color: #717171;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -63,7 +62,7 @@ button:hover{
 }
 button:active {
     scale: 0.95;
-    background-color:#647ee6;
+    background-color:#717171;
 }
 .helper-text {
     display: none;
@@ -89,21 +88,19 @@ button:active {
 }
   
 input.error {
-    border: solid 2px #992020;
     background-color: #CCBBBB;
-    color: #662020;
+    color: black;
 }
   
 input.correct {
     background-color: #BBCCBB;
-    border: solid 2px #206620;
-    color: #206620;
+    color: white;
 }
  .visible {
     display: block;
 }
 .mensagem-erro-senha {
-    color: red; 
+    color: #39ff14; 
     font-size: 18px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -112,7 +109,7 @@ input.correct {
     transition: 1s;
  }
  .mensagem-erro-gmail {
-    color: red; 
+    color: #39ff14; 
     font-size: 20px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -126,8 +123,13 @@ div{
     font-size: 2rem;
     
 }
+.colorlabel{
+    color: white;
+
+
+}
 .mensagem-erro-password2 {
-    color: red; 
+    color: #39ff14; 
     font-size: 20px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -136,7 +138,7 @@ div{
     transition: 1s;
  }
  .mensagem-erro-password {
-    color: red; 
+    color: #39ff14;
     font-size: 15px;
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -145,7 +147,7 @@ div{
     transition: 1s;
  }
  .mensagem-erro-nome{
-    color: red; 
+    color: #39ff14; 
     font-size: 17px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -153,7 +155,7 @@ div{
     border-radius: 2rem 2rem 0 0 ;
  }
 .mensagem-erro-gamil2{
-    color: red; 
+    color: #39ff14; 
     font-size: 20px;
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
