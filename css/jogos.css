@@ -524,7 +524,7 @@ h2 {
 
 footer {
     padding:4px 20px;
-    background-color: #163FE5;
+    background-color: #717171;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -542,4 +542,9 @@ h6 {
     font-family: 'Inter', sans-serif;
     color: white;
     margin: 8px 8px 8px 48px;
+    font-size: 0.75rem;
+}
+
+.newColorNav {
+    color: #39ff14;
 }

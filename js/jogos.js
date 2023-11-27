@@ -103,6 +103,9 @@ const arrayLegendas = [
 ]
 
 let navTop = document.querySelector('#navTop');
+
+let navBarTop = document.getElementsByClassName('nav-bar-top')
+
 let menuHamburguer = document.getElementById('littleScreens');
 let navMenuHamburguer = document.querySelector('#nav-menuHamburguer');
 let legenda = document.querySelectorAll('#legenda');
@@ -114,6 +117,7 @@ let linkReview = document.querySelectorAll('#linkReview');
 
 //print das variáveis
 console.log(navTop)
+console.log(navBarTop)
 console.log(menuHamburguer)
 console.log(navMenuHamburguer)
 console.log(legenda)
@@ -122,6 +126,11 @@ console.log(imgs)
 console.log(navReview)
 console.log(divSemGap)
 console.log(linkReview)
+
+//evento para colorir as navegações no header e footer (Ainda esta em ajustes!!!)
+navBarTop.addEventListener('mouseover', ()=> {
+    navBarTop.classList.add('newColorNav');
+})
 
 //evento para menu Hamburguer
 menuHamburguer.addEventListener('click', ()=> {
