@@ -67,7 +67,7 @@
 
 /*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image {
-    border-radius: 16px;
+    border-radius: 20px;
     margin: 30px;
     margin-bottom: 65px;
     height: 380px;
@@ -77,13 +77,13 @@
 .image{
     height: 380px;
     width: 280px;
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0px 0px 25px black;
 }
 
 /*CSS PARA IMAGENS DE JOGOS TOP1*/
 .game-image-primeiro{
-    border-radius: 16px;
+    border-radius: 20px;
     margin: 30px;
     height: 380px;
     width: 280px;
@@ -144,7 +144,7 @@ h2, h3{
     background-color: #a7a7a7;
     padding: 10px;
     text-shadow: 0px 0px 1px black;
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: inset 0px 0px 48px 1px black;
     cursor: default;
 }
