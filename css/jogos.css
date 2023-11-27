@@ -39,7 +39,7 @@ header a {
     display: none;
     position: absolute;
     z-index: 1;
-    background: linear-gradient(to bottom, #163FE5 74px, #1C1D1D);
+    background-color: #717171;
     border-bottom-left-radius: 40px;
 }
 
