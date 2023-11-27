@@ -210,7 +210,7 @@ section img {
     width: 200px;
     height: 300px;
     border-radius: 20px;
-    filter:drop-shadow(20px 20px 10px black);
+    filter:drop-shadow(10px 10px 10px black);
 }
 
 #legenda {
@@ -273,7 +273,7 @@ a {
 }
 
 .dropShadowImg {
-    filter: drop-shadow(20px 20px 10px #163FE5);
+    filter: drop-shadow(10px 10px 10px #a7a7a7);
 }
 
 .visible1 {
