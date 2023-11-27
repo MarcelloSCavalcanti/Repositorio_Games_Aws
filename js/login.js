@@ -106,3 +106,20 @@ function adicionarEventoTransicao(input) {
       this.style.borderColor = ""; 
   });
 }
+const botaoEntrar = document.querySelector('button.acao[type="submit"]');
+
+if (botaoEntrar) {
+  botaoEntrar.addEventListener("click", function (event) {
+      const inputs = document.querySelectorAll('input');
+      const inputsCorretos = Array.from(inputs).every(input => input.classList.contains('correct'));
+
+      if (!inputsCorretos) {
+          event.preventDefault(); 
+          alert("Por favor, corrija os erros nos campos antes de enviar o formulário.");
+      } else {
+        location.reload();
+      }
+  });
+} else {
+  console.error("Botão não encontrado. Verifique o seletor fornecido.");
+}

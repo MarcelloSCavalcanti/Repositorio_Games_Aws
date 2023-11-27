@@ -55,10 +55,10 @@ form {
     height: max-content;
     text-shadow: 0px 0px 5px black;
     font-size: 30px;
-    background-color: #163FE5;
-    color: rgb(231, 122, 12);
+    background-color: #717171;
+    color: #39ff14;
+
     border-radius: 16px;
-    border: 2px solid;
     padding: 16px;
 }
 
@@ -95,7 +95,7 @@ input {
     padding: 16px;
     gap: 1rem;
     margin: 10px;
-    background-color: #163FE5;
+    background-color: #717171;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: text;  
 }
@@ -123,10 +123,13 @@ input {
      }
     
 }
-
+#areaConteudo {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 input:focus {
-    color: white;
-    background-color:#0425a6;
+    background-color:#717171;
     transition:0.3s;
 }
 
@@ -136,11 +139,12 @@ button{
     font-size: 38px;
     border-radius: 2rem;
     padding: 16px;
-    background-color: #163FE5;
+    background-color: #717171;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     cursor: default;
+    color: white;
 } 
 
 @media (max-width: 410px) {
@@ -217,22 +221,19 @@ footer {
   }
   
   input.error {
-    border: solid 2px #992020;
     background-color: #CCBBBB;
-    color: #662020;
   }
   
   input.correct {
     background-color: #BBCCBB;
-    border: solid 2px #206620;
-    color: #206620;
+    color: white;
   }
   
   .visible {
     display: block;
   }
 .mensagem-erro{
-    color: red; 
+    color: #39ff14; 
     font-size: 30px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
@@ -247,7 +248,6 @@ footer {
         padding: 0px;
     }
     .mensagem-erro{
-        color: red; 
         font-size: 16px; 
         border-color: firebrick;
         box-shadow: inset 0rem 0rem 3rem 0.1rem black;
