@@ -1,6 +1,5 @@
 /*Esse arquivo é para a estilização padrão dos tipos de páginas como: NEWS(index), TOP, JOGOS, LOGIN, REVIEW e CONTATO*/
 * {
-    color:orangered;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     margin: 0;
@@ -10,16 +9,21 @@
 }
 
 body {
+    background-repeat: repeat;
+    background-size: 100vh;
+    background-size: 100vw;
     background-image: url("/src/img/backgroundCinzaEscuroFundo20.png");
+    /*
+    background-color: rgb(26, 26, 26)
+    background-image: linear-gradient(360deg, lightblue, blue, black, blue, lightblue);*/
 }
-
 /*para andar pela página de forma suave quando selecionado o retornar para o topo*/
 html{
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #163FE5;
+    background-color: #717171;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +32,22 @@ header {
 
 header img {
     border-radius: 20px;
+}
+
+h1 {
+    color: #39ff14;
+}
+
+a, h2, h3, h6{
+    color: white;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+a:hover {
+    color: #39ff14;
 }
 
 @media (max-width: 660px) {
@@ -164,7 +184,7 @@ main {
 
 footer {
     padding:4px 20px;
-    background-color: #163FE5;
+    background-color: #717171;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,14 +198,33 @@ footer nav ul{
     padding: 0 48px 0 8px;
 }
 
+footer img {
+    border-radius: 0;
+}
+
+/*responsividade logo proz e aws*/
+@media (max-width: 1500px) {
+    footer img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1340px) {
+    footer img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 440px) {
+    footer img {
+        width: 100px;
+    }
+}
+
 @media (max-width: 1250px) {
     ul {
     font-size: 24px;
     margin:0;
-    }
-
-    h6{
-        font-size: 24px;
     }
 }
 
@@ -300,7 +339,7 @@ h6 {
             width: 100px;
             padding-right: 80px;
             padding-left: 20px;
-            background: linear-gradient(to bottom, #163FE5 74px, #1C1D1D);
+            background: linear-gradient(to bottom, #717171 74px, #1C1D1D);
             border-bottom-left-radius: 40px;
         }
 }

@@ -12,7 +12,7 @@ h3 {
 
 h2, h3 {
     width: min-content;
-    background-color: #163FE5;
+    background-color: #a7a7a7;
     padding: 16px;
     text-shadow: 0rem 0rem 0.1rem black;
     border-radius: 2rem;
@@ -86,7 +86,7 @@ main div {
 }
 /*:hover e not(:hover) dão a animação para quando o mouse entra sobre a imagem e sai da imagem*/
 .game-image:hover {
-    box-shadow: 0px 0px 16px orangered;
+    box-shadow: 0px 0px 16px #a7a7a7;
     transition: 0.35s;
     /*transform: scale(1.1);*/
 }
