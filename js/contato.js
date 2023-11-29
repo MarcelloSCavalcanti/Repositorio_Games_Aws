@@ -66,7 +66,7 @@ usernameInput.addEventListener("blur", function () {
 });
 let comentarioInput = document.getElementById("comentario");
 let comentareHelper = document.getElementById("comentario-helper");
-let mensagemTexto = "voce excedeu o limite maximo de 500"
+let mensagemTexto = "voce excedeu o limite maximo";
 
 comentarioInput.addEventListener("focus", function () {
   if (this.classList.contains("error")) {
@@ -100,3 +100,18 @@ comentarioInput.addEventListener("blur", function () {
   }
 });
 
+function limparEstiloInputVazio(input, helper) {
+  if (input.value.trim() === "") {
+    input.classList.remove("error", "correct");
+    RemAviso(helper);
+  }
+}
+
+// Adicione chamadas a esta função nos eventos "blur" de cada input para limpar o estilo quando estiver vazio
+usernameInput.addEventListener("blur", function () {
+  limparEstiloInputVazio(usernameInput, usernameHelper);
+});
+
+comentarioInput.addEventListener("blur", function () {
+  limparEstiloInputVazio(comentarioInput, comentareHelper);
+});

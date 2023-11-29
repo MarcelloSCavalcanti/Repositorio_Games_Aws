@@ -1,13 +1,4 @@
 
-function togglePopup(input, label) {
-    input.addEventListener("focus", () => {
-      label.classList.add("required-popup");
-    });
-    input.addEventListener("blur", () => {
-      label.classList.remove("required-popup");
-    });
-  }
-  
   function estilizarInputCorreto(input, helper) {
     helper.classList.remove("visible");
     input.classList.remove("error");
