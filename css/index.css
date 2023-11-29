@@ -28,7 +28,7 @@ main div {
 }
 /*de game image até .game-image:hover .legenda é a configuração necessária a fim de ter a descrição do jogo sobre a imagem sem aparece*/
 .game-image {
-    border-radius: 16px;
+    border-radius: 20px;
     height: 396px;
     width: 296px;
     cursor: default;
@@ -37,8 +37,8 @@ main div {
 .image{
     height: 396px;
     width: 296px;
-    border-radius: 16px;
-
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 16px black);
 }
 
 .legenda {
@@ -51,8 +51,8 @@ main div {
     align-self: flex-end;
     height: 3rem;
     width: 296px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     transition: 0.3s;
     opacity: 0;
 }
@@ -105,7 +105,7 @@ main div {
     width: 296px;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 
 .item:hover {

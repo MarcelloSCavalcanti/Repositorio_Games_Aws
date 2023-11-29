@@ -16,6 +16,11 @@ body {
     /*
     background-color: rgb(26, 26, 26)
     background-image: linear-gradient(360deg, lightblue, blue, black, blue, lightblue);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
 }
 /*para andar pela página de forma suave quando selecionado o retornar para o topo*/
 html{
@@ -178,7 +183,6 @@ main {
 
 #areaConteudo {
     padding: 32px 0px;
-    width: 1700px;
     margin: 0 auto;
 }
 
@@ -292,7 +296,7 @@ h6 {
 
 .nav-bar-bot a {
     font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-weight:bold;
     text-shadow: 0px 0px 1px black;
 }
 

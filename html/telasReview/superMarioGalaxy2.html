@@ -70,34 +70,39 @@
             </section>
             <section>
                 <h3 class="textBox">Comentários</h3>
-                <div id="comentariosAnteriores">
                     <div class="textBox">
                         <p>Nota: 5</p>
                         <p>Jogo muito divertido! Vale muito a pena comprar!!!</p>
+                    </div>
+                    <div class="textBox" id="commentPost">
+                        <p></p>
                     </div>
                     <div class="textBox">
                         <p>Nota: 5</p>   
                         <p>Um dos melhores jogos de aventura de todos os tempos!!!</p>
                     </div>
-                </div>
                 <div class="flexAndGap" id="centerText">
                     <button type="button" class="textBox" id="lerMaisButton">Ler mais comentários</button>
                 </div>
             </section>
             <section>
-                <form>
+                <form id="formulario" class="rounded-2 bg-white p-5 w-50">
+
                     <h3 for="nome" class="textBox">Deixe seu comentário!</h3>
-                    <span class="textBox" id="nota">Qual nota esse game merece?</span>
+                    <span class="textBox">Qual nota esse game merece?</span>
                     <label for="nota">
-                        <button type="button"  id="btnSubtrairNota">-</button>
                         <input type="number" name="nota" id="nota" min="0" max="5" placeholder="Nota de 0 a 5">
-                        <button type="button" id="btnAdicionarNota">+</button>
                     </label>
+
+                    <div class="mb-3"> 
+                        <label for="inputText" class="form-label"></label>
+                        <textarea class="form-control" id="inputText" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="3" cols="35" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="btnPublicar">Publicar comentário!</button>
+                    </div>
                 </form>
-                <label for="avaliacaoGame">
-                    <textarea id="avaliacaoGame" name="avaliacaoGame" placeholder="Escreva sua opinião sobre o game bem aqui!" rows="3" cols="35" required></textarea><br>
-                </label>
-                <button id="btnPublicar">Publicar comentário!</button>
             </section>
         </section>
     </main>
@@ -114,5 +119,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="generalReview.js"></script>   
 </body>
 </html> 

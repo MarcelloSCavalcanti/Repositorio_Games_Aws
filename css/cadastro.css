@@ -1,3 +1,7 @@
+html {
+    height: 100vh;
+}
+
 section {
     display: flex;
     justify-content: center;
@@ -66,14 +70,14 @@ button:active {
 }
 .helper-text {
     display: none;
-   font-size: 1.2rem;
-   color: rgb(231, 122, 12);
-   margin-top: 12px;
-   transition: 1s;
+    font-size: 1.2rem;
+    color: rgb(231, 122, 12);
+    margin-top: 12px;
+    transition: 1s;
 }
-  
-  
-  /* ---------- Estilos dinâmicos ---------- */
+
+
+/* ---------- Estilos dinâmicos ---------- */
 .required-popup::after {
     content: "*Campo obrigatório";
     position: absolute;
@@ -86,17 +90,17 @@ button:active {
     display: block;
     background-color: #202020;
 }
-  
+
 input.error {
     background-color: #CCBBBB;
     color: black;
 }
-  
+
 input.correct {
     background-color: #BBCCBB;
     color: white;
 }
- .visible {
+.visible {
     display: block;
 }
 .mensagem-erro-senha {
@@ -107,16 +111,16 @@ input.correct {
     padding: 11px 100px 14px 100px;
     border-radius: 2rem 2rem 0 0;
     transition: 1s;
- }
- .mensagem-erro-gmail {
+}
+.mensagem-erro-gmail {
     color: #39ff14; 
     font-size: 20px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 100px 14px 100px;
     border-radius: 2rem 2rem 0 0; 
-   margin-left: 12px;
- }
+margin-left: 12px;
+}
 div{
     text-align: center;
     margin-left: center;
@@ -136,8 +140,8 @@ div{
     padding: 11px 85px 14px 85px;
     border-radius: 2rem 2rem 0 0 ;/
     transition: 1s;
- }
- .mensagem-erro-password {
+}
+.mensagem-erro-password {
     color: #39ff14;
     font-size: 15px;
     border-color: firebrick;
@@ -145,15 +149,15 @@ div{
     padding: 11px 12px 14px 12px;
     border-radius: 2rem 2rem 0 0 ;
     transition: 1s;
- }
- .mensagem-erro-nome{
+}
+.mensagem-erro-nome{
     color: #39ff14; 
     font-size: 17px; 
     border-color: firebrick;
     box-shadow: inset 0rem 0rem 3rem 0.1rem black;
     padding: 11px 11px 14px 11px;
     border-radius: 2rem 2rem 0 0 ;
- }
+}
 .mensagem-erro-gamil2{
     color: #39ff14; 
     font-size: 20px;
@@ -166,35 +170,35 @@ div{
 }
 @media screen and (max-width: 600px) and (max-height: 2000px) {
     div{
-       padding: 1rem;
+        padding: 1rem;
     }
- 
+
     h2{
-       font-size: 2rem;
+        font-size: 2rem;
     }
- 
+
     form {
-       font-size: 2rem;
-       padding: 2rem 1rem 2rem 1rem;
+        font-size: 2rem;
+        padding: 2rem 1rem 2rem 1rem;
     }
     button{
-       font-size: 1.4rem;
-       padding: 16px  40px  16px  40px
+        font-size: 1.4rem;
+        padding: 16px  40px  16px  40px
     }
     p{
-       padding: 16px  32px  16px  32px;
-       margin: 16px auto;
-       font-size: 1.4rem;
+        padding: 16px  32px  16px  32px;
+        margin: 16px auto;
+        font-size: 1.4rem;
     }
 
     input {
-       width: max-content; 
-       font-size: 1.4rem;
-       border-radius: 1rem;
-       padding: 16px;
-       margin-bottom: 10px;
- 
-   
+        width: max-content; 
+        font-size: 1.4rem;
+        border-radius: 1rem;
+        padding: 16px;
+        margin-bottom: 10px;
+
+
     }
     label{
         font-size: 1.4rem;
@@ -207,18 +211,18 @@ div{
     .mensagem-erro-nome{
         font-size: 11px;
         padding: 11px 12px 14px 12px;
-     }
-     .mensagem-erro-gmail {
+    }
+    .mensagem-erro-gmail {
         font-size: 12px;
         padding: 11px 90px 14px 90px;
-     }
-     .mensagem-erro-password {
+    }
+    .mensagem-erro-password {
         font-size: 11px; 
         padding: 11px 12px 14px 12px;
-     }
-     .mensagem-erro-password2 {
+    }
+    .mensagem-erro-password2 {
         font-size: 15px;
         padding: 11px 20px 14px 20px;
 
-     }
- }
+    }
+}

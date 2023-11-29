@@ -48,7 +48,7 @@ for(let i = 0; i < arrayCarrossel1.length; i++) {
     <div class="game-image item slide">
         <img src="${arrayCarrossel1[i].image}" alt="${arrayCarrossel1[i].descicaoImg}" class="image">
         <div class="legenda">
-        <a href="${arrayCarrossel1[i].nextPage}">${arrayCarrossel1[i].legenda}</a>
+            <a href="${arrayCarrossel1[i].nextPage}">${arrayCarrossel1[i].legenda}</a>
         </div>
     </div>`;
 
