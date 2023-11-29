@@ -131,6 +131,8 @@ input[type=number] {
     appearance: textfield;
 }
 
+
+
   /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -177,6 +179,15 @@ p {
 @media (max-width: 650px) {
     #lerMaisButton {
         margin: 5px 16px;
+    }
+}
+
+@media (max-width: 450px) {
+        textarea {
+            font-size: 12.5px;
+    }
+    .textBox {
+        font-size: 15px;
     }
 }
 

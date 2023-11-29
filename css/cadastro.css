@@ -35,6 +35,13 @@ input {
     font-size: 2rem; 
 }
 
+@media (max-width: 450px) {
+    input {
+        width: 200px;
+        margin:4px 4px;
+    }
+}
+
 input:focus {
     color: white;
     transition:0.3s;
@@ -192,7 +199,10 @@ div{
     }
 
     input {
-        width: max-content; 
+        color: white;
+    }
+
+    input {
         font-size: 1.4rem;
         border-radius: 1rem;
         padding: 16px;

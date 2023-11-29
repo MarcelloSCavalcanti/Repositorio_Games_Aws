@@ -20,8 +20,11 @@
     #areaConteudo {
         width: 600px;
     }
-    
+}
 
+
+input {
+        color: white;
 }
 
 @media (max-width: 610px) {
