@@ -19,7 +19,8 @@ section {
 }
 /*estilização de elementos usado em todos os elementos que contenham texto*/
 .textBox{
-    background-color: #163FE5;
+    color:#ffffff;
+    background-color: #a7a7a7;
     padding: 10px 10px;
     margin: 5px;
     width: max-content;
@@ -48,16 +49,15 @@ section {
 }
 /*Config da imagem do vídeo do google, não usar width nem height visto que desfoca a imagem o melhor é usar essas no html*/
 iframe {
-    box-shadow: 0px 0px 16px #163FE5;
+    box-shadow: 0px 0px 16px #a7a7a7;
     border-radius: 20px;
 }
 /*Estilização dos input do campo do valor da nota*/
 input {
-    background-color: #163FE5;
+    background-color: #a7a7a7;
     color: #ffffff;
     box-shadow: inset 0px 0px 10px 5px black;
     font-size: 20px;
-    text-shadow: 0px 0px 5px black;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
@@ -66,7 +66,7 @@ input {
 
 input:focus {
     color: white;
-    background-color:#0425a6;
+    background-color:rgba(100, 230, 100, 0.589);
     transition:0.3s;
 }
 
@@ -75,7 +75,7 @@ input:focus {
     border-radius: 20px;
     padding: 10px;
     font-size: 20px;
-    background-color: #163FE5;
+    background-color: #a7a7a7;
     color: #ffffff;
     text-shadow: 0px 0px 5px black;
     box-shadow: inset 0px 0px 10px 5px black;
@@ -87,12 +87,13 @@ input:focus {
 }
 /*config do botão de avaliação da nota*/
 button {
+    color: #ffffff;
     padding: 5px 10px;
     font-size: 1.5rem;
     text-shadow: 0px 0px 5px black;
     border-radius: 50%;
     margin: 0px 0px;
-    background-color: #163FE5;
+    background-color: #a7a7a7;
     box-shadow: inset 0px 0px 10px 5px black;
 }
 /*aparecer as setas do campo number no firefox*/
@@ -108,7 +109,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 /*para dar efeito de botão quando clicado*/
 button:active {
     scale: 0.95;
-    background-color:#647ee6;
+    background-color:rgba(100, 230, 100, 0.589);
 }
 
 #btnSubtrairNota:active, #btnAdicionarNota:active {

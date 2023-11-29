@@ -42,11 +42,9 @@ function togglePopup(input, label) {
   var elementosAcao = document.querySelectorAll('.acao');
   elementosAcao.forEach(function(elemento) {
     elemento.addEventListener("mouseover", function () {
-        this.style.transform = "scale(1.1)";
         this.style.transformOrigin = "center";
         this.style.cursor = "pointer";
-        this.style.transform = "scale(30px)";
-        this.style.transition= "0.75s";
+        this.style.transition= "0.2s";
     });
 
     elemento.addEventListener("mouseout", function () {
