@@ -127,7 +127,7 @@ Escondendo a scrollbar para IE, Edge and Firefox
 /*div referente ao "quadrado de área do slider parte externa não animada"*/
 .slider {
     height: 475px;
-    width: 100%;
+    width: 80%;
     margin: auto;
     position: relative;
     display: grid;
@@ -141,6 +141,8 @@ Escondendo a scrollbar para IE, Edge and Firefox
     animation: scroll 5s linear infinite;
     animation-direction:alternate;
 }
+
+
 /*parte necessária para buscar a parada do movimento para melhor leitura e entrada na página respectiva, para retomar animação no pc tirar o mouse no celular clicar fora das imagens do slider*/
 .slide-track:hover {
     animation-play-state: paused;
@@ -203,6 +205,17 @@ Escondendo a scrollbar para IE, Edge and Firefox
         }
     }
 }
+
+@media (max-width: 2000px) {
+    #areaConteudo {
+        width:1700px;
+    }
+}
+
+@media (max-width: 1700px) {
+    #areaConteudo {
+        width:1500px;
+    }
 
 @media (max-width: 1500px) {
     #areaConteudo {
