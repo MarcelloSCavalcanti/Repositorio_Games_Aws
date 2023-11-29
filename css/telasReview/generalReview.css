@@ -23,27 +23,38 @@ section {
     background-color: #a7a7a7;
     padding: 10px 10px;
     margin: 5px;
-    width: max-content;
     height: max-content;
+    width: max-content;
     text-shadow: 0px 0px 5px black;
     border-radius: 20px;
     align-self: center;
     box-shadow: inset 0px 0px 10px 5px black;
     cursor: default;
 }
+/*------------------*/
+@media (max-width: 650px) {
+    .textBox {
+        width:max-content;
+    }
+}
+
 /*Aplicando display flex para os elementos filhos e um gap de 20px entre elementos*/
 .flexAndGap {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 /*Área do trailer e do gameplay*/
 .trailerEGameplay {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: min-content;
 }
+
 /*estilização do título dos vídeos*/
 .tituloTrailerEGameplay {
-    margin: 0px auto 20px auto;
+    margin: 20px auto 20px auto;
     font-size: 1.5rem;
     text-shadow: 0px 0px 5px black;
 }
@@ -51,6 +62,25 @@ section {
 iframe {
     box-shadow: 0px 0px 16px #a7a7a7;
     border-radius: 20px;
+    margin: 0px 8px;
+}
+
+@media (max-width: 700px) {
+    iframe {
+        width:500px;
+    }
+}
+
+@media (max-width: 550px) {
+    iframe {
+        width:400px;
+    }
+}
+
+@media (max-width: 450px) {
+    iframe {
+        width:300px;
+    }
 }
 /*Estilização dos input do campo do valor da nota*/
 input {
@@ -126,6 +156,12 @@ p {
     width: 500px;
     word-wrap: break-word;
 }
+
+@media (max-width: 650px) {
+    p {
+        width:280px;
+    }
+}
 /*borão de publicar comentário*/
 #btnPublicar {
     margin: 20px;
@@ -134,8 +170,14 @@ p {
 }
 /*id a fim de centralizar e ganhar um avastamento do elemento de cima*/
 #lerMaisButton {
-    margin: 0 auto;
-    margin-top: 5px;
+    margin: 5px auto;
+
+}
+
+@media (max-width: 650px) {
+    #lerMaisButton {
+        margin: 5px 16px;
+    }
 }
 
 
