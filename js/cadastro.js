@@ -110,7 +110,7 @@ function adicionarEventoTransicao(input) {
   const mensagemGmailInvalida = "Escreva um email válido";
   gmailInput.addEventListener("input", function (e) {
     let valor = e.target.value;
-    const regexGmail = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+    const regexGmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|hotmail|outlook)\.com$/;
     if (regexGmail.test(valor)){
       estilizarInputCorreto(gmailInput, gmailHelper);
     } else {
@@ -135,7 +135,7 @@ function adicionarEventoTransicao(input) {
   gamil2Invalida="Os dois emails não são iguais"
 gmail2Input.addEventListener("input", function (e) {
     let valor = e.target.value;
-    const regexGmail = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+    const regexGmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|hotmail|outlook)\.com$/;
   
     if (regexGmail.test(valor)) {
       if (valor === gmailInput.value) {

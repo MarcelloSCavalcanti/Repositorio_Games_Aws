@@ -30,7 +30,7 @@ const mensagemGmailInvalida = "Escreva um e-mail válido";
 const mensagemSenhaInvalida = "Escreva uma senha válida";
 usernameInput.addEventListener("change", (e)=> {
     let valor = e.target.value
-    const regexGmail = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+    const regexGmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|hotmail|outlook)\.com$/;
     if (regexGmail.test(valor)) {
     estilizarInputCorreto(usernameInput, usernameHelper);
     }

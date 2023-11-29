@@ -37,7 +37,7 @@ usernameInput.addEventListener("focus", function () {
 
 usernameInput.addEventListener("blur", function () {
   let valor = this.value.trim();
-  const regexGmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const regexGmail = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|hotmail|outlook)\.com$/;
 
   if (valor === "") {
     // Se o campo estiver vazio, reverter para o estado inicial
