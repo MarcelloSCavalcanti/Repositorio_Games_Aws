@@ -16,4 +16,4 @@ form.addEventListener('submit', (event) => {
     commentPost.appendChild(p);
     nota.value = '';
     textComment.value = '';     
-});  
+});
